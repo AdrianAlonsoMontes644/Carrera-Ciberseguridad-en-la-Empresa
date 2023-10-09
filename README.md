@@ -73,7 +73,7 @@ Son cualquier aparato electrónico que permita interactuar con otras personas. M
 
 -La seguridad dentro de estos: Los sistemas de antivirus y las actualizaciones de seguridad. Estos dos son obligatorios para mantener la seguridad del dispositivo. Como recomendación, no ejecutar archivos de origenes desconocidos, mantener el sistema actualizado y usar contraseñas robustas.
 
-- y Apps, que son y diferencias: Ambos son aplicaciones u herramientas desarrolladas para llevar a cabo una función. Pero las Apps son dirigidas en su mayoría a los móviles y los softwares a los ordenadores.
+-Softwares y Apps, que son y diferencias: Ambos son aplicaciones u herramientas desarrolladas para llevar a cabo una función. Pero las Apps son dirigidas en su mayoría a los móviles y los softwares a los ordenadores.
 ->|(¡¿Me dices de comprar un móvil nuevo solo por no tener espacio para las actualizaciones de seguridad!? que bien tiene que sentirse eso de tener dinero, esas 7 aplicaciones que no he utilizado ni una vez y no me deja desistalar se pueden quedar de base, muchas gracias)|
 
 -Las contraseñas fuertes: Son aquellas que contienen un alto número de caracteres, mezclan letras minúsculas y mayúsculas, incluyen números y poseen carácteres especiales. ->|(El ejemplo en el que convierte una frase y un mes del año en @gOM5fdTV3JdT¡@ fue bastante satísfactorio)| y como último consejo cambiar las contraseñas cada mes ->|(Ya me cuestó bastante aprenderme las que uso, no pienso rotar mensualmente o me bloquearan por uso excesivo de "contraseñas olvidadas")|
