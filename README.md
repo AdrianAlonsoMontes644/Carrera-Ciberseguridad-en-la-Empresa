@@ -85,4 +85,26 @@ Son cualquier aparato electrónico que permita interactuar con otras personas. M
 -BYOD: anagrama de "Bring Your Own Device". Se trata de los dispositivos personales que la empresa permite usar para el trabajo. Puede tener un gran impacto corporativo, debido a que en caso de una brecha de seguridad es más dificil identíficarlo y se tiene menos control sobre el dispositivo. También un gran impacto personal debido a que pueden existir nomas de uso obligatorias de la empresa y en caso de avería el costo 
 deberá ser una inversión de la persona, es decir, la empresa no es responsable del dispositivo.
 
+#### Carrera Proyecto de clases Día 2: 10/10/2023
+
 ### Usuarios Y Contraseñas
+
+Los usuarios son un Pseudónimo que utilizamos las personas físicas para identificarnos en los sistemas. Siempre acompañado de una contraseña para corresponder a unas credenciales de acceso de esta forma aumentando la seguridad. Algunos ejemplos pueden ser el nombre solo, acompañado de apellidos o el codigo de empleado en la empresa. Su función es permitirnos una acreditación virtual de acceso para autenticarnos e identificarnos.
+
+Deben utilizarse para controlar los accesos y tener una seguridad estable -> |(Hace bastante incapié en esto y pone unos cuantos ejemplos bastante obvios. Como persona a la que le han robado una cuenta de google que luego aparecía con activaciones en Turquía, ya tengo bastante claro donde no meter mi cuenta)|
+
+-Los gestores de contraseñas: Nos permite guardar contraseñas de manera segura y tambien nuestros usuarios, permitiendo también ordenarlos como queramos. Como ejemplo pone la aplicación KEEPASS, sencillo de instalar localmente y que permite centralizar las contrasañes y guardarlas de forma segura aplicando criptografía cifrandolas.
+
+### Políticas de Contraseñas
+
+Explica porque la mayoría de compañias nos obligan a cambiar de contraseña cada cierto tiempo. Por ejemplo, si alguien obtiene las contraseñas, despues del cambio perderá el acceso. Las empresas prohiben repetir mínimo las 5 contraseñas anteriores pudiendo llegar a 20 o 40 contraseñas. Se recomienda cambiar las contraseñas personales cada 30 a 90 días ->|(Hagamoslo corto, Seguridad)|.
+
+-Beneficios de las políticas de contraseñas: Mejora la seguridad, ayuda a cotrolar las credenciales, ayuda a identificar más rapido un problema y permite llevar a cabo un bloqueo de usuarios. Como tal no existen inconvenientes, solo el tener que adaptarse
+
+### Copias de seguridad(Backup)
+
+No es más que una copia de una información que permita recuperarla en caso de ataque informático o borrados accidentales. No se recomienda hacer las copias en un mismo dispositivo, si no en pendrives o usar la nube por ejemplo ->|(Sinceramente la nube me parece cada día menos segura, al menos si alguien quiere robarme un pendrive se juega el brazo. Y no tengo problemas con los borrados accidentales, guardo cada muy poco tiempo y muchas veces para asegurarme)|
+
+### Carpetas compartidas
+
+Son carpetas a las que se pueda acceder desde distintos perfiles de usuario. Se pueden usar para compartir archivos y trabajar sobre una misma carpeta de ser necesario, tambien tiene como ventaja la actualización en tiempo real de los ficheros. Al mismo tiempo su función principal sigue siendo su mayor peligro, el que muchas personas pueden acceser, lo cual facilita el robo y extracción de información o la entrada de información maliciosa o la posibilidad de que corrompan los archivos. Por estos peligros se recomienda el uso de permisos de acceso y el uso de copias de seguridad.
