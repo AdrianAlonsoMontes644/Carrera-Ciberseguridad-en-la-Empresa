@@ -121,4 +121,12 @@ Los navegadores nos permiten movernos por la red para obtener información por e
 
 -Las URL: Es el nombre a través del cual nos conectamos a una página web. Se compone de 2 partes el protocolo que es por ejemplo el http que aparece al inicio de las paginas y el dominio que es el resto de la URL, estando separados por dos barras y doble punto //: También existe el subdominio, una tecera parte que se añade delante del dominio y se separan por un punto.
 
--Como reconocer URL seguras e inseguras: Nunca se puede estar seguro al 100% de que es segura ->|(Ejemplo gracioso, hace unas semanas un amigo y yo descargamos un programa desde su página oficial, otro colega se lo quiso descargar la semana siguiente desde la misma página con la URL que le dimos y termino teniendo que formatear el pc por un troyano que le estaba bloqueando todo el uso del ordenador desde dentro)|-> . Como recomendación verificar a donde redirige, como está escrita la URL y que el protocolo de seguridad esté en uso (https). Si la dirección no es reconocible y no está aplicado el protocolo de seguridad, es decir, aparece http sin la s al final, es más probable que no se trate de una página segura. Nos enseña una aplicación llamada "VirusTotal" que permite verificar enlaces
+-Como reconocer URL seguras e inseguras: Nunca se puede estar seguro al 100% de que es segura ->|(Ejemplo gracioso, hace unas semanas un amigo y yo descargamos un programa desde su página oficial, otro colega se lo quiso descargar la semana siguiente desde la misma página con la URL que le dimos y termino teniendo que formatear el pc por un troyano que le estaba bloqueando todo el uso del ordenador desde dentro)|-> . Como recomendación verificar a donde redirige, como está escrita la URL y que el protocolo de seguridad esté en uso (https). Si la dirección no es reconocible y no está aplicado el protocolo de seguridad, es decir, aparece http sin la s al final, es más probable que no se trate de una página segura. Nos enseña una página web llamada "VirusTotal" que permite verificar enlaces.
+
+-Códigos QR: Códigos que permiten almacenar información. Hay que tener cuidado ya pueden almacenar enlaces maliciosos o dirigirnos a conecciones que no conocemos, incluso descargar directamente una aplicación. Se recomienda verificar el enlace que contiene el código usando softwares de análisis.
+
+-Certificados en internet: Información relacionada con la página web, que ayuda a verificar al propietario de una web y nos ayuda en la protección contra terceros en el intercambio de información.
+
+#### Carrera Proyecto de clases Día 3: 11/10/2023
+
+### Correo electrónico seguro
