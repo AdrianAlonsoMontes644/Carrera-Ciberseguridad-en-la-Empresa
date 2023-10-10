@@ -108,3 +108,17 @@ No es más que una copia de una información que permita recuperarla en caso de 
 ### Carpetas compartidas
 
 Son carpetas a las que se pueda acceder desde distintos perfiles de usuario. Se pueden usar para compartir archivos y trabajar sobre una misma carpeta de ser necesario, tambien tiene como ventaja la actualización en tiempo real de los ficheros. Al mismo tiempo su función principal sigue siendo su mayor peligro, el que muchas personas pueden acceser, lo cual facilita el robo y extracción de información o la entrada de información maliciosa o la posibilidad de que corrompan los archivos. Por estos peligros se recomienda el uso de permisos de acceso y el uso de copias de seguridad.
+
+### Navegación segura
+
+Los navegadores nos permiten movernos por la red para obtener información por ejemplo. Hay que tener cuidado ya que se pueden mostrar recursos tanto locales como remotos ->|(Me he sentido tonto mientras veo como me explican el uso de una barra de búsqueda a lo largo de todo un minuto y medio...)|
+
+-Los navegadores seguros: Son aquellos con medidas de seguridad que preeven la actividad no autorizada -> |(Que ya para eso tenemos Tor y Onion...)|. -> Utilizan metodos de forma proactiva lo que permite que actue antes que se produzca un ataque informático y no después, protegen la identidad y ayuda con las cookies maliciosas. Recomienda no confiarse igualmente por tener un navegador seguro y concienciarnos nosotros mismo de navegar de manera segura.
+
+-Las actualizaciones en los navegadores web: Los navegadores siguen siendo aplicaciones que requieren cambios y mejoras de seguridad constantes al ser la herramienta más expuesta a los ataques informáticos. Se recomienda especial precaución y atención al ser la herramienta con la que navegamos por internet. Dentro de estos podemos comprobar que tenemos todas las actualizaciones en los ajustes.
+
+-Las extensiones: Pequeños programas que se incluyen en la herramienta de nvegación web, los usos y funcionamientos son casi infinitos al ser programas, tambien pueden ser peligrosos e instalar un malware, por lo que hay que revisar bien las que se instalan. Tampoco se recomiendo instalar muchas porque podría realentizar el dispositivo. 
+
+-Las URL: Es el nombre a través del cual nos conectamos a una página web. Se compone de 2 partes el protocolo que es por ejemplo el http que aparece al inicio de las paginas y el dominio que es el resto de la URL, estando separados por dos barras y doble punto //: También existe el subdominio, una tecera parte que se añade delante del dominio y se separan por un punto.
+
+-Como reconocer URL seguras e inseguras: Nunca se puede estar seguro al 100% de que es segura ->|(Ejemplo gracioso, hace unas semanas un amigo y yo descargamos un programa desde su página oficial, otro colega se lo quiso descargar la semana siguiente desde la misma página con la URL que le dimos y termino teniendo que formatear el pc por un troyano que le estaba bloqueando todo el uso del ordenador desde dentro)|-> . Como recomendación verificar a donde redirige, como está escrita la URL y que el protocolo de seguridad esté en uso (https). Si la dirección no es reconocible y no está aplicado el protocolo de seguridad, es decir, aparece http sin la s al final, es más probable que no se trate de una página segura. Nos enseña una aplicación llamada "VirusTotal" que permite verificar enlaces
