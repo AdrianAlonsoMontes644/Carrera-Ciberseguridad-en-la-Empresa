@@ -130,3 +130,69 @@ Los navegadores nos permiten movernos por la red para obtener información por e
 #### Carrera Proyecto de clases Día 3: 11/10/2023
 
 ### Correo electrónico seguro
+
+Un método para enviar y recibir información de manera casi instantanea, esta puede ir en formato de texto tanto en imágenes o en documentos de distinta índole. Hay que tenr ciertas precauciones al usarlo, sobre todo mucho cuidado con remitentes desconocidos. Entre otros peligros se encuentra el envío de información confidencial y el spam. -> |(Está muy bien decir que no abras siquiera este tipo de correos porque les demuestras que la cuenta está activa, pero solo abro correos de clases y algunos mensajes de spam siguen llegando después de años...)| -> Hay que proteger muy bien la cuenta como usuario para evitar accesos no autorizados.
+
+-El phishing: Técnicas que buscan engañar a una persona usando ingeniería social para llevar a cabo robos informáticos, una de las formas es conseguir que accedamos a un enlace. Hay 4 tipos:
+
+Por correo electrónico: El mencionado anteriormente, es el más barato y facil de ejecutar.
+
+Vishing: Se trata de phishing por voz, a través de llamadas telefónicas
+
+Smishing: Se trata de phishing a través de SMS. Por ejemplo, falsos mensajes del banco con enlaces.
+
+Carta Nigeriana: Intenta acercarse a la persona con información fraudulenta ya sea con la muerte de un familiar y una herencia o con falsos premios ganados.
+
+-Documentos adjuntos en el correo electrónico: Son los ficheros enlazados al mensaje para enviar información de diferentes maneras. No se puede saber si son seguros o estar infectados de forma 100% segura. Pudiendo contener información maliciosa o contener ejecutables que instalen malwares.
+
+### Descargas desde Internet
+
+Las solemos asociar a tomas de piratería y descargas ilegales. Pero son cualquier imagen, fichero adjunto o plataforma de streaming que usemos. Durante la navegación también existen descargas de las que no somos conscientes, ya que se puede considerar incluso que al intrar a una página se está descargando en nuestro navegador. -> |(Esas buenas páginas que nada más entrar intentas descargarte 30 archivos desconocidos son exasperantes)|. 
+
+-Es segura la descarga de ficheros desde internet? -> |(spoiler: NO)| -> : Hay dos tipos de descargas
+
+Fuentes conocidas: Correos electrónicos internos de la empresa, Documentos en carpetas corporativas y Webs verificadas.
+
+Fuentes desconocidas: Correos electrónicos de emisores desconocidos, Repositorios de documentos en internet y Webs de dudosa fiabilidad.
+
+Precauciones a tener en cuenta: Verificar siempre la procedencia, analizar siempre con un antivirus y ante cualquier duda no descargar directamente
+
+### Bloqueo de sesión
+
+La sesión hay que recordar que está vinculada con nuestro usuario y contraseña y esta sesión se mantiene activa durante todo el uso hasta que sea detenida por el usuario.
+
+Nos permite acceso a donde tenga permisos el usuario así como la identificación del mismo.
+
+Puede ser peligrosa? Pues como todo. Si nos suplantan la identidad con nuestra sesión pueden interacruar con todo donde tenga permisos el usuario. Como puede ocurrir? Por ejemplo activando el correo electrónico en un dispositivo ajeno y no cerrando la sesión. Otro ejemplo sería dejar el puesto de la oficina dejando la sesión abierta.
+
+### Datos sensibles
+
+Se trata de los datos personales que afectan a la privacidad de la persona, como su información mediatica o médica, opiniones políticas y religiosas, ect... Estos datos han de ser protegidos con medidas de seguridad fuerte y con visualización estricta y recordar que la filtración de datos sensibles puede llegar a multas muy graves ->|(Ya, claro... a mi me robaron mi teléfono en 3º de la ESO y se dedicaron a esparcir toda mi información por el instituto, desde contraseñas y mis datos médicos hasta mi historial de google. Maravillosa actuación por parte del centro 2 semanas después de quejarme que hicieron que se me pagase el movil robado, solo eso e incluso pareció a regañadientes para que no se llevase el caso a la policia... Que buenos docentes tenemos en este país, arriba España o algo así era)|
+
+### Notificación de Incidentes de Ciberseguridad
+
+Que son?: Se trata de un aviso que se lleva a cabo que sucede un problema que afecta a la seguridad virtual como ataques informáticos o los borrados de información. Podemos causarlos voluntariamente subiendo información confidencial a la red o cediendo nuestras credenciales de acceso a otra persona. También se pueden generar de manera involuntaria, ya sea que nos suplanten la identidad sin saberlo, nos roben las credenciales de acceso, que caigamos en una estafa o el caso "Fraude del CEO", un tipo de fsishing donde nos engañan haciendose pasar por un alto cargo en la empresa.
+
+Como lo notificamos: No existe una única respuesta válida ya que cada jefe debe notificar a sus trabajadores el procedimiento a realizar. Un ejemplo podría ser notificar a nuestro resposable más directo en el momento que seamos conscientes del incidente. Otro sería comunicar directamente al equipo de ciberseguridad.
+
+No hay que tener miedo de comunicar un problema de ciberseguridad, debido a que no hacerlo puede acatar a mayores problemas.
+
+### Desconexión cuando no se está utilizando la red
+
+Los dispositivos se mantienen enviando información a la red aunque no los estemos utilizando activamente, lo cual abre una posible brecha de seguridad en la cual no somos conscientes de lo que esta sucediendo. Por esto es recomendable desconectarse de la red cuando no se esté utilizando -> |(Es un problema entonces que vivimos con el movil conectado a internet casi 24/7 y sinceramente a estas alturas no voy a conectarme y desconectarme cada 5 minutos para ver si tengo un mensaje, me quedo conectado y ya sonará)|
+
+### Cierre de sesiones
+
+Liberar por completo la sesión que estuviesemos utilizando bloqueando el acceso a nuestra sesión y dejando que otra persona pueda acceder con su propio usuario y contraseña. Siempre cerrar la sesión al momento de dajar de usar un dispositivo.
+
+### Apagado del dispositivo
+
+Consiste en dejar el dispositivo sin conección a la corriento o la batería para literalmete apagarlo. Los peligros de no hacerlo? El uso indebido sin consentimiento y ser objetivo de ciberdelincuentes
+
+### Conclusiones
+
+-Que se ha visto: Conceptos esenciales de la ciberseguridad y los peligros de la navegación insegura.
+
+-Que se ha aprendido: El uso seguro de los dispositivos electrónicos, la navegación segura, el uso seguro del correo electrónico y la importancia de la actualización continua de los sistemas y las aplicaciones
+
+-Proximos pasos: Continuar aprendiendo sobre los riesgos de internet, mantenerse actualizado sobre la ciberseguridad, conocer los ataque más comunes para evitarlos
