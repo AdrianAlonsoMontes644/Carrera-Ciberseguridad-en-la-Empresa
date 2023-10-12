@@ -427,3 +427,5 @@ Por cada riesgo se debería recopilar la siguiente información:
 -Progreso de las acciones
 
 -Estado 
+
+|(Al final de cada parte del modulo hay un mini examen. Las preguntas no se corresponden con el manual, te dicen unas cosas y el manual otras totalmente diferente. Un autentico desastre la verdad...)|
