@@ -276,3 +276,36 @@ El gobierno y la gestión del riesgo deben estar alineadas con los objetivos cor
 -> |(La introducción de 19 minutos tomó una hora... este curso va a ser lento...)|
  
 ### Definición del marco de gestión del riesgo
+
+Para gestionar el riesgo, es necesario contar r con un "framework" o marco para el mismo dentro de la organización que defina los roles y responsabilidades, recursos y tolerancia al riesgo que se tendrá. Su principal salida es la estrategia de gestión del riesgo.
+
+La estrategia también incluye cualquier decisión a nivel estratégico y las consideraciones sobre cómo los riesgos a las operaciones y activos serán gestionadas por el comité de dirección y la gerencia senior. 
+
+#### Marco de gestión ISO 27005
+
+Es un estandar internacional que se ocupa de la gestión de riesgos de seguridad de la información. Suministra directrices para la gestión de riesgos de seguridad en una empresa.
+
+-Gestión de riesgos de seguridad de la información en una empresa. ISO 27001.
+
+Busca un enfoque en "Risk Management" para Tecnologías de la Información.
+
+-Esta norma parte del mismo modelo definido en ISO 31000 (gestión riesgo empresarial general).
+
+Este Marco de gestión ISO 27005 lleva a cabo la identificación del riesgo en un orden:
+
+-Identificación de activos
+-Identificación de amenazas
+-Identificación de controles existentes
+-Identificación de vulnerabilidades 
+
+También analiza los riesgos:
+
+-Metodologías
+-Evaluación de las consecuencias
+-Evaluación de la probabilidad de los incidentes
+-Determinación del riesgo
+-Evaluación de riesgos 
+
+#### Estándares NIST 800-39 y 800-30
+
+El propósito de NIST SP 800-39 es proporcionar una guía para la organización en la gestión de riesgos de seguridad de información. Otro factor importante es proporcionar orientación para desplegar un sistema integrado para toda la organización del programa para la gestión de riesgos de seguridad de información. 
