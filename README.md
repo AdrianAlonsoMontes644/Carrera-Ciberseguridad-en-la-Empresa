@@ -318,7 +318,7 @@ El objetivo del componente de la evaluación de riesgos es identificar:
 -El daño que puede ocurrir dado el potencial de las amenazas explotando vulnerabilidades
 -La probabilidad de que el daño se producirá. El resultado final es una determinación del riesgo 
 
-#### Definición del marco de gestión del riesgo:
+### Definición del marco de gestión del riesgo:
 
 Este modelo de marco de gestión del riesgo se basa en el estándar NIST 800-39.
 
@@ -429,3 +429,7 @@ Por cada riesgo se debería recopilar la siguiente información:
 -Estado 
 
 |(Al final de cada parte del modulo hay un mini examen. Las preguntas no se corresponden con el manual, te dicen unas cosas y el manual otras totalmente diferente. Un autentico desastre la verdad...)|
+
+#### Carrera Proyecto de clases Día 5: 13/10/2023
+
+### Evaluación del riesgo
