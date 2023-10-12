@@ -332,13 +332,29 @@ El marco de gestión del riesgo es el medio principal para dirigir el riesgo en 
 
 El trabajo previo para crear este marco estandarizado para la organización será el siguiente:
 
-- Identificar las asunciones que afectan a cómo el riesgo se evalúa, se responde y se monitoriza en la organización.
+-Identificar las asunciones que afectan a cómo el riesgo se evalúa, se responde y se monitoriza en la organización: Las organizaciones que identifican, caracterizan y proveen ejemplos representativos de las fuentes de amenazas, vulnerabilidades, consecuencias y determinaciones de probabilidades promocionan una terminología común y un marco de referencia para comparar y tratar el riesgo a través de diferentes áreas, servicios y procesos.
   
-- Identificar restricciones para la realización de las actividades de evaluación, respuesta y monitorización del riesgo dentro de la organización.
+-Identificar restricciones para la realización de las actividades de evaluación, respuesta y monitorización del riesgo dentro de la organización.
 ○ Limitaciones financiera.
-○ Requisitos legales, regulatorios y/o contractuales.
+○ Requisitos legales, regulatorios y contractuales.
 ○ La cultura organizacional.
 
-- Identificar el nivel de tolerancia al riesgo de la organización.
+-Identificar el nivel de tolerancia al riesgo de la organización: La tolerancia al riesgo es el nivel de riesgo que una organización está dispuesta a a aceptar en su búsqueda de objetivos estratégicos. Las organizaciones definen la tolerancia al riesgo de
+seguridad de la información a nivel organizacional considerando todas las áreas, servicios y procesos. Se pueden utilizar diversas técnicas para identificar el nivel de tolerancia.
   
-- Identificar las prioridades y compensaciones consideradas por la organización para la gestión del riesgo
+-Identificar las prioridades y compensaciones consideradas por la organización para la gestión del riesgo: El riesgo se experimenta en diferentes niveles, en diferentes formas y en diferentes tiempos. En la capa 1, las organizaciones realizan concesiones y establecen prioridades para responder a esos riesgos. Las organizaciones tienden a tener múltiples prioridades que a veces entran en conflicto, lo que genera un riesgo potencial.
+
+En muchas organizaciones pequeñas/medianas y/o con poco nivel de madurez respecto a la gestión del riesgo, el marco puede establecerse con una línea base básica y seguir madurando a partir de ahí:
+
+-Metodología de análisis de riesgos, incluyendo valores posibles para la probabilidad e impacto
+
+-Catálogo de activos y amenazas
+
+-Catálogo de potenciales salvaguardas
+
+-Tolerancia al riesgo simplificada 
+
+->|(Llevo un buen rato sin hacer comentarios y me di cuenta ahora, estoy piloto automático de lo soporífero que me parece este profesor, es como si tuviese un audio de loquendo de fondo pero con voz aburrida sumado a que parece no necesitar respirar, termina y parrafo y lleva la mitad del siguiente, no me da para comprender la mitad de las cosas que dice hasta oirlas 3 veces...)|
+
+#### Alineación con el negocio
+
