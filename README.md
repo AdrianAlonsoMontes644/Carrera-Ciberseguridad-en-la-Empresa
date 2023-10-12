@@ -409,12 +409,21 @@ Documento o herramienta donde se registran todos los nuevos riesgos que afecten 
 Por cada riesgo se debería recopilar la siguiente información: 
 
 -Identificador único
+
 -Fecha de detección
+
 -Probabilidad
+
 -Impacto
+
 -Nivel de riesgo
+
 -Propietario
+
 -Acciones/Salvaguardas de tratamiento
+
 -Acción de contingencia
+
 -Progreso de las acciones
+
 -Estado 
