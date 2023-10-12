@@ -196,3 +196,83 @@ Consiste en dejar el dispositivo sin conección a la corriento o la batería par
 -Que se ha aprendido: El uso seguro de los dispositivos electrónicos, la navegación segura, el uso seguro del correo electrónico y la importancia de la actualización continua de los sistemas y las aplicaciones
 
 -Proximos pasos: Continuar aprendiendo sobre los riesgos de internet, mantenerse actualizado sobre la ciberseguridad, conocer los ataque más comunes para evitarlos
+
+## "Curso de análisis y gestión del riesgo":
+
+● 1. Introducción a la terminología
+
+● 2. Definición del marco de gestión del riesgo
+
+● 3. Evaluación del riesgo
+
+● 4. Mitigación del riesgo
+
+● 5. Controles de mitigación: Seguridad administrativa y física
+
+● 6. Controles de mitigación: Seguridad lógica
+
+● 7.Monitorización del riesgo
+
+##
+#### Carrera Proyecto de clases Día 4: 12/10/2023
+### Introducción a la terminología
+
+-Análisis de riesgos informáticos: proceso que comprende la identificación de activos informáticos y de información, sus vulnerabilidades y las amenazas a los que se encuentran expuestos, así como su probabilidad de ocurrencia y el impacto de las mismas. 
+
+-Riesgos de Seguridad de información: deben ser considerados en el contexto del negocio, y las interrelaciones con otras funciones de negocios y los clientes deben ser identificados para lograr una imagen global y completa de estos riesgos.
+
+-Amenaza: Cualquier ocurrencia que pueda tener un impacto negativo en nuestros activos.
+
+-Vulnerabilidad: Es la falta de un control que pueda permitir que la amenaza ocurra.
+
+-Activo: Cualquier cosa con valor para nuestra organización.
+
+-Impacto: La degradación sobre el activo que provoca la amenaza y los daños que provoca.
+
+-Riesgo: Se trata del calculo de Impacto * Probabilidad.
+
+-Gestión del riesgo: Continuación del análisis y el que debemos hacer para tratarlo.
+
+-Informe de estado del riesgo: Se recoge como se encuentra la organización en un momento dado.
+
+-Informe de evaluación de salvaguardas: Nos dice como de bien están funcionando las salvaguardas en función del riesgo.
+
+-Impacto residual: El impácto que queda luego de implementar los controles que tenemos.
+
+-Riesgo acumulado: El riesgo acumulado según la situación actual
+
+-Riesgo potencial: El riesgo que podría ocurrir si no tenemos en cuenta las salvaguardas y protecciones
+
+-Apetito, Tolerancia y Capacidad del riesgo: Se trata de cuanto riesgo está dispuesto a sufrir una organización
+
+-Salvaguarda: Se trata de un control, medida de seguridad o contra-medida a un problema
+
+-Valor de un activo: Se trata de la repercusión, ya sea monetaria o de cara al público que se deberá acatar en caso de que una amenaza de lugar.
+
+->|(El profesor de este curso sinceramente no me gusta, muy tecnico todo y rápido, parece que no respira entre palabras, de casi 5 horas que dura este curso van a ser 7 solo de lo mucho que tendré que volver atras...)|
+
+#### Gestión del riesgo TI vs Gestión de riesgos para proyectos TI
+
+● Gestión de riesgos TI: busca proteger todos los activos de la organización, especialmente la información, en su procesamiento/tratamiento en los sistemas de información.
+
+● Proyectos TI: definidos en el tiempo. Pueden suponer un riesgo a la seguridad de la información. En este caso se puede aplicar la misma metodología general de análisis y gestión del riesgo TI.
+
+#### Gobierno, Riesgo y Cumplimiento (GRC)
+
+Es una estrategia para administrar el gobierno general de una organización, la administración de riesgos empresariales y el cumplimiento de las regulaciones.
+
+Como beneficios: mejora de la toma de decisiones, inversiones óptimas en TI, eliminación de silos y reducción de la fragmentación entre las divisiones y departamentos, entre otros.
+
+Las organizaciones desarrollan un marco de GRC para el liderazgo, organización y operación de las áreas de TI de la organización para asegurar que apoyan y permiten los objetivos estratégicos de la organización. 
+
+#### Gobierno del riesgo vs gestión del riesgo
+
+-El gobierno del riesgo es un framework que introduce los artefactos de gobiernos requeridos para la gestión (como las políticas y procedimientos), así como otros elementos requeridos como el apetito del riesgo. Este dará soporte a la gestión del riesgo.
+
+-La gestión del riesgo es un mecanismo que identifica, cualifica y evalúa el riesgo para determinar dónde se requiere mayor o menor gobierno. Esta retroalimentará a la organización con el mapa de riesgos actual de forma que se pueda decidir sobre la mejor estrategia de tratamiento del riesgo en base a las reglas establecidas por el gobierno (priorización, apetito del riesgo, etc).
+
+El gobierno y la gestión del riesgo deben estar alineadas con los objetivos corporativos como los financieros, estratégicos, de reputación, etc. Con la finalidad se convertirse en un facilitador del negocio en lugar de un centro de coste. 
+
+-> |(La introducción de 19 minutos tomó una hora... este curso va a ser lento...)|
+ 
+### Definición del marco de gestión del riesgo
