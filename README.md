@@ -358,3 +358,63 @@ En muchas organizaciones pequeñas/medianas y/o con poco nivel de madurez respec
 
 #### Alineación con el negocio
 
+La gestión de riesgos ayuda a mitigar el aumento de amenazas para las organizaciones. El cambio hacia un enfoque de gestión de riesgos de seguridad se ha estado desarrollando por algún tiempo, según el estudio CISO Insights. 
+
+Los requisitos claves de los programas de gestión el riesgo son: 
+
+-El cumplimiento es solo un factor: El cumplimiento no debe desaparecer en su totalidad incluso en un programa basado en riesgos. Las normas están ahí, pero los jefes y gerentes de un departamento deben empezar a pensar en términos de niveles de riesgo aceptables frente a requisitos de cumplimiento.
+
+-La tolerancia al riesgo evoluciona con el tiempo: Se espera que un plan de evaluación y un perfil de riesgo cambien con el tiempo. Además, es difícil para las empresas evaluar de manera adecuada el riesgo antes de encontrar un problema. Sin embargo, las conversaciones frecuentes sobre con qué están cómodos los gerentes senior y los jefes promueven la conciencia de riesgos en todas las líneas del negocio.
+
+-Hacer funcionar la gestión de riesgos: La gestión de riesgos se divide en tres áreas distintas: estratégica, táctica y operativa. A medida que una empresa se traslada hacia un enfoque basado en riesgos, puede explorar plataformas de evaluación, trabajar para crear perfiles de riesgo y asociarse con proveedores para realizar una evaluación de riesgos.
+
+Para asegurar la madurez del proceso debe quedar alineado con el negocio. En el proceso de identificación del riesgo es necesario que se consulte a los principales líderes de la organización con el objeto de saber qué activos son especialmente importantes para ellos, qué procesos de transformación sufrirá en el corto y medio plazo la organización, cuáles son los escenarios de amenaza/riesgo que les preocupan de verdad, etc.
+
+Este trabajo debe ser bidireccional, de forma que se facilite a la gerencia, y especialmente al consejo de dirección, el entendimiento de los riesgos de la organización y cómo los mismos pueden afectar a los objetivos del negocio. 
+
+#### Cultura del Riesgo
+
+-Es necesario tener una cultura de riesgo que permita reportar, escalar e intervenir los posibles daños o aprovechar las oportunidades.
+
+-La definición de cultura de riesgo abarca los valores, las creencias, las actitudes y el conocimiento sobre el riesgo que se tiene en el interior de una organización.
+
+-Es importante que esta cultura del riesgo de ciberseguridad sea embebida dentro de la cultura de riesgo general de la organización, dado que es parte de este riesgo global.
+
+-Una cultura de riesgos también involucra los cibernéticos, aquí es necesario definir líneas de acción específica en tres áreas:
+○ El uso de una metodología alineada con la estrategia de operación
+○ Planes flexibles
+○ Tener una línea de comunicación con los grupos
+
+#### Roles y Responsabilidades
+
+Dependiendo de la organización, los roles y responsabilidades expresados a continuación podrían variar, aunando algunas personas varios roles o bien estando las responsabilidades de algunos roles diluidas en otros.
+
+-Comité de dirección: El comitñe de dirección es el responsable último de la gestión de riesgos. Si bien delega en la gerencia general su implementación adecuada y eficiente, el directorio tiene la responsabilidad final de la gestión de riesgos.
+
+-Comité de riesgos: El comité de dirección debe conformar un comité de riesgos, el cual se reúna periódicamente y que represente a todas las áreas requeridas (legal, operaciones, financiero, ciberseguridad, TI, etc). 
+
+-Gerencia general: La gerencia general tiene como responsabilidad ejecutar de forma efectiva y eficiente el modelo de gestión de riesgos, todo ello dentro de las políticas, los manuales y los procedimientos previamente establecidos.
+
+-Áreas funcionales y de apoyo: Las distintas áreas de la organización deben involucrarse activamente en la gestión de los riesgos, siendo responsables del funcionamiento del sistema de gestión de riesgos dentro de su área.
+
+-Área especializada en la gestión de riesgos: Las organizaciones deben contar con un área especializada en la gestión de riesgos, generalmente dentro del área de seguridad de la información, la cual debe ser independiente de las áreas funcionales y de
+apoyo. El comité debería asegurar que el área especializada en la gestión de riesgos, cuente con recursos suficientes para el pleno desarrollo de sus actividades, así como la independencia suficiente para la toma de decisiones. 
+
+-Auditoría interna: La unidad de auditoría interna, con dependencia directa del comité, debe evaluar el cumplimiento de los procedimientos utilizados para la gestión de cada uno de los riesgos a los que se ve expuesta la organización, de acuerdo a las exigencias contenidas en las presentes instrucciones. 
+
+#### Registro del Riesgo
+
+Documento o herramienta donde se registran todos los nuevos riesgos que afecten a la organización. Deberá ser actualizado de forma regular, tras cada evaluación del riesgos, con cada reunión del comité del comité de riesgos, con los resultados del monitoreo del riesgo y su tratamiento, etc.
+
+Por cada riesgo se debería recopilar la siguiente información: 
+
+-Identificador único
+-Fecha de detección
+-Probabilidad
+-Impacto
+-Nivel de riesgo
+-Propietario
+-Acciones/Salvaguardas de tratamiento
+-Acción de contingencia
+-Progreso de las acciones
+-Estado 
