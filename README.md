@@ -308,4 +308,37 @@ También analiza los riesgos:
 
 #### Estándares NIST 800-39 y 800-30
 
-El propósito de NIST SP 800-39 es proporcionar una guía para la organización en la gestión de riesgos de seguridad de información. Otro factor importante es proporcionar orientación para desplegar un sistema integrado para toda la organización del programa para la gestión de riesgos de seguridad de información. 
+El propósito de NIST SP 800-39 es proporcionar una guía para la organización en la gestión de riesgos de seguridad de información. Otro factor importante es proporcionar orientación para desplegar un sistema integrado para toda la organización del programa para la gestión de riesgos de seguridad de información. Tiene 4 partes: La evaluación(Assess), la respuesta(respond), la monitorización(Monitor) y por último el marco(Frame) que es el que permite llevar un proceso homogeneo, documentado y conocido por todos que permitirá ser comparable a lo largo del tiempo.
+
+El estándar NIST 800-39 establece un marco y proceso para la gestión del riesgo de sistemas de información en la organización, mientrás que el estándar NIST 800-30 se centra específicamente en ser una guía para realizar evaluación de riesgo en TI.
+
+El objetivo del componente de la evaluación de riesgos es identificar:
+-Las amenazas a las organizaciones
+-Las vulnerabilidades internas y externas a las organizaciones
+-El daño que puede ocurrir dado el potencial de las amenazas explotando vulnerabilidades
+-La probabilidad de que el daño se producirá. El resultado final es una determinación del riesgo 
+
+#### Definición del marco de gestión del riesgo:
+
+Este modelo de marco de gestión del riesgo se basa en el estándar NIST 800-39.
+
+● Nivel 1 de responsabilidad: los líderes de la organización, con la colaboración del responsable del riesgo deben definir el marco de riesgo organizacional.
+
+● Nivel 2 de responsabilidad: los propietarios de los servicios/procesos (p.e los responsables de cada área funcional y de soporte si fuese necesario) aplicarán su comprensión del marco organizacional del riesgo para dirigir sus preocupaciones específicas a las funciones de negocio.
+
+● Capa 3: los responsables de programas, propietarios de SI y los proveedores comunes de controles (p.e el área de ciberseguridad) aplican su entendimiento del marco de riesgo de la organización en base a cómo los decisores en las capas 1 y 2 decidieron gestionar el riesgo.
+
+El marco de gestión del riesgo es el medio principal para dirigir el riesgo en la capa 3. El marco trata preocupaciones sobre el diseño, desarrollo, implementación, operación y eliminación de los SI organizacionales y los entornos en los que estos operan. 
+
+El trabajo previo para crear este marco estandarizado para la organización será el siguiente:
+
+- Identificar las asunciones que afectan a cómo el riesgo se evalúa, se responde y se monitoriza en la organización.
+  
+- Identificar restricciones para la realización de las actividades de evaluación, respuesta y monitorización del riesgo dentro de la organización.
+○ Limitaciones financiera.
+○ Requisitos legales, regulatorios y/o contractuales.
+○ La cultura organizacional.
+
+- Identificar el nivel de tolerancia al riesgo de la organización.
+  
+- Identificar las prioridades y compensaciones consideradas por la organización para la gestión del riesgo
