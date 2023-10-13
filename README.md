@@ -820,5 +820,182 @@ Desventajas:
 
 #### Escenarios de riesgo
 
+La estimación, prevención y reducción de riesgos es la clave para evitar pérdidas y desastres en cualquier organización. Uno de los pasos para lograr estos objetivos es la construcción de una serie de escenarios de riesgos, amenazas y vulnerabilidades. Su objetivo principal es tener una visión global de los riesgos, roles e interacciones para identificar prioridades en el tratamiento del riesgo. Para ello se pueden tomar 2 aproximaciones:
 
+-De arriba a abajo: En esta aproximación se comienza con los objetivos de negocio globales y se realiza un análisis de los escenarios de riesgos más probables y relevantes que podrían afectar a dichos objetivos
 
+-De abajo arriba: En esta aproximación se comienza con un conjunto genérico de escenarios para definir escenarios más específicos y concretos para la organización.
+
+Estas aproximaciones son complementarias y deberían usarse en conjunción. Estos escenarios deben ser relevantes y enlazados a los riesgos específicos de la organización
+
+Aproximación práctica sobre cómo desarrollar estos escenarios:
+
+-Comenzar con una lista genérica de riesgos para definir un conjunto inicial de escenarios para la organización.
+
+-Validar dichos escenarios contra los objetivos del negocio.
+
+-Refinar el conjunto de escenarios seleccionado basada en la validación anterior. Categorizarlos de forma que se alineen con la criticidad de la organización.
+
+-Reducir el número de escenarios a un conjunto manejable.
+
+-Mantener todos los riesgos en una lista de forma que puedan ser reevaluados en la siguiente iteración e incluidos para su análisis en detalle si se vuelven relevantes en ese momento.
+
+-Incluir un “evento no especificado” en los escenarios para tratar los incidentes que no han sido cubiertos por los escenarios especificados.
+
+Es importante que por cada escenario se especifique no sólo la amenaza, sino como la misma podría hacerse realidad en la organización. Se debe definir por cada uno el evento que lo produciría, cuándo y cómo sucedería.
+
+#### Modelado de amenazas
+
+Es un conjunto de técnicas que permiten analizar las potenciales amenazas que un desarrollo de software podría tener con el fin de asegurar que las mismas son tratadas mediante controles. Los pasos para crear un modelo de amenazas son: 
+
+1-Crear una descripción de la arquitectura: Utilice diagramas y tablas para documentar la arquitectura, incluyendo sub-sistemas, fronteras de confianza y flujo de datos. Suele ser necesario la creación de diagramas de componentes físicos así como diagramas de flujos de datos.
+
+2-Descomponer la aplicación: Descomponga la arquitectura de la aplicación, incluyendo la capa de red y el diseño de infraestructura, para crear un perfil de seguridad para la aplicación.
+
+3-Identificar las amenazas: Utilice la información obtenida en los pasos 1 y 2 y la mentalidad de un atacante para identificar las amenazas más importantes para el contexto y el escenario del sistema.
+
+4-Documentar las amenazas: Documente utilizando una plantilla que capture el conjunto básico de atributos de cada amenaza.
+
+5-Asignar prioridades a las amenazas: Utilice una calificación de amenazas para centrarse en las áreas donde existe mayor vulnerabilidad y riesgo.
+
+Para la identificación y documentación de las amenazas existen diferentes modelos. Uno de los más conocidos y utilizados es el modelo STRIDE creado por Microsof
+
+Las amenazas se clasifican en las siguientes categorías que facilita en análisis de las potenciales amenazas de una aplicación:
+
+-Suplantación de identidad de usuario (Spoofing).
+
+-Modificación indebida (Tampering).
+
+-Repudio (Repudiation).
+
+-Divulgación de información (Information Disclosure).
+
+-Denegación de servicio (DoS).
+
+-Elevación de privilegios (Elevation of Privileges).
+
+#### Metodologías de análisis del riesgo
+
+Si bien en este curso nos hemos centrado principalmente en la metodología MAGERIT para la evaluación del riesgo, existen otras metodologías que pueden ser utilizadas también para la gestión del riesgo como el tratamiento y la monitorización:
+
+-OCTAVE
+
+-MAGERIT
+
+-Estándar Internacional ISO/IEC 27005
+
+-MEHARI
+
+-CRAMM
+
+-NIST 800-30
+
+#### Informe de evaluación del riesgo
+
+Recoge todas las evidencias recopiladas y las conclusiones obtenidas sobre el entorno del riesgo, las amenazas encontradas, su valoración en impacto y probabilidad y el mapa de riesgo de la organización. A la vez este informe puede ser continuado en la siguiente fase incluyendo las salvaguardas existentes y a implementar junto con el riesgo residual tras la implementación de las mismas.
+
+-Plantilla simple: El contenido básico de la misma debería ser el siguiente
+
+.Descripción de los activos: Descripción procesos de negocio o áreas, y por cada uno. Su árbol de activos y dependencias. 
+
+.Resumen del valor de los activos.
+
+.Descripción del riesgo.
+
+.Descripción de los valores seleccionados para la probabilidad y degradación en las amenazas.
+
+.Mapas de riesgo: Riesgo potencial y Riesgo presente. 
+
+.Debilidades o vulnerabilidades.
+
+.Anexo resumen áreas, servicios, valoraciones, red/es donde se encuentra la información, aplicaciones, herramientas y repositorios, información gestionada en general, dónde se encuentra localizada la información en papel, dónde se encuentra localizada la información digital y responsable del área. 
+
+-Plantilla NIST 800-30: 
+
+-Resumen ejecutivo:
+
+.Fecha de la evaluación.
+
+.Resumen del propósito.
+
+.Descripción del alcance
+
+-Cuerpo del informe:
+
+.Propósito de la evaluación.
+
+.Restricciones y asunciones.
+
+.Entradas tolerancia riesgo.
+
+.Identificar y describir el modelo de riesgo y la aproximación analítica utilizados.
+
+.Razonamiento para cada decisión relacionada con el riesgo durante la valoración.
+
+.Incertidumbres del proceso.
+
+.Si el análisis incluye áreas de negocio, describir los servicios, interconexiones y dependencias, así como la TI que las soporta.
+
+.Si el análisis incluye SI de la organización, describir los sistemas.
+
+.Resumir los resultados de la evaluación.
+
+.Identificar el marco temporal durante el cual será válida la evaluación.
+
+.Listar los riesgos debidos a amenazas de adversarios.
+
+.Listar los riesgos debido a otras amenazas.
+
+-Apéndices:
+
+.Listado de referencias y fuentes de información.
+
+.Listado del equipo o personas individuales que han realizado la evaluación.
+
+.Listado de detalles de la evaluación y de cualquier evidencia de soporte. 
+
+### Mitigación del Riesgo
+
+A la vista de los impactos y riesgos a que están expuestos las áreas, servicios, procesos, los sistemas y aplicaciones, hay que tomar una serie de decisiones condicionadas por diversos factores:
+
+-La gravedad del impacto y/o del riesgo.
+
+-Las obligaciones a las que por ley esté sometida la organización.
+
+-Las obligaciones a las que por reglamentos sectoriales esté sometida la organización.
+
+-Las obligaciones a las que por contrato esté sometida la organización. 
+
+Dentro del margen de maniobra que permita este marco, pueden aparecer consideraciones adicionales sobre la capacidad de la Organización para aceptar ciertos impactos de naturaleza intangible tales como:
+
+-Imagen pública de cara a la sociedad.
+
+-Política interna.
+
+-Relaciones con los proveedores.
+
+-Relaciones con los clientes o usuarios.
+
+-Relaciones con otras organizaciones.
+
+-Nuevas oportunidades de negocio.
+
+-Acceso a sellos o calificaciones reconocidas de seguridad. 
+
+Todas las consideraciones anteriores desembocan en una calificación de cada riesgo significativo, determinándose si:
+
+1. Es crítico en el sentido de que requiere atención urgente.
+2. 
+3. Es grave en el sentido de que requiere atención.
+4. 
+5. Es apreciable en el sentido de que pueda ser objeto de estudio para su tratamiento.
+6. 
+7. Es asumible en el sentido de que no se van a tomar acciones para atajarlo:
+
+.Cuando el impacto residual es asumible.
+
+.Cuando el riesgo residual es asumible.
+
+.Cuando el coste de las salvaguardas oportunas es desproporcionado en comparación al impacto y riesgo residuales. 
+
+#### Evaluación y opciones de tratamiento del riesgo
