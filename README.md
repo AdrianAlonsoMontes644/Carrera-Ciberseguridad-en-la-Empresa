@@ -1076,3 +1076,40 @@ El análisis económico tendrá como misión decidir entre estas opciones, siend
 
 -Estudio mixto: En análisis de riesgos meramente cualitativos, la decisión la marca el balance de costes y beneficios intangibles, si bien siempre hay que hacer un cálculo de lo que cuesta la solución y cerciorarse de que el gasto es asumible. De lo contrario, la supuesta solución no es una opción
 
+#### Opciones de tratamiento del riesgo
+
+Si los riesgos no se aceptan será necesario tener una estrategia para tratarlos.
+
+-Eliminación: La eliminación de la fuente de riesgo es una opción frente a un riesgo que no es aceptable. En un sistema podemos eliminar varias cosas, siempre que no afecten a la esencia de la organización. Las decisiones de eliminación de las fuentes de riesgo suponen realizar un nuevo análisis de riesgos sobre el sistema modificado.
+
+-Mitigación: La mitigación del riesgo se refiere a una de dos opciones:
+
+.Reducir la degradación causada por una amenaza.
+
+.Reducir la probabilidad de que una amenaza de materializa.
+
+En ambos casos lo que hay que hacer es ampliar o mejorar el conjunto de salvaguardas.
+
+.Salvaguardas preventivas: Buscan prevenir que una amenaza se haga real, por lo que disminuyen la probabilidad.
+
+.Salvaguardas correctivas: Buscan minimizar el daño realizado en caso de materializarse la amenaza, por lo que disminuyen el impacto
+
+.Salvaguardas detectivas: Buscan detectar la ocurrencia de una amenaza. No modifican el impacto de forma directa, pero son necesarios para el funcionamiento de las salvaguardas correctivas.
+
+-Compartición o transferencia: Tradicionalmente se ha hablado de transferir el riesgo. Como la transferencia puede ser parcial o total, es más general hablar de compartir el riesgo. Hay dos formas básicas de compartir riesgo:
+
+Hay dos formas básicas de compartir riesgo: 
+
+.Riesgo cualitativo: se comparte por medio de la externalización de componentes del sistema, de forma que se reparten responsabilidades: unas técnicas para el que opera el componente técnico; y otras legales según el acuerdo que se establezca de prestación del servicio.
+
+.Riesgo cuantitativo: se comparte por medio de la contratación de seguros, de forma que a cambio de una prima, el tomador reduce el impacto de las posibles amenazas y el asegurador corre con las consecuencias. Hay multitud de tipos y cláusulas de seguros para concretar el grado de responsabilidad de cada una de las partes.
+
+Cuando se comparten riesgos cambia, bien el conjunto de componentes del sistema o bien su valoración, requiriéndose un nuevo análisis.
+
+-Financiación: Cuando se acepta un riesgo, la organización hará bien en reservar fondos para el caso de que el riesgo se concrete y haya que responder de sus consecuencias. También puede ser parte de los contratos de aseguramiento.
+
+-Cálculo de la disminución del riesgo: Una vez finalizado la evaluación del tratamiento y los controles a implementar, se deben generar los nuevos mapas de riesgo que muestren la situación de la organización tras su implementación.
+
+#### Requisitos de un programa de ciberseguridad
+
+Un programa de ciberseguridad busca la implementación de los proyectos de seguridad, entendiendo por tales proyectos los que permitirán materializar las decisiones adoptadas para el tratamiento de los riesgos. Para ello, se deben realizar los siguientes pasos para su implementación: 
