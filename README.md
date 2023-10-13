@@ -1113,3 +1113,8 @@ Cuando se comparten riesgos cambia, bien el conjunto de componentes del sistema 
 #### Requisitos de un programa de ciberseguridad
 
 Un programa de ciberseguridad busca la implementación de los proyectos de seguridad, entendiendo por tales proyectos los que permitirán materializar las decisiones adoptadas para el tratamiento de los riesgos. Para ello, se deben realizar los siguientes pasos para su implementación: 
+
+-Identificación de proyectos de seguridad
+
+En última instancia se trata de implantar o mejorar la implantación de una serie de salvaguardas que lleven el impacto y el riesgo a los niveles residuales determinados por la Dirección. Este tratamiento de las salvaguardas se materializa en una serie de tareas a llevar acabo.
+
