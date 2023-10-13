@@ -999,3 +999,61 @@ Todas las consideraciones anteriores desembocan en una calificación de cada rie
 .Cuando el coste de las salvaguardas oportunas es desproporcionado en comparación al impacto y riesgo residuales. 
 
 #### Evaluación y opciones de tratamiento del riesgo
+
+Para poder evaluar y tratar el riesgo, hay que entender una serie de conceptos, tanto para la propia evaluación como para poder determinar a posteriori la mejor opción para su tratamiento
+
+-Interpretación de los valores de impacto y riesgo residuales:
+
+Impacto y riesgo residual son una medida del estado presente, entre la inseguridad potencial y las medidas adecuadas que reducen impacto y riesgo a valores aceptables. Si el valor residual es igual al valor potencial, las salvaguardas existentes no valen para nada, típicamente no porque no haya nada hecho, sino porque hay elementos fundamentales sin hacer. 
+
+Es importante entender que un valor residual es sólo un número. Para su correcta interpretación debe venir acompañado de la relación de lo que se debería hacer y no se ha hecho; es decir, de las vulnerabilidades que presenta el sistema
+
+-Aceptación del riesgo: El comité de dirección, sometida al análisis de riesgos, debe determinar el nivel de impacto y riesgo aceptable. Más propiamente dicho, debe aceptar la responsabilidad de las insuficiencias. Esta decisión no es técnica. Puede ser una decisión política o gerencial o puede venir determinada por ley o por compromisos contractuales con proveedores o usuarios. Estos niveles de aceptación se pueden establecer por activo o por agregación de activos. 
+
+Cualquier nivel de impacto y/o riesgo es aceptable si lo conoce y acepta formalmente la dirección. Cabe destacar que esta no es una opción de tratamiento del riesgo, per se, sino que el riesgo existente es aceptado sin más por el motivo que sea
+
+-Tratamiento del riesgo: La dirección puede decidir aplicar algún tratamiento al sistema de seguridad desplegado para proteger el sistema de información. Hay dos grandes opciones:
+
+.Reducir el riesgo residual (aceptar un menor riesgo).
+
+.Ampliar el riesgo residual (aceptar un mayor riesgo).
+
+Para tomar una u otra decisión hay que enmarcar los riesgos soportados por las áreas/servicios/procesos y sus aplicaciones/sistemas dentro de un contexto más amplio que cubre un amplio espectro de consideraciones de las que podemos apuntar algunas:
+
+.Cumplimiento de obligaciones; sean legales, regulación pública o sectorial, compromisos internos, misión de la Organización, responsabilidad corporativa, etc.
+
+.Posibles beneficios derivados de una actividad que en sí entraña riesgos.
+
+.Condicionantes técnicos, económicos, culturales, políticos, etc.
+
+.Equilibrio con otros tipos de riesgos: comerciales, financieros, regulatorios, medioambientales, laborales, etc.
+
+En condiciones de riesgo residual extremo, casi la única opción es reducir el riesgo. En condiciones de riesgo residual aceptable, podemos optar entre aceptar el nivel actual o ampliar el riesgo asumido.
+
+En términos de zonas de riesgos, se pueden tomar las siguientes decisiones:
+
+Zona 1 – riesgos muy probables y de muy alto impacto; posiblemente nos planteemos sacarlos de esta zona.
+
+Zona 2 – riesgos de probabilidad relativa e impacto medio; se pueden tomar varias opciones.
+
+Zona 3 – riesgos improbables y de bajo impacto; o los dejamos como están, o permitimos que suban a mayores si ello nos ofreciera alguna ventaja o beneficio en otro terreno.
+
+Zona 4 – riesgos improbables pero de muy alto impacto; suponen un reto de decisión pues su improbabilidad no justifica que se tomen medidas preventivas, pero su elevado impacto exige que tengamos algo previsto para reaccionar; es decir, hay que poner el énfasis en medidas de reacción para limitar el daño y de recuperación del desastre si ocurriera.
+
+También conviene considerar la incertidumbre del análisis. Hay veces que sospechamos las consecuencias, pero hay un amplio rango de opiniones sobre su magnitud. En otras ocasiones la incertidumbre afecta a la probabilidad.
+
+-Buscar formas de mejorar la previsión, típicamente indagando en foros, centros de respuesta a incidentes o expertos en la materia.
+
+-Evitar el riesgo cambiando algún aspecto, componente o arquitectura del sistema.
+
+-Tener preparados sistemas de alerta temprana y procedimientos flexibles de contención, limitación y recuperación del posible incidente.
+
+#### Estudio del coste/beneficio
+
+No se puede invertir en salvaguardas más allá del valor que queremos proteger. Es intencionado el hecho de que el riesgo caiga fuertemente con pequeñas inversiones y que el coste de las inversiones se dispare para alcanzar niveles de seguridad cercanos al 100%.
+
+-Análisis cuantitativo
+
+-Análisis cuantitativo
+
+-Estudio mixto
