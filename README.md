@@ -515,3 +515,310 @@ Por cada servicio o proceso analizado, se debería obtener la siguiente informac
 -Matriz de impacto indisponibilidad servicio / proceso. En las filas las dimensiones de impacto y en las columnas las dimensiones temporales (p.e. 1 hora, 1 día, 1 semana y 1 mes). Así, se podrá saber el impacto de cada periodo de indisponibilidad del servicio o proceso sobre cada dimensión como el daño de imagen o el impacto legal y regulatorio.
 
 #### Identificación de activos
+
+Como mínimo, la evaluación del riesgo deberá determinar los siguientes elementos:
+
+Primero, que activos tenemos, estos interesan por su valor y están expuestos a amenazas que causan cierta degradación que tiene que ver con el impacto, el cual es tanto el valor del activo como la degradación que causaría la amenaza. Las amenazas también tienen cierta probabilidad que da lugar al riesgo
+
+En un sistema de información hay 2 cosas esenciales: la información que manejay los servicios que presta.
+
+Estos activos esenciales marcan los requisitos de seguridad para todos los demás componentes del sistema.
+
+-Subordinados a dicha esencia se pueden identificar otros activos relevantes:
+
+-Datos que materializan la información.
+
+-Servicios auxiliares que se necesitan para poder organizar el sistema.
+
+-Las aplicaciones informáticas (software) que permiten manejar los datos.
+
+-Los equipos informáticos (hardware) y que permiten hospedar datos, aplicaciones y servicios.
+
+-Los soportes de información que son dispositivos de almacenamiento de datos.
+
+-El equipamiento auxiliar que complementa el material informático.
+
+-Las redes de comunicaciones que permiten intercambiar datos.
+
+-Las instalaciones que acogen equipos informáticos y de comunicaciones.
+
+-Las personas que explotan u operan todos los elementos anteriormente citados.
+
+-Los activos esenciales son la información y los servicios prestados; pero estos activos dependen de otros activos más prosaicos como pueden ser los equipos, las comunicaciones, las instalaciones y las frecuentemente olvidadas personas que trabajan con aquellos.
+
+Aunque en cada caso hay que adaptarse a la Organización objeto del análisis, con frecuencia se puede estructurar el conjunto de activos en capas, donde las capas superiores dependen de las inferiores:
+
+-activos esenciales: información que se maneja y servicios prestados.
+
+-servicios internos: que estructuran ordenadamente el sistema de información.
+
+-el equipamiento informático: aplicaciones (software), equipos informáticos (hardware) y comunicaciones.
+
+-soportes de información: discos, cintas, etc.
+
+-el entorno: activos que se precisan para garantizar las siguientes capas: equipamiento y suministros de energía, climatización, etc. mobiliario, los servicios subcontratados a terceros y las instalaciones físicas (edificios, CPDs, etc).
+
+-el personal: usuarios, operadores, administradores y desarrolladores.
+
+#### Amenazas y Vulnerabilidades
+
+|(7:45 Minutos de los cuales los 3 primeros repite el inicio de la identificación de activos que acaba de explicar, este tipo cada vez cae más bajo)|
+
+El siguiente paso consiste en determinar las amenazas que pueden afectar a cada activo. Las amenazas son “cosas que ocurren”. Y, de todo lo que puede ocurrir, interesa lo que puede pasarle a nuestros activos y causar un daño.
+
+-De origen natural: Hay accidentes naturales (terremotos, inundaciones, …). Ante esos avatares el sistema de información es víctima pasiva, pero de todas formas tendremos en cuenta lo que puede suceder: 
+
+-Del entorno (de origen industrial): Hay desastres industriales ante los cuales el sistema de información es víctima pasiva; pero no por ser pasivos hay que permanecer indefensos:
+
+-Causadas por las personas de forma accidental: Las personas con acceso al sistema de información pueden ser causa de problemas no intencionados, típicamente por error o por omisión.
+
+-Causadas por las personas de forma deliberada: Las personas con acceso al sistema de información pueden ser causa de problemas o ataques intencionados, bien con ánimo de beneficiarse indebidamente, bien con ánimo de causar daños y perjuicios a los legítimos propietarios.
+
+Desde el estándar ISO 27001 se dispone de un catálogo de vulnerabilidades generalista que podría servir como base para el trabajo:
+
+-Interfaz de usuario complejas.
+
+-Contraseñas predeterminadas no modificadas.
+
+-Eliminación de medios de almacenamiento sin eliminar datos.
+
+-Sensibilidad del equipo a los cambios de voltaje.
+
+-Sensibilidad del equipo a la humedad, temperatura o contaminantes.
+
+-Inadecuada seguridad del cableado.
+
+-Inadecuada gestión de capacidad del sistema.
+
+-Gestión inadecuada del cambio.
+
+-Clasificación inadecuada de la información.
+
+-Control inadecuado del acceso físico.
+
+-Mantenimiento inadecuado.
+
+-Inadecuada gestión de red.
+
+-Respaldo inapropiado o irregular.
+
+-Inadecuada gestión y protección de contraseñas.
+
+-Protección física no apropiada.
+
+-Reemplazo inadecuado de equipos viejos.
+
+-Falta de formación y conciencia sobre seguridad.
+
+-Inadecuada segregación de funciones.
+
+-Mala segregación de las instalaciones operativas y de prueba.
+
+-Insuficiente supervisión de los empleados y vendedores.
+
+-Especificación incompleta para el desarrollo de software.
+
+-Pruebas de software insuficientes.
+
+-Falta de política de acceso o política de acceso remoto.
+
+-Ausencia de política de escritorio limpio y pantalla clara.
+
+-Falta de control sobre los datos de entrada y salida.
+
+-Falta de documentación interna.
+
+-Carencia o mala implementación de la auditoría interna.
+
+-Falta de políticas para el uso de la criptografía.
+
+-Falta de procedimientos para eliminar los derechos de acceso a la terminación del empleo.
+
+-Desprotección en equipos móviles.
+
+-Falta de redundancia, copia única.
+
+-Ausencia de sistemas de identificación y autenticación.
+
+-No validación de los datos procesados.
+
+-Ubicación vulnerable a inundaciones.
+
+-Mala selección de datos de prueba.
+
+-Copia no controlada de datos.
+
+-Descarga no controlada de Internet.
+
+-Uso incontrolado de sistemas de información.
+
+-Software no documentado.
+
+-Empleados desmotivados.
+
+-Conexiones a red pública desprotegidas.
+
+-Los derechos del usuario no se revisan regularmente.
+
+#### Valoración del riesgo
+
+Una vez identificados los activos y las amenazas a los mismos, es necesario realizar una asignación de valores para los mismos, de forma que podamos saber el valor de un activo, la probabilidad e impacto de una amenaza, y con ello el nivel de riesgo de la organización.
+
+● Valoración de activos:
+
+¿Por qué interesa un activo? Por lo que vale. No se está hablando de lo que cuestan las cosas, sino de lo que valen.
+
+La valoración se puede ver desde la perspectiva de la ‘necesidad de proteger’ pues cuanto más valioso es un activo, mayor nivel de protección requeriremos en la dimensión de seguridad que sea pertinente.
+
+El valor puede ser propio, o puede ser acumulado. Se dice que los activos inferiores en un esquema de dependencias, acumulan el valor de los activos que se apoyan en ellos.
+
+De un activo puede interesar calibrar diferentes dimensiones:
+
+-su confidencialidad: ¿qué daño causaría que lo conociera quien no debe? Esta valoración es típica de datos.
+
+-su integridad: ¿qué perjuicio causaría que estuviera dañado o corrupto? Esta valoración es típica de los datos, que pueden estar manipulados, ser total o parcialmente falsos o, incluso, faltar datos.
+
+-su disponibilidad: ¿qué perjuicio causaría no tenerlo o no poder utilizarlo? Esta valoración es típica de los servicios/procesos.
+
+Adicionalmente, en sistemas dedicados a servicios de la sociedad de la información, frecuentemente es útil valorar:
+
+-la autenticidad: ¿qué perjuicio causaría no saber exactamente quien hace o ha hecho cada acción? Esta valoración es típica de servicios y de los datos.
+
+-la trazabilidad del uso del servicio: ¿qué daño causaría no saber a quién se le presta tal servicio? O sea, ¿quién hace qué y cuándo?
+
+-la trazabilidad del acceso a los datos: ¿qué daño causaría no saber quién accede a qué datos y qué hace con ellos?
+
+Una vez determinadas qué dimensiones interesan de un activo hay que proceder a valorarlo. La valoración es la determinación del coste que supondría recuperarse de una incidencia que destrozara el activo. Hay muchos factores a considerar:
+
+-coste de reposición: adquisición e instalación.
+
+-coste de mano de obra invertida en recuperar el valor del activo.
+
+-lucro cesante: pérdida de ingresos.
+
+-capacidad de operar: confianza de los usuarios y proveedores que se traduce en una pérdida de actividad o en peores condiciones económicas.
+
+-sanciones por incumplimiento de la ley u obligaciones contractuales.
+
+-daño a otros activos, propios o ajenos.
+
+-daño a personas.
+
+-daños medioambientales.
+
+La valoración puede ser cuantitativa (con una cantidad numérica) o cualitativa (en alguna escala de niveles). Los criterios más importantes a respetar son:
+
+-la homogeneidad: es importante poder comparar valores aunque sean de diferentes dimensiones a fin de poder combinar valores propios y valores acumulados, así como poder determinar si es más grave el daño en una dimensión o en otra.
+
+-la relatividad: es importante poder relativizar el valor de un activo en comparación con otros activos.
+
+● Valoración de las amenazas
+
+Cuando un activo es víctima de una amenaza, no se ve afectado en todas sus dimensiones, ni en la misma cuantía. Una vez determinado que una amenaza puede perjudicar a un activo, hay que valorar su influencia en el valor del activo, en dos sentidos:
+
+-Degradación: mide el daño causado por un incidente en el supuesto de que ocurriera. La degradación se suele caracterizar como una fracción del valor del activo y así aparecen expresiones como que un activo se ha visto totalmente degradado o degradado en una pequeña fracción
+
+-Probabilidad: es más compleja de determinar y de expresar. A veces se modela de forma cualitativa por medio de alguna escala nominal o a veces de forma numérica.
+
+● Determinación del impacto potencial
+
+Se denomina impacto a la medida del daño sobre el activo derivado de la materialización de una amenaza. Conociendo el valor de los activos y la degradación que causan las amenazas, es directo derivar el impacto que estas tendrían sobre el sistema
+
+-Impacto acumulado: Es el calculado sobre un activo teniendo en cuenta: su valor acumulado, las amenazas a que está expuesto, el impacto acumulado se calcula para cada activo por cada amenaza y en cada dimensión de valoración, siendo una función del valor acumulado y de la degradación causada:
+
+.El impacto es tanto mayor cuanto mayor es el valor propio o acumulado sobre un activo.
+
+.El impacto es tanto mayor cuanto mayor sea la degradación del activo atacado.
+
+Al calcularse sobre los activos que soportan el peso del sistema de información, permite determinar las salvaguardas de que hay que dotar a los medios de trabajo: protección de los equipos, copias de respaldo, etc.
+
+-Impacto repercutido Es el calculado sobre un activo teniendo en cuenta: su valor propio, las amenazas a que están expuestos los activos de los que depende. El impacto repercutido se calcula para cada activo, por cada amenaza y en cada dimensión de valoración, siendo una función del valor propio y de la degradación causada:
+
+.El impacto es tanto mayor cuanto mayor es el valor propio de un activo.
+
+.El impacto es tanto mayor cuanto mayor sea la degradación y la dependencia del activo atacado.
+
+Al calcularse sobre los activos que tienen valor propio, permite determinar las consecuencias de las incidencias técnicas sobre la misión del sistema de información. Es pues una presentación gerencial que ayuda a tomar una de las decisiones críticas de un análisis de riesgos: aceptar un cierto nivel de riesgo.
+
+-Determinación del riesgo potencial: Se denomina riesgo a la medida del daño probable sobre un sistema. Conociendo el impacto de las amenazas sobre los activos, es directo derivar el riesgo sin más que tener en cuenta la probabilidad de ocurrencia. Por lo general se calcula multiplicando el impacto por la probabilidad, si bien para cada organización se puede adaptar esta formula.
+
+El riesgo crece con el impacto y con la probabilidad, pudiendo distinguirse una serie de zonas a tener en cuenta en el tratamiento del riesgo:
+
+.zona 1 – riesgos muy probables y de muy alto impacto.
+
+.zona 2 – franja amarilla: cubre un amplio rango desde situaciones improbables y de impacto medio, hasta situaciones muy probables pero de impacto bajo o muy bajo.
+
+.zona 3 – riesgos improbables y de bajo impacto.
+
+.zona 4 – riesgos improbables pero de muy alto impacto.
+
+-Riesgo acumulado: Es el calculado sobre un activo teniendo en cuenta:
+
+.El impacto acumulado sobre un activo debido a una amenaza
+
+.La probabilidad de la amenaza.
+
+-Agregación de riesgos: Las organizaciones pueden utilizar la agregación de riesgos para juntar diferentes riesgos discretos o de bajo nivel dentro de un riesgo más general o de alto nivel. La agregación debe realizarse bajo ciertas condiciones:
+
+.Puede agregarse el riesgo repercutido sobre diferentes activos.
+
+.Puede agregarse el impacto acumulado sobre activos que no sean dependientes entre sí, y no hereden valor de un activo superior común.
+
+.No debe agregarse el riesgo acumulado sobre activos que no sean independientes, pues ello supondría sobre ponderar el riesgo al incluir varias veces el valor acumulado de activos superiores.
+
+.Puede agregarse el riesgo de diferentes amenazas sobre un mismo activo, aunque conviene considerar en qué medida las diferentes amenazas son independientes pueden ser concurrentes.
+
+.Puede agregarse el riesgo de una amenaza en diferentes dimensiones.
+
+->|(POR DIOS CUANTAS LISTAS LLEVO YA, ESTE SEÑOR NO PARA)|
+
+#### Modelos de valoración de activos y del riesgo
+
+De cara a valorar el valor de los activos, la probabilidad y el impacto de una amenaza, existen diferentes modelos que pueden ser aplicados:
+
+Modelos cuantitativos: Se basan en asignar valores numéricos exactos o en rangos determinados. Estos modelos, si bien a priori parecen los más adecuados, requieren de un gran nivel de las organizaciones, y aún así es complicado en varios casos.
+
+Modelos cualitativos: Se basan en asignar valores de entre un rango definido previamente. Para ello las mediciones deben ser relacionadas teniendo en cuenta la comparación de los activos y las amenazas entre si, dado que en muchos casos el valor será relativo
+
+Modelos semi-cuantitativos: : Se encuentran entre el cualitativo y cuantitativo dando como resultado valoraciones aproximadas en lugar de exactas o absolutas. Estos métodos son útiles cuando no se puede realizar mediciones o valoraciones directas y se acepta la posibilidad de realizar inferencias.
+
+-Métodos cuantitativos:
+
+Ventajas:
+
+.Permite la definición de las consecuencias de un modo cuantitativo.
+
+.Permiten el análisis de beneficio/coste durante la selección de las salvaguardas.
+
+.Se obtiene una imagen mas ajustada de la valoración de riesgos.
+
+Desventajas:
+
+.Las medidas cuantitativas dependen del alcance y exactitud de las escalas de medida.
+
+.El resultado del análisis puede ser no preciso y a veces confuso.
+
+.Debe ser enriquecido con una descripción cualitativa.
+
+.Suelen ser mas caros y requieren de mayor experiencia
+
+-Métodos cualitativos:
+
+Ventajas:
+
+.Permite determinar grandes áreas de riesgos en un corto periodo de tiempo y sin mucha experiencia.
+
+.Suelen ser análisis mas fáciles y económicos.
+
+Desventajas:
+
+.No permite la estimación de probabilidades y resultados utilizando medidas numéricas.
+
+.El análisis de coste/beneficio es mas difícil durante la fase de determinación de las salvaguardas.
+
+.Los resultados son de carácter general mediante aproximaciones.
+
+#### Escenarios de riesgo
+
+
+
