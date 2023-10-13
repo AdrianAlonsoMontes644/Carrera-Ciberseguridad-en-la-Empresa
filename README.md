@@ -1116,5 +1116,72 @@ Un programa de ciberseguridad busca la implementación de los proyectos de segur
 
 -Identificación de proyectos de seguridad
 
-En última instancia se trata de implantar o mejorar la implantación de una serie de salvaguardas que lleven el impacto y el riesgo a los niveles residuales determinados por la Dirección. Este tratamiento de las salvaguardas se materializa en una serie de tareas a llevar acabo.
+En última instancia se trata de implantar o mejorar la implantación de una serie de salvaguardas que lleven el impacto y el riesgo a los niveles residuales determinados por la Dirección. Este tratamiento de las salvaguardas se materializa en una serie de tareas a llevar acabo. Cada programa de seguridad debe detallar:
 
+.Su objetivo genérico.
+
+.Las salvaguardas concretas a implantar o mejorar, detallando sus objetivos de calidad, eficacia y eficiencia
+
+.La relación de escenarios de impacto y/o riesgo que afronta: activos afectados, tipos de activos, amenazas afrontadas, valoración de activos y amenazas y niveles de impacto y riesgo
+
+.La unidad responsable de su ejecución.
+
+.Una estimación de costes, tanto económicos como de esfuerzo de realización.
+
+.Una relación de subtareas a afrontar.
+
+.Una estimación del estado de riesgo a su finalización.
+
+.Un sistema de indicadores de eficacia y eficiencia que permitan conocer en cada momento la calidad del desempeño de la función de seguridad que se desea y su evolución temporal.
+
+Las estimaciones anteriores pueden ser muy precisas en los programas sencillos; pero pueden ser simplemente orientativas en los programas complejos que conlleven la realización de un proyecto específico de seguridad. 
+
+.Estudio de la oferta del mercado: productos y servicios.
+
+.Coste de un desarrollo específico, propio o subcontratado.
+
+.Si se estima adecuado un desarrollo específico hay que determinar: La especificación funcional y no-funcional del desarrollo. El método de desarrollo que garantice la seguridad del nuevo componente. Los mecanismos de medida que debe llevar empotrados. Los criterios de aceptación y el plan de mantenimiento.
+
+-Plan de ejecución
+
+Hay que ordenar en el tiempo los proyectos de seguridad teniendo en cuenta los siguientes factores:
+
+.La criticidad, gravedad o conveniencia de los impactos y riesgos que se afrontan, teniendo máxima prioridad los programas que afronten situaciones críticas.
+
+.El coste del programa.
+
+.La disponibilidad del personal propio para responsabilizarse de la dirección de las tareas programadas.
+
+.Las posibles dependencias entre proyectos. En muchos casos puede ocurrir que el comienzo de un proyecto dependa de la salida de otro/s. 
+
+.Otros factores como puede ser la elaboración del presupuesto anual de la Organización, las relaciones con otras organizaciones, la evolución del marco legal, reglamentario o contractual, etc
+
+Típicamente, un plan de seguridad se planifica en tres niveles de detalle:
+
+.Plan director: A menudo denominado plan de actuación, trabaja sobre un periodo largo, estableciendo las directrices de actuación.
+
+.Plan anual: Trabaja sobre un periodo corto, estableciendo la planificación de los programas de seguridad.
+
+.Plan de proyecto: Trabaja en el corto plazo, estableciendo el plan detallado de ejecución de cada programa de seguridad.
+
+-Ejecución del plan
+
+El objetivo de esta fase es el de alcanzar los objetivos previstos en el plan de seguridad para cada proyecto planificado. Como salida del mismo tendremos lo siguiente:
+
+.Salvaguardas implantadas.
+
+.Normas de uso y procedimientos de operación.
+
+.Sistema de indicadores de eficacia y eficiencia del desempeño de los objetivos de seguridad perseguidos.
+
+.Modelo de valor actualizado.
+
+.Mapa de riesgos actualizado.
+
+.Estado de riesgo actualizado.
+
+#### Informe de tratamiento del riesgo
+
+incorpora las diferentes opciones de tratamiento del riesgo junto con el mapa del riesgo tras su implementación. Este informe puede ser independiente o bien incluirse como continuación del informe de evaluación de riesgos. 
+
+Como mínimo debería contener la siguiente información:
