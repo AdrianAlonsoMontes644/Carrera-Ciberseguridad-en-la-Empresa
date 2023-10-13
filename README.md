@@ -433,3 +433,85 @@ Por cada riesgo se debería recopilar la siguiente información:
 #### Carrera Proyecto de clases Día 5: 13/10/2023
 
 ### Evaluación del riesgo
+
+Ayuda a la toma de decisiones y entender la gestión de riesgos y cómo pueden afectar a la consecución de sus objetivos, y a la capacidad de eficiencia de los controles ya implantados. Los procedimientos de identificación del riesgo pueden contener:
+
+-Procedimientos en base a evidencias, como por ejemplo las revisiones de datos anteriores.
+
+-Los enfoques metodológicos del equipo, en el que los expertos identifican los riesgos a través de una serie de preguntas.
+
+-Métodos de razonamiento inductivo, como por ejemplo HAZOP. Un razonamiento inductivo es una forma de razonamiento en que la verdad de las premisas apoyan la conclusión, pero no la garantizan. -> |(La única vez que el profesor hace una especie de ejemplo o dinamismo que no le hace parecer un robot y lo hace con cuervos, es esto una señal?)|
+
+En esta primera fase de la metodología se identifican de forma sistemática las posibles causas concretas de los riesgos empresariales (de seguridad), así como los diversos y posibles efectos que debe afrontar la organización
+
+#### Métodos y herramientas para el análisis del riesgo
+
+Se pueden utilizar una serie de herramientas y métodos que facilitarán el análisis de la organización. Entre los más comunes encontramos:
+
+-Check-lists: Se trata de una manera simple de identificar los riesgos. Esta técnica proporciona una lista de las incertidumbres típicas a considerar. Los usuarios se refieren a una lista previamente desarrollada, códigos o normas
+
+-Entrevistas: Se realizan entrevistas con expertos de la organización y/o externos para la dientificaciónd e los riesgos. 
+
+-Análisis Delphi: Los responsables de lograr la ejecución del método Delphi, son varios grupos de expertos dotados de un conocimiento amplio en el tema de gestión de riesgos. Para que esta técnica funcione correctamente se deben lograr opiniones anónimas, individuales y en conjunto, con los miembros encargados.
+
+-Informes de inteligencia externos: A nivel externo a la organización existen diferentes empresas privadas y organismos públicos que producen informes de inteligencia sobre nuevas amenazas y tendencias, ya sea a nivel general o sectorial. Estos informes pueden ser analizados para ver su posible ocurrencia en la organización. Por un lado se dispone de feeds de ciberinteligencia que alertan de nuevo malware, vulnerabilidades y ataques. Por otro, existen organizaciones llamadas ISACs (Information Sharing and Analysis Centers) que proveen de recursos centralizados para la recopilación de información sobre amenazas y que permiten una comunicación bidireccional con sus miembros. 
+
+-What if: El análisis what if se usa en la etapa preliminar de la gestión cuando se comienzan a identificar los riesgos. Este método consiste en programar reuniones con expertos que conozcan en detalle un área, servicio o proceso concreto. En la reunión inicial se plantean interrogantes para evidenciar riesgos futuros. Las reuniones siguientes son para encontrar causas, consecuencias y acciones. Se basa en imaginas casos que impactarían en la organización y validar su probabilidad e impacto final.
+
+Así mismo, existen otra serie de técnicas más avanzadas que pueden utilizarse, si bien requieren de un mayor conocimiento así como de una mayor madurez en la organización:
+
+-Análisis preliminar de riesgos (APR)
+
+-Los 5 por qué
+
+-FME (Failure mode and effective analysis)
+
+-Matriz SWOT (Strenghts, Waknesses, Opportunities and Threats)
+
+-Análisis de árbol de fallas
+
+-Diagrama causa-efecto (o de Ishikawa)
+
+-Cuestionario de análisis de riesgos
+
+-Gráfica de flujos de procesos
+
+-Análisis Modal de Fallos y Efectos (AMFE)
+
+-Análisis funcional de operatividad (HAZOP)
+
+-Análisis de capas de protección (LOPA)
+
+-Análisis de Montecarlo
+
+|(Debido a que son tan avanzados que solo se usan en empresas muy maduras, no los explica, y menos mal, que son un cacho y capaz que cada uno me tomaba 10 minutos resumirlo)|
+
+#### Análisis de impacto del negocio (BIA)
+
+Tiene como principal objetivo identificar las necesidades del negocio en términos de recuperación. Un aspecto importante a tener en cuenta en la elaboración de un BIA son los tiempos:
+
+-RTO (Recovery Time Objective): Tiempo de recuperación de las actividades que hemos identificado bajo unas condiciones mínimas aceptables. Por ejemplo, supongamos que el Responsable del Departamento de Administración nos indica que, en caso de que fallara la plataforma que soporta las aplicaciones para la generación y emisión de la nómina, se deberían recuperar el servicio en un plazo máximo de 24h. En este caso, estableceríamos que el RTO asociado a dicho proceso es de 24h.
+
+-MTD (Maximum Tolerable Downtime): Tiempo máximo tolerable de caída el cual nos determina el tiempo que puede estar caído un proceso antes de que se produzcan efectos desastrosos en la compañía y repercuta en el negocio. Supongamos que el proceso de gestión de nóminas no debe estar interrumpido por un periodo superior a 48h. En este caso, estableceríamos que el MTD asociado a dicho proceso es de 48h.
+
+-RPO (Recovery Point Objective): El grado de dependencia de la actualidad de los datos determina la cantidad máxima de información que se podría perder sin llegar a tener consecuencias inaceptables, formando parte de las políticas de respaldo definidas por la organización. En este sentido, imaginemos que el Responsable del Departamento de Administración nos indica que podrían tolerar una pérdida de información siempre y cuando no se perdieran los datos generados en más de un día completo. Por lo tanto, estableceríamos que el RPO es de 24h.
+
+Por cada servicio o proceso analizado, se debería obtener la siguiente información:
+
+-Identificador y nombre del servicio/proceso.
+
+-Descripción del mismo.
+
+-Datos de contacto del responsable de negocio y técnico junto con sus backups.
+
+-Procesos o servicios que dependen de este: Nombre e identificador, criticidad de la dependencia (p.e. baja, media o alta) y descripción de dicha dependencia.
+
+-Procesos o servicios de los que depende este: Igual que el anterior.
+
+-Las anteriores dependencias permitirán conocer el arbol de interrelaciones entre los servicios/procesos de la organización con el fin de evitar que, en caso de desastre, la falta de un servicio/proceso pueda poner en peligro otros que son críticos.
+
+-Proveedores críticos (externos a la organización): Proveedor, contacto, si existen Acuerdos de Nivel de Servicio y los niveles establecidos. RTO, RPO y MTD.
+
+-Matriz de impacto indisponibilidad servicio / proceso. En las filas las dimensiones de impacto y en las columnas las dimensiones temporales (p.e. 1 hora, 1 día, 1 semana y 1 mes). Así, se podrá saber el impacto de cada periodo de indisponibilidad del servicio o proceso sobre cada dimensión como el daño de imagen o el impacto legal y regulatorio.
+
+#### Identificación de activos
