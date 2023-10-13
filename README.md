@@ -985,12 +985,12 @@ Dentro del margen de maniobra que permita este marco, pueden aparecer considerac
 Todas las consideraciones anteriores desembocan en una calificación de cada riesgo significativo, determinándose si:
 
 1. Es crítico en el sentido de que requiere atención urgente.
-2. 
-3. Es grave en el sentido de que requiere atención.
-4. 
-5. Es apreciable en el sentido de que pueda ser objeto de estudio para su tratamiento.
-6. 
-7. Es asumible en el sentido de que no se van a tomar acciones para atajarlo:
+   
+2. Es grave en el sentido de que requiere atención.
+ 
+3. Es apreciable en el sentido de que pueda ser objeto de estudio para su tratamiento.
+ 
+4. Es asumible en el sentido de que no se van a tomar acciones para atajarlo:
 
 .Cuando el impacto residual es asumible.
 
