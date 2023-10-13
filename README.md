@@ -1052,8 +1052,27 @@ También conviene considerar la incertidumbre del análisis. Hay veces que sospe
 
 No se puede invertir en salvaguardas más allá del valor que queremos proteger. Es intencionado el hecho de que el riesgo caiga fuertemente con pequeñas inversiones y que el coste de las inversiones se dispare para alcanzar niveles de seguridad cercanos al 100%.
 
--Análisis cuantitativo
+-Análisis cuantitativo: En la práctica, cuando hay que protegerse de un riesgo que se considera significativo, aparecen varios escenarios hipotéticos:
 
--Análisis cuantitativo
+E0: si no se hace nada.
 
--Estudio mixto
+E1: si se aplica un cierto conjunto de salvaguardas.
+
+E2-N: si se aplican otros conjuntos de salvaguardas .
+
+El análisis económico tendrá como misión decidir entre estas opciones, siendo E0 una opción posible, que pudiera estar justificada económicamente
+
+-Análisis cuantitativo: Cuando el análisis es cualitativo, en la balanza de costes beneficios aparecen aspectos intangibles que impiden el cálculo de un punto numérico de equilibrio. Entre los aspectos intangibles se suelen contemplar:
+
+.Aspectos reputacionales o de imagen.
+
+.Aspectos de competencia: comparación con otras organizaciones de mismo ámbito de actividad
+
+.Cumplimiento normativo, que puede ser obligatorio o voluntario.
+
+.Capacidad de operar.
+
+.Productividad.
+
+-Estudio mixto: En análisis de riesgos meramente cualitativos, la decisión la marca el balance de costes y beneficios intangibles, si bien siempre hay que hacer un cálculo de lo que cuesta la solución y cerciorarse de que el gasto es asumible. De lo contrario, la supuesta solución no es una opción
+
