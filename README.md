@@ -1185,3 +1185,85 @@ El objetivo de esta fase es el de alcanzar los objetivos previstos en el plan de
 incorpora las diferentes opciones de tratamiento del riesgo junto con el mapa del riesgo tras su implementación. Este informe puede ser independiente o bien incluirse como continuación del informe de evaluación de riesgos. 
 
 Como mínimo debería contener la siguiente información:
+
+-Introducción.
+
+-Enfoque metodológico.
+
+-Situación actual:
+
+.Debilidades.
+
+.Mapas de riesgo.
+
+.Resumen de los planes de acción. 
+
+-Descripción en detalle de los planes de acción.
+
+.Descripción de la medida.
+
+.Objetivos concretos buscados.
+
+.Actividades a realizar.
+
+.Nivel de madurez buscado.
+
+.Entorno tecnológico involucrado.
+
+.Recursos necesarios.
+
+.Métricas propuestas.
+
+-Acciones de monitorización necesarias
+
+-Apéndices:
+
+.Resumen de los planes de acción.
+
+.Plan de proyecto con todos los proyectos necesarios, con fecha de inicio y fin.
+
+#### Frameworks de seguridad
+
+Existen diferentes frameworks de seguridad de la información y ciberseguridad que nos permitirán contar con un conjunto de salvaguardas base entre las que poder escoger para los planes de mitigación del riesgo, así como establecer un marco general de gestión de la seguridad.
+
+-ISO 27001 
+
+La norma se encuentra dividida en dos partes. La primera se compone de 10 puntos entre los cuales se encuentran:
+
+.Objeto y campo de aplicación.
+
+.Referencias normativas.
+
+.Términos y definiciones.
+
+.Contexto de la organización.
+
+.Liderazgo.
+
+.Planificación.
+
+.Soporte.
+
+.Operación
+
+.Evaluación de desempeño.
+
+.Mejora. 
+
+La segunda parte, está conformada por el anexo A, que establece los objetivos de control y los controles de referencia
+
+-NIST CSF (Cyber Security Framework)
+
+Este marco no provee nuevas funciones o categorías de ciberseguridad, sino recopila las mejores prácticas y las agrupa según afinidad. Se centra en el uso de impulsores de negocio para guiar las actividades de ciberseguridad y considerar los riesgos de ciberseguridad como parte de los procesos de gestión de riesgos de la organización. El framework consta de tres partes: el marco básico, el perfil del marco y los niveles de implementación.
+
+#### Níveles de implementación
+
+Los tiers proporcionan un contexto sobre cómo una organización ve el riesgo de la ciberseguridad y los procesos implementados para manejarlo.
+
+-Las escalas describen el grado en que las prácticas de gestión de riesgos de ciberseguridad de una empresa exhiben las características definidas en el marco. Por ello mismo, actúan como niveles de madurez en los procesos de ciberseguridad.
+
+-Los niveles de implementación caracterizan las prácticas de una compañía en un rango. 4 niveles: parcial / riesgo informado / repetible / adaptativo.
+
+-Estos niveles reflejan una progresión desde respuestas informales y reactivas hasta enfoques que son ágiles y están informados sobre el riesgo. 
+
+### Controles de mitigación: Seguridad administrativa y física
