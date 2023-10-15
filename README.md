@@ -1266,4 +1266,250 @@ Los tiers proporcionan un contexto sobre cómo una organización ve el riesgo de
 
 -Estos niveles reflejan una progresión desde respuestas informales y reactivas hasta enfoques que son ágiles y están informados sobre el riesgo. 
 
+#### Carrera Proyecto de clases Día 6: 15/10/2023
+
 ### Controles de mitigación: Seguridad administrativa y física
+
+-Gobierno de la ciberseguridad: De acuerdo al modelo establecido por el IT Governance Institute (ISACA), la seguridad requiere la participación activa de los altos directivos de las empresas. 
+
+.El gobierno corporativo es el conjunto de responsabilidades y prácticas ejercidas por los responsables de una empresa con el objetivo de:
+
+.Proporcionar dirección estratégica, Asegurar que los objetivos sean alcanzados, Garantizar que los riesgos sean gestionados adecuadamente,
+
+.Verificar que los recursos de la empresa sean utilizados de manera responsable.
+
+La ciberseguridad debe ser parte integral del gobierno corporativo para lograr sus objetivos, para cubrir las necesidades actuales y futuras. 
+
+El objetivo de la seguridad de la información es desarrollar, implementar y administrar un programa de seguridad que alcance los siguientes cinco resultados básicos de un gobierno eficaz de seguridad:
+
+-Alineación estratégica: Alinear la seguridad de la información con la estrategia de negocio.
+
+-Administrar los riesgos: Ejecutar medidas apropiadas para mitigar los riesgos y reducir el posible impacto que tendrían en los activos de información.
+
+-Entrega de valor: Optimizar las inversiones en la seguridad.
+
+-Administración de recursos: Utilizar el conocimiento y la infraestructura de la segurida dde la información con eficiencia y eficacia.
+
+-Medición del desempeño: Monitorizar y reportar métricas de seguridad de la información para garantizar que se alcancen los objetivos.
+
+Para lograr un gobierno eficaz, la alta dirección debe establecer un marco que guíe el desarrollo y mantenimiento de un programa integral de seguridad: 
+
+La estrategia tiene como entradas la estrategia de negocio, el estado actual y deseado de seguridad, los requerimientos del negocio y procesos, los resultados de la evaluación de riesgos y requisitos regulatorios. La estrategia proporciona la base para el desarrollo de los planes de acción en cumplimiento de los objetivos de seguridad.
+
+Debido a que las organizaciones tienen diversas necesidades y sus enfoques de gobierno pueden variar, se ha identificado un conjunto básico de principios y buenas prácticas para ayudar a guiar estos esfuerzos.
+
+-Principios:
+
+.El riesgo de seguridad de la información es más que un problema de TI: es un componente clave en la gestión de riesgos de la organización, lo que requiere la supervisión de la dirección.
+
+.El riesgo tiene implicaciones legales que los directivos deben entender.
+
+.El riesgo debe ser un tema de discusión en la junta de dirección de forma periódica.
+
+.Los directores deben implementar un marco efectivo de gestión de riesgos en la organización.
+ 
+.La alta dirección y el consejo deben evaluar el riesgo de seguridad de la información al igual que otros riesgos a nivel organizacional para asegurar que los riesgos se acepten, eviten, mitiguen o transfieran.
+
+-Buenas prácticas:
+
+.Realizar una evaluación anual de la seguridad de la información a cargo de la alta dirección.
+
+.Llevar a cabo evaluaciones de riesgos periódicos como parte de un programa global de gestión de riesgos.
+
+.Implementar políticas y procedimientos basados en las evaluaciones de riesgos.
+
+.Establecer una estructura de gestión de seguridad para asignar individualmente roles y responsabilidades.
+
+.Desarrollar iniciativas para brindar seguridad de la información a redes, instalaciones, sistemas e información en general.
+
+.Tratar la seguridad de la información como parte integral durante el ciclo de vida de los sistemas de información.
+
+.Proporcionar concienciación, capacitación y educación en seguridad de la información para todo el personal.
+
+.Conducir pruebas y evaluaciones periódicas para medir la efectividad de las políticas y procedimientos de seguridad de la información.
+
+.Crear y ejecutar planes de acción para manejar cualquier deficiencia de seguridad de la información.
+
+.Desarrollar e implementar procedimientos de respuesta a incidentes.
+
+.Establecer planes, procedimientos y pruebas para proporcionar continuidad de las operaciones.
+
+.Utilizar las mejores prácticas de la industria como ISO 27001, NIST SP 800, CoBIT, entre otros.
+
+#### Políticas, procedimientos y guías
+
+El cuerpo documental de la seguridad se compone de 3 patas:
+
+-Políticas de seguridad: Las políticas de seguridad son documentos de alto nivel que establecen la visión de la dirección sobre la protección de los activos de la organización. Al ser de alto nivel, definen el qué, qué debe ser protegido, qué es más importante, qué es más prioritario, qué está permitido y qué no lo está y qué tratamiento se le darán a los problemas de seguridad. Su objetivo fundamental es proporcionar orientación y apoyo a la dirección para la seguridad de la información de acuerdo con los requisitos de la organización y con las regulaciones y leyes vigentes.
+
+-Procedimientos: Se trata de documentos que desarrollan a bajo nivel las políticas de seguridad pero de forma agnóstica a tecnologías concretas. Se deben definir los pasos a dar y, cuando sea posible, un flujograma que detalle las entradas y salidas, los pasos intermedios, los puntos de decisión y los resultados de dichas decisiones 
+
+-Guías: Estos documentos, los de más bajo nivel, muestran para cada tecnología concreta el cómo aplicar los procedimientos. No tiene porque haber una correspondencia exacta de un procedimiento a una guía, puesto que estas últimas pueden cubrir diferentes procedimientos para una tecnología concreta. Sin embargo, es importante asegurar que todos los procedimientos estén cubiertos por una guía.
+
+Con el objeto de desarrollar políticas de seguridad de calidad, debemos tener en cuenta varios aspectos:
+
+-Adaptabilidad: La organización no debe adaptarse a un documento. La política debe adaptarse a los requerimientos de la organización. Por ello, se descarta la opción de copiar el documento de otra organización, más aún, si tenemos en cuenta que son diferentes los requerimientos de un tipo de organización de otra, como organismos públicos o privado, o del sector industrial y de banca
+
+-Definición de los objetivos: El documento precisa definir los objetivos de seguridad de la información, su forma de aprobación y la manera en que han de ser revisados, sin entrar en detalles acerca de estos procesos.
+
+-Compromiso: La Alta Dirección de la organización debe expresar sin lugar a dudas, su compromiso total con el sistema y con su propósito final, que no debe ser otro que cumplir con los requerimientos en materia de seguridad de la información de las partes interesadas en el sistema.
+
+-Comunicación: El documento debe establecer quién o quiénes son los encargados de comunicar a las partes interesadas los alcances y la evolución del sistema, no solo durante la implementación del mismo, sino en adelante, en la medida en que se presenten revisiones, actualizaciones o mejoras.
+
+-Revisiones: La política de Seguridad de la Información debe ser revisada en forma periódica, y estas revisiones, así como los responsables de las mismas, y los periodos de tiempo en los que se efectuarán, son temas que se deben incluir en el documento.
+
+-Alineamiento legal, regulatorio y normativo: Dado que las leyes y regulaciones, tanto generales como sectoriales, son de obligado cumplimiento, se hace vital que las políticas de seguridad estén alineadas con las mismas y desarrollen su cumplimento dentro de la organización. 
+
+De acuerdo a las buenas prácticas dela industria, una política de seguridad debería incluir los siguientes puntos:
+
+-Introducción: Breve explicación del asunto principal de la política.
+
+-Ámbito de aplicación: Descripción de los departamentos, áreas o actividades de una organización a las que afecta/aplica la política. Cuando es relevante en este apartado se mencionan otras políticas relevantes a las que se pretende dar cobertura desde ésta.
+
+-Objetivos: Descripción de la intención de la política.
+
+-Principios: Descripción de las reglas que conciernen a acciones o decisiones para alcanzar los objetivos. En algunos casos puede ser de utilidad identificar previamente los procesos clave asociados con el asunto principal de la política para pasar posteriormente a identificar las reglas de operación de los procesos. 
+
+-Responsabilidades: Descripción de quién es responsable de qué acciones para cumplir con los requisitos de la política. En algunos casos, esto puede incluir una descripción de los mecanismos organizativos, así como las responsabilidades de las personas con roles designados.
+
+-Resultados clave: Descripción de los resultados relevantes para las actividades de la organización que se obtienen cuando se cumplen los objetivos.
+
+-Políticas relacionadas: Descripción de otras políticas relevantes para el cumplimiento de los objetivos, usualmente se indican detalles adicionales en relación a temas específicos.
+
+Finalmente, las políticas de seguridad más típicas en una organización serían las siguientes:
+
+-Gestión de activos: Inventariado y gestión del ciclo de vida de los activos.
+
+-Clasificación de la información: Guía de alto nivel sobre los niveles de clasificación de la información en la organización y cómo catalogar la misma de acuerdo a los criterios establecidos.
+
+-Uso aceptable: Qué entiende la organización por uso aceptable de los diferentes activos aportados por la misma a los usuarios.
+
+-Control de Acceso: Guías de alto nivel sobre la gestión de identidades y control de acceso.
+
+-Seguridad para proveedores: Criterios generales para asegurar que los proveedores con acceso a nuestros sistemas y/o información cumplen con un mínimo de requisitos que aseguren un nivel de seguridad adecuados.
+
+-Continuidad de negocio: Establecer los parámetros generales para la continuidad de negocio en caso de un desastre y asegurar la recuperación de sistemas y servicios en un tiempo razonable que minimice el impacto a la organización a la vez que el coste.
+
+-Gestión de incidentes: Criterios generales para asegurar que en caso de incidente se disponen de los medios y conocimiento necesario para detectarlo, investigarlos y priorizarlos, contenerlos, resolverlos y recuperar el entorno.
+
+-BYOD: Criterios generales para el uso razonable de dispositivos personales de comunicación para el acceso y trabajo con al información de la organización.
+
+-Dispositivos móviles y teletrabajo: Criterios generales para asegurar la seguridad en el uso de dispositivos móviles aportados por la organización así como cuando se esté teletrabajando.
+
+-Gestión de claves y certificados: Criterios generales para la gestión del ciclo de vida de los certificados, tanto los emitidos internamente como los adquiridos externamente, desde su creación a su revocación.
+
+-Eliminación y destrucción de la información: Criterios generales para la eliminación y destrucción de información en papel o digital, así como para la retirada de medios de almacenamiento en base a la clasificación de la información contenida.
+
+-Escritorios y pantallas limpios: Requisitos para el uso de información en el espacio de trabajo individual o colectivo para evitar robo u espionaje.
+
+-Gestión del cambio: Criterios de seguridad a introducir en el proceso de gestión del cambio para asegurar que el mismo se realiza de forma segura, incluyendo aspectos como la aprobación, prueba de los mismos en entornos previos a producción en caso de posibles impactos a la seguridad, existencia de planes de vuelta atrás en caso de problemas, etc.
+
+-Copias de seguridad: Criterios generales sobre copias de seguridad de acuerdo a la clasificación de la información, teniendo en cuenta aspectos como la periodicidad, tipología, periodo de retención, pruebas, etc.
+
+-Transferencia de información: Criterios generales para asegurar la información cuando es transferida, tanto mediante correos electrónicos como mediante procesos automatizados.
+
+#### Organización de la seguridad de la información
+
+Para poder responder de forma eficaz y eficiente a los retos de la seguridad de la información en la organización, se deben organizar y estructurar las responsabilidades y las funciones relacionadas con la seguridad, así como asegurar que no existan lagunas.
+
+El objetivo es describir y documentar la estructura de responsabilidades, competencias y relaciones relativas a la seguridad de la información en la organización.
+
+-Funciones y responsabilidad de la seguridad de la información: Se trata de definir las responsabilidades de cada empleado o puesto de trabajo en relación a la Seguridad de la Información. Es decir, sumar a las funciones de cada puesto aquellas funciones que tengan que ver con la seguridad de la información. Pero no basta con definirlas, también deberemos comunicar a cada persona implicada en la Seguridad de la Información sus roles y responsabilidades. También se deben incluir a terceras partes, dado que son una parte crítica del proceso en muchas ocasiones.
+
+-Segregación de tareas: Se trata de evitar usos o accesos indebidos a la información o a las aplicaciones o sistemas que la gestionan mediante la separación de las funciones asignando distintos perfiles o áreas de responsabilidad. Explicado de otra forma, podemos determinar las responsabilidades, tareas, accesos, etc. que conllevan un riesgo de mal uso, accidental o deliberado, si son compartidas por una misma persona.
+
+-Contacto con autoridades: En caso de incidentes en la seguridad de la información, puede resultar necesario mantener informados a los organismos de control del estado o administración. Así, se deberán establecer dentro de los procedimientos de gestión de incidentes a quién se contactará, cuándo se realizará el contacto, los datos de contacto de los grupos necesarios y la información que se deberá transmitir.
+
+-Contacto con grupos de interés especial: Mantenerse al día en seguridad de la información parece una tarea imposible de realizar de forma autónoma, aun para grandes corporaciones, por lo que este control nos indica que deberemos identificar todos aquellos grupos de interés tales como: foros especializados en Seguridad de la información, organismos administrativos como INCIBE en España o empresas expertas en seguridad de la información. Se trata de mantenernos actualizados en cuanto a las noticias sobre la seguridad de la información y permanecer alerta ante las nuevas amenazas para la seguridad de la información y si es necesario que adoptemos alguna recomendación de estos grupos especializados.
+
+-Seguridad de la información en la gestión de proyectos: Este control pretende decirnos que la seguridad de la información debe involucrarse en todos los procesos de la organización ya sean procesos del negocio, procesos internos, servicios o productos, procesos TI etc. Para afrontar este requisito es necesario realizar una evaluación de riesgos, centrada en la seguridad de la información, al comienzo de cualquier proyecto, para identificar amenazas, vulnerabilidades y riesgos asociados al proyecto. Esto nos permitirá adoptar los controles necesarios.
+
+#### Dispositivos móviles y teletrabajo
+
+-Dispositivos móviles: Se trata de disponer de políticas de Seguridad de la Información como medidas concretas que mitiguen los riesgos de la seguridad de la información en el uso de dispositivos móviles o remotos en una organización. La política de uso de dispositivos móviles en una organización debe considerar:
+
+.El registro de nuevos dispositivos. La cancelación de registro de dispositivos móviles. Requisitos de seguridad física.
+
+.Requisitos de seguridad técnica incluidas conexiones remotas.
+
+.Control de software.
+
+.Control de acceso y cifrado de la información contenida en reposo y en tránsito.
+
+Las políticas diseñadas para dispositivos móviles además de los requisitos anteriores deberían considerar las condiciones de uso de dispositivos móviles y cuando sean apropiados.
+
+-Teletrabajo: En la actualidad, el teletrabajo es una actividad relativamente difundida en todo tipo de organizaciones, por lo que la seguridad de la Información es un aspecto clave para garantizar la protección de esta actividad. Se trata de:
+
+.Evaluar que activos de información están involucrados en el teletrabajo.
+
+.Realizar una evaluación de riesgos aplicada a los activos de la información y a las actividades del teletrabajo.
+
+Restricciones o controles para las actividades de teletrabajo según la norma ISO 27002:
+
+.La seguridad física existente del sitio de teletrabajo, considerando la seguridad física del edificio y del entorno local.
+
+.El entorno físico de teletrabajo propuesto.
+
+.Los requisitos de seguridad de las comunicaciones, teniendo en cuenta la necesidad de acceso remoto a los sistemas internos de la organización, la sensibilidad de la información a ser accedida y pasada sobre el enlace de comunicación y la sensibilidad del sistema interno.
+
+.La provisión de acceso al escritorio virtual que impide el procesamiento y el almacenamiento de información sobre el equipo de propiedad privada.
+
+.La amenaza de acceso no autorizado a la información o a los recursos de otras personas que utilizan el alojamiento, por ejemplo, familiares y amigos.
+
+.El uso de redes domésticas y requisitos o restricciones de la configuración de los servicios de red inalámbricos.
+
+.Las políticas y los procedimientos para evitar conflictos relativos a los derechos de propiedad intelectual desarrollados en los equipos de propiedad privada.
+
+.El acceso a los equipos de propiedad privada, que puede ser prevenido por la legislación.
+
+.Los acuerdos de licencia de licencia software en los que las organizaciones pueden ser responsables de la concesión de licencias a los clientes de software en estaciones de trabajo de propiedad privada.
+
+.La protección ante software malicioso y los requisitos de firewall
+
+#### Seguridad en RRHH
+
+El objetivo del presente dominio es la necesidad de educar e informar al personal desde su ingreso y en forma continua, cualquiera sea su situación de actividad, acerca de las medidas de seguridad que afectan al desarrollo de sus funciones y de las expectativas depositadas en ellos en materia de seguridad y asuntos de confidencialidad.
+
+Es necesario reducir los riesgos de error humano, comisión de actos ilícitos, uso inadecuado de instalaciones y recursos y manejo no autorizado de la información, junto a la definición de posibles sanciones que se aplicarán en caso de incumplimiento.
+
+Se requiere explicitar las responsabilidades en materia de seguridad en la etapa de reclutamiento de personal e incluirlas en los acuerdos a firmarse y verificar su cumplimiento durante el desempeño del individuo como empleado.
+
+#### Gestión de activos
+
+Los inventarios de activos son un elemento clave para la identificación del riesgo. Solo así podremos establecer las amenazas y vulnerabilidades reales a las que está expuesto el sistema. Otra razón de gran importancia, es que, gracias al registro del inventario de activos podemos identificar quién es el propietario del activo y asignar responsabilidades. De esta forma, logramos proteger la confidencialidad, la integridad y la disponibilidad de la información.
+
+El objetivo de estos controles es la preservación de los activos de información como soporte del negocio. Se focaliza en varias vertientes:
+
+-Responsabilidad de los activos: EL objetivo de este punto es la identificación de los activos de información y las responsabilidades sobre los mismos, con el objetivo de evaluar las medidas de protección adecuadas para cada activo en base a una evaluación de riesgos.
+
+-Clasificación de la información: Asegurar que la información recibe el nivel de protección adecuado de acuerdo con su importancia en la organización.
+
+-Manejo de los soportes de almacenamiento: Se trata de proteger la información en el nivel de soportes en los que se encuentra ya sea papel o soportes electrónicos. Prevenir la exposición, modificación, eliminación o destrucción de información almacenada en medios de forma no autorizada.
+
+#### Controles de mitigación: Seguridad física
+
+La seguridad física es la disciplina que diseña, despliega y mantiene controles de seguridad aplicables al mundo físico con el objeto de proteger diferentes tipos de activos:
+
+-Áreas y espacios.
+
+-Equipamiento.
+
+-Personas.
+
+Si bien las personas son el bien más valioso. y el fin último de la seguridad en las organizaciones, generalmente las medidas para proteger a las mismas está incluidas en las otras dos. 
+
+Controles específicos para crear y mantener áreas seguras:
+
+-Perímetro de seguridad física: Control orientado a proveer protección contra la entrada no autorizada.
+
+-Controles de acceso físico: Aquellas áreas que se consideran seguras deben estar protegidas por controles de entrada que permitan solo personal autorizado incluyendo la asignación, modificación y eliminación de los permisos de acceso, sistemas de entrada como tornos, monitorización de los diferentes punto de entradas, registro y análisis de las entradas y salidas gestión del personal externo, uso de identificadores, etc
+
+-Seguridad de oficinas, despachos e instalaciones: Las instalaciones deben diseñarse para evitar al máximo posible el riesgo que la información confidencial sea accesible para los visitantes. Para ello se debe evitar siempre que sea posible que las áreas claves estén en sitios con paso público, evitar carteles y otros signos que aporten demasiada información sobre el edificio y las áreas internas.
+
+-Protección contra amenazas externas y medioambientales: Se deben diseñar controles contra desastres naturales, ataques maliciosos y accidentes.
+
+-Trabajo en áreas seguras: Se deben diseñar e implementar procesos para el trabajo en áreas seguras, teniendo en cuenta aspectos como que el personal sólo debería saber de la existencia de, y los trabajos realizados en, áreas seguras según el criterio de necesidad de saber, evitar el trabajo no supervisado en áreas seguras, las áreas seguras vacías deberían quedar cerradas y protegidas o evitar cualquier tipo de grabación en estas áreas.
+
+-Áreas de entrega y carga: Los puntos de carga y de entrega de mercancía suelen ser puntos sensibles para la seguridad física por lo se debería tomar en cuenta algunos aspectos como horarios definidos de apertura y cierre, control de apertura y cierre de puertas externas e internas, control de personal, realización de inventarios de materiales entregados, revisión de mercancías entregadas para detectar materiales peligrosos o separar entregas entrantes y salientes o barreras adicionales de seguridad.
+
+### Controles de mitigación: Seguridad Lógica
