@@ -1732,3 +1732,148 @@ datos a las que tiene acceso con el objeto de encontrar tanto nuevos repositorio
 -Bloqueo de acciones y enmascaramiento de datos: Debe permitir actuar como un cortafuegos de capa 7 con el objeto de bloquear acciones que se hayan definido previamente, a la vez que permite otras acciones enmascarando los datos (cubriendo una parte de los mismos por protección, por ejemplo para la protección de datos personales.
 
 #### Seguridad operacional
+
+Las operaciones de los sistemas, su administración y explotación requieren de controles de seguridad específicos para asegurar que dicha operación no introduzca nuevas debilidades y permita controlar las existentes.
+
+-Configuración segura o hardening: El hardening o configuración segura es el proceso de configuración sistemática de los sistemas y aplicaciones con el objeto de reducir la superficie de ataque potencial así como seleccionar opciones que aumenten la seguridad general del sistema y la información. Existen multitud de guías de fabricantes para realizar dicha tarea, así como guías de organizaciones internacionales como el Center for Internet Security. En general, este proceso se centra en aspectos como cerrar puertos innecesarios en los sistemas, asegurar las políticas de acceso de usuarios, la habilitación de cifrado, configuración de las capacidades de seguridad nativas de cada sistema/aplicación, permisos de seguridad en archivos y carpetas, acceso remoto, etc.
+
+Para permitir automatizar este proceso, existen soluciones que permiten validar la configuración de un sistema contra una línea base establecida y otro tipo que permite cambiar las configuraciones de sistemas y aplicaciones para cumplir con la línea base.
+
+-Gestión de vulnerabilidades: Una vulnerabilidad es una debilidad o fallo en un sistema de información que pone en riesgo la seguridad de la información pudiendo permitir que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma, por lo que es necesario encontrarlas y eliminarlas lo antes posible. La gestión de vulnerabilidades es un proceso continuo de TI consistente en la identificación, evaluación y corrección de vulnerabilidades en los sistemas de información y las aplicaciones de una organización, categorizando los activos según si importancia/valor y clasificando las vulnerabilidades según el nivel de riesgo, de
+forma que se puedan priorizar las vulnerabilidades a corregir.
+
+El proceso de gestión de vulnerabilidades suele incluir las siguientes acciones:
+
+.Obtención de un inventario de los activos de TI de una empresa, lo que incluye servidores, infraestructura de redes, estaciones de trabajo, impresoras y aplicaciones.
+
+.Detección de las vulnerabilidades existentes mediante escáneres de redes, escáneres de vulnerabilidades en host y software de pruebas de penetración automáticas y determinación de los niveles de riesgo. Generalmente, los escaneos en red suelen dar más falsos positivos que los realizados con agentes.
+
+.Reparación de sistemas y dispositivos vulnerables y presentación de informes sobre las medidas correctivas adoptadas. Este sub-proceso debe alinearse con la gestión del cambio para evitar impactar en los sistemas y contar con procedimientos específicos como contar con un plan de vuelta atrás antes de aplicar cambios en prueba en entornos de pre-producción antes de su despliegue definitivo.
+
+-Gestión del cambio: Los procesos de cambio pueden conllevar riesgos asociados para la seguridad de la información. Es por ello que se deben disponer de procesos y controles para que analicemos los procesos de cambio en sistemas y aplicaciones, junto con la infraestructura involucrada con los mismos. Las evaluaciones de riesgos deberían exigir siempre una autorización formal para la realización de cambios. Otro elemento esencial es establecer siempre una planificación para los cambios a realizar en equipos, sistemas software etc, acompañado de pruebas realizadas y comunicaciones a todos los involucrados. Antes de realizar ningún cambio se debe disponer de un procedimiento de vuelta atrás así como de probar los cambios en un entorno de pruebas lo más parecido al entorno de producción. Finalmente, deberíamos mantener un registro que contenga al menos la información de:
+
+.Quien autoriza los cambios.
+
+.Quien realiza los cambios.
+
+.Fecha.
+
+.Descripción de las tareas realizadas.
+
+.Validación del cambio.
+
+.Otra información que se considere necesaria.
+
+Esta información será útil en una auditoría para proporcionar la confianza de que los cambios se han realizado de forma controlada.
+
+-Gestión de la capacidad: Se trata de evitar pérdidas de disponibilidad o rendimiento de los sistemas por falta de capacidad. Gestionar la capacidad se refiere a tener un control del uso de los recursos. Esto se traduce en controles para:
+
+.Medición y Seguimiento del uso de recursos.
+
+.Previsión de uso a futuro o análisis de tendencias.
+
+.Planificar las ampliaciones de capacidad de los recursos cuando sea necesario.
+
+.Optimizar el uso de recursos. Por ejemplo, la posibilidad de optimizar las consultas a las bases de datos, realizar procesos por lotes fuera de horas de carga de trabajo, eliminación de archivos de datos antiguos y aceleración del ancho de banda para accesos no críticos.
+
+Para poder monitorizar la capacidad existen sistemas de monitorización de salud TI que permiten automatizar estas tareas en SO, BBDD, dispositivos de red, aplicaciones comerciales, etc.
+
+-Control del software en explotación: El objetivo es garantizar la integridad de los sistemas operacionales para la organización. Es importante mantener procedimientos para cubrir las instalaciones de software en cualquier dispositivo dentro de una organización.
+
+Estos procedimientos deben fijarse en la aplicabilidad de los siguientes controles:
+
+.Probar las nuevas aplicaciones o software en entornos aislados especialmente preparados para pruebas.
+
+.Comprobar las necesidades de instalación antes de su instalación.
+
+.Valorar la necesidad de actualización o instalación.
+
+.Planificar la forma de volver a versiones anteriores en caso de ser necesario.
+
+.Los entornos de desarrollo deben permanecer aislados de los entornos operativos.
+
+.Las instalaciones de software debe ser realizada por usuarios autorizados.
+
+.Establecer procedimientos o herramientas de monitoreo del software para detectar cambios no autorizados.
+
+.Las pruebas posteriores a la implementación deben incluir una supervisión de la red para identificar cualquier tráfico inesperado que pueda exponer errores o suponga empeoramiento de la velocidad de las transmisiones.
+
+#### Protección contra malware y del punto final:
+
+La protección del punto final se basa en proteger la infraestructura final así como las aplicaciones desplegadas en los mismos con el objeto de evitar un punto de entrada a la información almacenada.
+
+-Protección antimalware: Los antivirus son programas cuyo objetivo es detectar y eliminar virus informáticos. Con el transcurso del tiempo, la aparición de sistemas operativos más avanzados e internet, los antivirus han evolucionado hacia programas más avanzados que además de buscar y detectar virus informáticos consiguen bloquearlos, desinfectar archivos y prevenir una infección de los mismos. 
+
+Actualmente son capaces de reconocer otros tipos de malware como spyware, gusanos, troyanos, rootkits, RATs, etc. Históricamente se basaban en firmas, de manera que se necesitaba en los fabricantes hubiesen creado, dicha firma. Los nuevos sistemas se basan en aprendizaje máquina o aprendizaje profundo de forma que se entrena a los sistemas para que detecten características que comparten los malware, de forma que son capaces de dectarlos sin firmas, aunque sean nuevos.
+
+Otros sistemas se basan en detectar las características de una explotación, de forma que prevengan que el malware pueda tomar control del sistema, cifrar el disco duro, elevar privilegios, etc.
+
+-Endpoint Detection & Response: Este tipo de soluciones se encargan de monitorizar los sistemas donde están desplegados los agentes, analizando los procesos que se crean, trazas de memoria, conexiones de red entrantes y salientes, etc, para detectar posibles ataques hacia o desde el sistema.
+
+Ofrece una visibilidad completa de extremo a extremo sobre la actividad de cada equipo, administrada desde una única consola, junto con una valiosa inteligencia de seguridad que podría usar un experto de seguridad informático para una investigación y respuesta mayores. El objetivo principal de EDR es la detección proactiva de amenazas nuevas o desconocidas, infecciones previamente no identificadas que penetran en la organización directamente a través de endpoints y servidores. Ofrecen las siguientes capacidades:
+
+.Modelo preventivo/pre-infección y detectivo/post-infección basado en análisis sobre patrones de comportamiento.
+
+.Enfoque reactivo/post-incidente apoyado en capacidades de contención y remediación rápida frente incidentes.
+
+.Capacidades forenses, basadas en análisis sobre el registro de actividades del endpoint.
+
+.Inteligencia agregada, a través de un proceso continuo de investigación e innovación gracias a nuestro laboratorio y analistas expertos
+
+#### Copias de seguridad
+
+Se trata de un proceso mediante el cual se duplica la información existente de un soporte a otro, con el fin de poder recuperarlos en caso de fallo del primer alojamiento de los datos.
+
+-Para determinar la frecuencia con la que debemos realizar copias de seguridad, será necesario realizar un análisis en el que se tengan en cuenta los siguientes factores:
+
+.Número de datos o archivos generados y/o modificados en la organización.
+
+.Impacto para el negocio de la perdida de datos por unidad de tiempo.
+
+.Coste de almacenamiento.
+
+.Obligaciones legales y normativas.
+
+-Otro temas a tener en cuenta es el periodo de retención de los datos, cuánto tiempo debemos mantener las copias de seguridad, a decidir en base a requisitos legales y necesidades de la organización.
+
+-También es crítico decidir el tipo de copia de seguridad a realizar:
+
+.Copia de seguridad completa: Cuando se realiza una copia de seguridad completa todos los archivos y carpetas del sistema se copian. Por lo tanto tu sistema de copias de seguridad almacena una copia completa que es igual a la fuente de datos del día y hora en que se hace la copia de seguridad.
+
+.Copia de seguridad incremental: En este caso, la única copia completa es la primera. A partir de ahí, las copias de seguridad posteriores sólo almacenan los cambios realizados desde la copia de seguridad anterior. En este caso el proceso de restauración es más largo porque tienes que utilizar varias copias diferentes para restaurar completamente el sistema, pero a cambio el proceso de hacer la copia de seguridad es mucho más rápido y ocupa menos espacio de almacenamiento.
+
+.Copia de seguridad diferencial: Igual que las incrementales, la primera copia de seguridad es la única completa. La diferencia con la incremental viene del hecho de que aquí cada copia de seguridad posterior tiene todos los cambios respecto a la primera copia completa, y no respecto a la copia de seguridad anterior, como era el caso de la incremental.
+
+.Copia espejo (mirroring): Con una copia de seguridad en espejo se realiza una copia exacta de los datos originales. Se suele hacer “en directo”, es decir, a la vez que trabajas con los datos reales, se hace una copia espejo en un disco alternativo. La ventaja de una copia en espejo es que la copia de seguridad no contiene archivos antiguos o en desuso. 
+
+-Se deben contar con procedimientos de recuperación y probar de forma regular tanto los procedimientos como las copias con el fin de asegurar que en caso de necesidad no existirá problema, como que las copias de seguridad no se habían realizado correctamente y no es posible recuperarlas o que en el procedimiento se han olvidado incluir pasos críticos.
+
+-Por último, pero no menos importante, hay que tener muy presente que se deberán proteger las copias de seguridad con el mismo nivel de controles que la información original, y tener en cuenta que es necesario disponer de copias en sitios geográficamente alejados del sitio donde se alojan los datos originales en caso de desastre.
+
+#### Monitorización de eventos y supervisión
+
+-El objetivo es registrar los eventos relacionados con la seguridad de la información y generar evidencias. Para ello es necesario realizar las siguientes actividades:
+
+.Registro y gestión de eventos de actividad: Se deberían producir, mantener y revisar periódicamente los registros relacionados con eventos de actividad del usuario, excepciones, fallas y eventos de seguridad de la información.
+
+.Protección de los registros de información: Se debería proteger contra posibles alteraciones y accesos no autorizados la información de los registros.
+
+.Registros de actividad del administrador y operador del sistema: Se deberían registrar las actividades del administrador y del operador del sistema y los registros asociados se deberían proteger y revisar de manera regular.
+
+.Sincronización de relojes: Se deberían sincronizar los relojes de todos los sistemas de procesamiento de información pertinentes dentro de una organización o de un dominio de seguridad y en relación a una fuente de sincronización única de referencia
+
+#### Consideraciones para la auditoría de SI
+
+Estos controles buscan minimizar el impacto de las actividades de auditoría en los sistemas operativos mediante la planificación de actividades de forma que causen la mínima interferencia en los sistemas operativos.
+
+En este aspecto deberemos controlar que las auditorias para obtener esta información:
+
+1. Cumplan con el alcance planificado. En la práctica el alcance de las auditorias puede ser demasiado abierto de forma que la auditoría podría convertirse en una enorme tarea que reduce su propio valor, perdiendo un enorme esfuerzo en cosas que son de poca importancia. Delimitar las auditorias es una primera y primordial tarea para no devaluar su significado y para que realmente sean útiles.
+   
+2. Evaluar y considerar el impacto. Se debe evaluar el impacto o consumo de recursos de auditorías que supongan un consumo de recursos importante dentro de los sistemas. En este caso debe existir un procedimiento por el cual se evite realizar estas tareas que pueden comprometer la capacidad de los sistemas realizándolas en periodos de baja carga de trabajo.
+
+#### Carrera Proyecto de clases Día 8: 18/10/2023
+
+### Seguridad de las comunicaciones
+
+Los sistemas, aplicaciones e información de las organizaciones se encuentran desplegadas en redes informáticas que facilitan su comunicación, tanto a nivel interno como externo. Así, en la red se pueden originar nuevas amenazas que deben ser paradas, a la vez que aporta información que puede ayudar a detectar un ataque en curso.
