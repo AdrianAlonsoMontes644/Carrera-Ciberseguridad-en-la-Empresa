@@ -1512,4 +1512,223 @@ Controles específicos para crear y mantener áreas seguras:
 
 -Áreas de entrega y carga: Los puntos de carga y de entrega de mercancía suelen ser puntos sensibles para la seguridad física por lo se debería tomar en cuenta algunos aspectos como horarios definidos de apertura y cierre, control de apertura y cierre de puertas externas e internas, control de personal, realización de inventarios de materiales entregados, revisión de mercancías entregadas para detectar materiales peligrosos o separar entregas entrantes y salientes o barreras adicionales de seguridad.
 
+#### Carrera Proyecto de clases Día 7: 17/10/2023
+
 ### Controles de mitigación: Seguridad Lógica
+
+#### Terminología de Gestión de Identidades y Control de Accesos:
+
+-Gestión de accesos: El proceso de configurar el nivel de acceso para cada usuario y grupo dentro de un sistema. A través de este proceso, los administradores, conceden acceso a usuarios autorizados y restringen el acceso a los usuarios no autorizados. Esto se puede realizar de forma jerárquica a través del uso de grupos de usuarios. La gestión de accesos requiere de auditoria periódica y mantenimiento para mantenerse al día con el negocio en continua evolución y los roles de los empleados.
+
+-Necesidad de saber / Menor privilegio: Se trata de dos principios que regulan las buenas prácticas de la gestión de accesos y la provisión de permisos. El primero regula que los usuarios sólo deberían tener acceso a aquella información que sea imprescindible para realizar su trabajo y a nada más. El segundo dice que los usuarios deberían tener los privilegios mínimos que les permitan realizar su trabajo.
+
+-Aprovisionamiento / Desaprovisionamiento: El primero es el proceso de establecer una identidad y su acceso asociado en un sistema. El segundo es el proceso de eliminar dicho acceso y las identidades asociadas cuando un usuario se va, es despedido, cambia de área o puestoo su contrato finaliza.
+
+-Identificación, autenticación y autorización: Estos términos son la triada del control de acceso, mostrando el flujo en el que un usuario accede a un sistema. LA identificación es el proceso por el que un usuario establece cual es su identidad. La autenticación es el proceso por el cual el sistema verifica de alguna manera que el usuario tiene realmente la identidad proclamada. Y por fin, la autorización, es una vez identificado y autenticado al usuario, el sistema comprueba los permisos de acceso que tiene a dicho sistema.
+
+-Factores de Autenticación / 2FA / MFA: Existen diferentes esquemas de autenticación de usuarios, basados en la propiedad del factor utilizado para verificar la identidad. El primero es “algo que sabes”, basado generalmente en el uso de un usuario y contraseña. El Segundo factor es “algo que tienes” o autenticación biométrica, en el que el Sistema comprueba alguna característica física del usuario como su huella digital, el iris, la palma de la mano, su huella de voz, etc. Finalmente “algo que tienes”, en el cual la autenticación se basa en la posesión de un objeto como una smartcard, token que genera contraseñas aleatorias de forma temporal o smartphone al que llegan contraseñas temporales.
+
+-Acceso basado en roles (RBAC): Se trata de un paradigma de gestión del acceso y el privilegio en el cual se definen roles empresariales de acceso a los cuales se les conceden acceso a diferentes sistemas. Así, a cada usuario, de acuerdo a su puesto de trabajo se le asignarán uno o más roles. Este modelo es el más utilizado actualmente, si bien existen otros modelos como el Control de Acceso discrecional o DAC y el Control de Acceso Obligatorio o MAC.
+
+-Flujos de trabajo Altas, Bajas y Modificaciones: Cada vez que se quiere aprovisionar, desaprovisionar o modificar los permisos o rol de un usuario, se debe contar con un flujo de trabajo en el que los roles involucrados y los pasos a dar estén claramente definidos. Quién puede solicitarlo, quién/es debe/n aprobarlo, quién lo audita/monitoriza, etc.
+
+-Inicio de Sesión Único (SSO): Se trata de un mecanismo de control de acceso que permite que un usuario se autentique una vez ante un sistema maestro y este gestione sus credenciales contra otros sistemas de forma que no sea necesario volverse a autenticar 
+
+-Contraseña de un solo uso (OTP): Mecanismo de acceso basado en una contraseña es válida una sólo vez. Esto puede ser mediante sistemas que generan contraseñas de forma aleatoria y regular en el tiempo o bien mediante el envío de la contraseña a un dispositivo de usuario como teléfono 
+
+#### Requisitos del negocio para el control de accesos:
+
+-Política de control de acceso: Una política de control de acceso debe ser establecida, documentada y revisada basada en los requisitos de seguridad del negocio y de la información. Los propietarios de los activos deberán determinar las reglas de control de acceso apropiadas, los derechos de acceso y restricciones para determinados roles de usuarios, con el nivel de detalle y de dureza de los controles que reflejen los riesgos de seguridad asociados.
+
+-Acceso a las redes y a los servicios de red: Se trata de un requisito para la gestionar la autorización de los usuarios que acceden a los recursos de red. Para ello se exige como requisito elaborar una política específica para el uso de los recursos de red
+
+#### Gestión del acceso de usuarios:
+
+-Registro de usuarios y cancelación del registro: Se trata de un control para el alta y baja de los usuarios. Este control exige establecer un proceso de altas y bajas que permite los derechos de acceso teniendo en cuenta:
+
+.Un registro de IDs o cuentas de usuario donde se vincula o identifica al usuario.
+
+.Los IDs deben desactivarse automáticamente o de forma inmediata cuando el usuario abandona la organización.
+
+.Eliminación periódica de usuarios redundantes.
+
+.Los IDs redundantes nunca pueden ser asignados a otros usuarios.
+
+-Gestión de acceso a los usuarios: Se debe establecer un proceso formal para asignar y revocar los accesos a sistemas y servicios que:
+
+.Incluya la aprobación del propietario del servicio o sistema.
+
+.Verifique si el acceso cumple con las políticas de acceso definidas.
+
+.Se garantice que el acceso no se da hasta finalizar el proceso de autorización.
+
+.Asegure que se mantiene un registro de los accesos concedidos.
+
+.Asegure que se eliminan los accesos de usuarios que han abandonado la organización.
+
+.Asegure que se modifican los accesos de usuarios que han cambiado de función o puesto de trabajo si proceda.
+
+.Asegure que se revisan periódicamente los derechos de acceso
+
+-Gestión de derechos de acceso privilegiados: El control de los derechos de acceso privilegiados debe realizarse de forma independiente mediante un proceso específico que:
+
+.Tenga en cuenta las políticas de acceso privilegiado definidas.
+
+.Se identifiquen accesos privilegiados de cada sistema o proceso.
+
+.Se tenga en cuenta las reglas generales de mínimos privilegios.
+
+.Se establezca una norma de caducidad de los permisos privilegiados.
+
+.Se definan IDs especiales o distintos para las cuentas de uso normales o no privilegiadas.
+
+.Se definan procedimientos para evitar el uso no autorizado de cuentas con derechos de acceso privilegiados.
+
+.Se verifiquen periódicamente las competencias de los usuarios.
+
+.Considere mecanismos para mantener la confidencialidad de los datos de acceso de usuarios genéricos para los usuarios privilegiados o mecanismos para forzar el cambio de contraseñas cuando un usuario privilegiado abandona o cambia de puesto de trabajo.
+
+-Gestión de la información de autenticación secreta de los usuarios: Control para garantizar que se mantiene la confidencialidad de la información secreta de acceso. Gestionar la información de autenticación supone controlar:
+
+.Incluir cláusulas en contratos y condiciones de puesto de trabajo sobre el mantenimiento del secreto de las contraseñas o información de autenticación.
+
+.Obligación de cambiar contraseñas iniciales después de su primer uso.
+
+.Identificar al usuario antes de entregar las contraseñas y obtener acuse de recibo.
+
+.Uso de contraseñas seguras, no compartidas.
+
+.Uso de medios seguros de comunicación.
+
+.Cambiar contraseñas a personal externo después de que han realizado sus trabajos.
+
+-Revisión de derechos de acceso de usuario: Control para establecer una revisión periódica de los permisos de accesos de los usuarios que tenga en cuenta aspectos como:
+
+.Revisar derechos de acceso a la terminación de empleo o cambios en la organización.
+
+.Limitar en el tiempo los derechos de acceso con privilegios especiales.
+
+.Revisar las cuentas con privilegios especiales periódicamente y registrar los cambios que se realicen.
+
+-Eliminación o ajuste de los derechos de acceso: Control para garantizar que se modifican los derechos de acceso al finalizar el empleo o cambiar de puesto de trabajo dentro de la organización
+
+#### Aplicaciones de gestión de identidades
+
+La gestión de la identidad y del acceso, frecuentemente conocida por su acrónimo anglosajón IAM es un área de negocio que se dedica a las siguientes tareas:
+
+-Aprovisionamiento de cuentas de usuario y contraseñas, mediante automatismos, de acuerdo con políticas bien definidas y aplicadas.
+
+-Implantación de sistemas de identificación y autenticación única corporativa.
+
+-Gestión centralizada de las atribuciones de los usuarios, basada en directorios de usuarios.
+
+-Modelo de autorizaciones, que concentra en un solo punto las autorizaciones de acceso.
+
+La necesidad de negocio que cubre la gestión de identidad es facilitar y controlar de forma eficiente los sistemas de identificación y autenticación, autorización y auditoria  que emplean las organizaciones en sus procesos basados en tecnologías de la información. Entre los beneficios perseguidos destacan los siguientes:
+
+-Seguridad: La automatización y la gestión centralizada permite a las organizaciones alinear el acceso con las funciones de trabajo, asegurar que las políticas de seguridad son aplicadas consistentemente, y mejorar la fiabilidad de los procesos de seguridad.
+
+-Eficiencia: El auto-servicio, la automatización y la visibilidad de la asignación de recursos reduce el coste de la organización dentro y fuera de TI.
+
+-Simplicidad: La capacidad de Single sign-on (SSO) y las identidades federadas reducen la frustración de los usuarios y mejora el uso de las aplicaciones clave.
+
+-Productividad: La automatización, el uso de worflows y el auto-servicio permiten procesos más eficientes, proveyendo tiempos de respuestá más rápidos y permitiendo al personal centrarse en tareas de alto valor.
+
+-Cumplimiento: La centralización y la automatización permiten revisiones de auditoría automatizadas, mejorar el seguimiento de la actividad de usuario y la certificación de acceso de cara al cumplimiento, y aportar mayor confianza en el proceso IAM.
+
+Un proyecto típico de diseño de una solución IAM sigue los siguientes pasos:
+
+1. Crear una visión de arquitectura: El proyecto de despliegue debe llevarse a cabo en el contexto de una visión general de Gestión de Identidad y Accesos. Cada proyecto de IAM no sólo debe proporcionar un valor medible sino también mover a la organización más cerca de las metas generales de IAM. Por lo tanto, el primer paso es crear una visión de la arquitectura para sus capacidades de IAM, incluyendo componentes a corto, medio y largo plazo.
+
+2. Crear una hoja de ruta en fases: Es posible que la organización tenga una larga lista de requisitos. Por lo tanto, la priorización y la definición de fases son los pasos clave. Las fases son importantes no sólo porque los presupuestos son siempre finitos, sino porque los proyectos grandes son mucho más difíciles de manejar, teniendo grandes riesgos.
+
+3. Definir una arquitectura: El enfoque arquitectónico tiene dos componentes: la decisión de hacer o comprar y las opciones de implementación. La primera de ellas es la decisión de comprar o poder reutilizar lo que ya tenemos. No siempre es necesario realizar inversión nueva en software o infraestructura.
+
+Factores críticos de éxito para un proyecto de tal envergadura:
+
+-Se debe asegurar el apoyo total de la dirección y que este continúe durante todo el proyecto para ayudar a mantener el esfuerzo en los límites marcados y reforzar las expectativas.
+
+-Se deben abrazar las características de la tecnología seleccionada. Si bien no todas las características requeridas estarán presentes y habrá que desarrollar algunos módulos, la sobre-personalización hará inmantenible el sistema.
+
+-No se debe hacer mucho demasiado pronto. Se debe asegurar que la solución a construir se mantiene alineada con el roadmap del proyecto y los requisitos previstos. A menudo los stakeholders quieren tratar cada hallazgo de auditoría o los riesgos de un análisis, lo que llevará a un proyecto fallido. Este tipo de proyectos son muy complejos y con líneas temporales de años.
+
+-No se debe sucumbir a la tentación de automatizar procesos malos,tolerar datos incompletos o eliminar requisitos clave. Se debe trabajar con la dirección para restablecer las expectativas, evaluar el riesgo de la iniciativa y desarrollar soluciones alternativas
+
+-Asegurar que se sabe cómo se soportará el despliegue antes siquiera de comenzarlo. LA formación, contratación de nuevo personal y su integración en la estructura debería comenzar tras el caso de negocio y la aprobación del presupuesto.
+
+#### Principios de criptografía:
+
+La criptografía es un conjunto de técnicas, que originalmente tratan sobre la protección o el ocultamiento de la información frente a observadores no autorizados. A través de la criptografía la información puede ser protegida contra el acceso no autorizado, su interceptación, su modificación y la inserción de información extra.
+
+-Funciones dentro de la seguridad: Con la criptografía se intenta garantizar las siguientes propiedades deseables en la comunicación de información de forma segura:
+
+.Confidencialidad: solamente los usuarios autorizados tienen acceso a la información.
+
+.Integridad de la información: garantía ofrecida a los usuarios de que la información original no será alterada, ni intencional ni accidentalmente.
+
+.Autenticación de usuario: es un proceso que permite al sistema verificar si el usuario que pretende acceder o hacer uso del sistema es quien dice ser.
+
+.Autenticación de remitente: es el proceso que permite a un usuario certificar que el mensaje recibido fue de hecho enviado por el remitente y no por un suplantador.
+
+.Autenticación del destinatario: es el proceso que permite garantizar la identidad del usuario destinatario.
+
+.No repudio en origen: que cuando se reciba un mensaje, el remitente no pueda negar haber enviado dicho mensaje.
+
+.No repudio en destino: que cuando se envía un mensaje, el destinatario no pueda negar haberlo recibido cuando le llegue.
+
+.Autenticación de actualidad: consiste en probar que el mensaje es actual, y que no se trata de un mensaje antiguo reenviado.
+
+-Criptosistemas de clave pública y privada: Existen dos tipos fundamentales de criptosistemas o sistemas de cifrado:
+
+.Criptosistemas simétricos o de clave privada. Son aquellos que emplean una misma clave k tanto para cifrar como para descifrar.
+
+.Criptosistemas asimétricos o de clave pública, que emplean una doble clave. kp se la conoce como clave privada y kP se la conoce como clave pública. Una de ellas sirve para la transformación o función E de cifrado y la otra para la transformación D de descifrado. En muchos casos son intercambiables, esto es, si empleamos una para cifrar la otra sirve para descifrar y viceversa.
+
+-Protección de la confidencialidad en información almacenada y en tránsito: En términos generales, hay dos circunstancias en las que se debe usar el usar el cifrado: cuando los datos están en tránsito o cuando están en reposo.
+
+.En tránsito: en este contexto, es cuando envías información a través de Internet, por correo electrónico, o cuando necesitas almacenarla en otro lugar que no sea tu propio dispositivo.
+
+.En reposo: Los datos se consideran así cuando se encuentran almacenados en tu dispositivo, ya sea en una parte integrada como un disco rígido, o en un medio extraíble, como una unidad USB.
+
+-Firmas digitales: autenticación, no repudio y protección de la integridad: La firma digital consta de dos “claves” o secuencias de caracteres separadas. Consiste en aplicar mecanismos criptográficos al contenido de un mensaje o documento con el objetivo de demostrar al receptor del mensaje que el emisor del mensaje es real, que éste no puede negar que envió el mensaje y que el mensaje no ha sido alterado desde su emisión. El primer paso es crear un resumen o hash del mensaje. Los funciones de resumen o hash son algoritmos que consiguen crear a partir de una entrada una salida alfanumérica de longitud normalmente fija, que representa un resumen de toda la información que se le ha dado. Para crear una firma digital, el software de firma crea un hash unidireccional de los datos electrónicos que se deben firmar. La clave privada se usa para encriptar el hash. El hash cifrado junto con otra información es la firma digital. Cualquier cambio en los datos, incluso cambiando o eliminando un solo carácter, da como resultado un valor diferente.
+
+#### Data Loss Prevention e Information Rights Management:
+
+Un aspecto crítico en la protección de datos es la gestión del nivel de acceso de los ficheros no estructurados y su compartición dentro y fuera de la organización. Para ello se disponen de 2 tipos de soluciones principalmente que pueden complementarse:
+
+-Data Loss Prevention (DLP): Una solución de prevención de pérdida de datos (DLP) es un sistema que está diseñado para detectar potenciales brechas de datos/transmisiones de datos y prevenirlos a través de monitorización, detección y bloqueo de información sensible mientras está en uso, en movimiento y en reposo. La solución no cifra los ficheros, sino que les aplica etiquetas en su descripción de metadatos, y son los agentes desplegados en los equipos/servidores o bien los nodos en red quienes se encargan de bloquear cualquier acción peligrosa. Así, se pueden conceder permisos de grano fico, como leer y editar, pero no copiar/pegar o enviar por mail.
+
+-Information Rights Management: Las tecnologías de IRM permiten el cifrado de documentación aplicando una protección persistente a los mismos. La documentación en reposo se encuentra cifrada y sólo está accesible a los usuarios que tengan derechos de acceso a la misma. Los derechos por lo general se dan de forma granular y se asignan usuario a usuario, por lo que es más recomendable de cara a la compartición de ficheros con terceras partes. Así, se puede compartir un fichero con sólo permisos de lectura, o también de modificación, pero por ejemplo no de compartición, copia o impresión. Así mismo, los permisos pueden ser cambiados o eliminados en tiempo casi real.
+
+#### Seguridad en el correo electrónico:
+
+-El correo electrónico es uno de los principales medios de compartición de información, tanto a nivel interno de la organización como externa, a la vez que uno de los principales vectores de entrada para amenazas. Por ello, se deben contar con sistemas que permitan obtener las siguientes funcionalidades:
+
+-Detección de phishing: Mediante técnicas como detección de orígenes, inteligencia artificial aplicada al análisis del contenido, etc, detectar que se tarta de un posible caso de phishing.
+
+-Detonación de ficheros y enlaces: Capacidad de poder analizar enlaces y adjuntos en correos electrónicos mediante el uso de sandboxes para validar su comportamiento.
+
+-Análisis de malware: Capaz de poder utilizar técnicas de firmas y de inteligencia artificial para validar si un fichero adjunto es un malware.
+
+-Control de información saliente (DLP): Análisis del contenido de los correos y los adjuntos para, sólo o en conjunción con una solución DLP. Poder evitar fugas de información. Otra opción sería el cifrado del correo y/o los adjuntos, de forma que solo el destinatario legítimo podría verlo.
+
+-Detección de fraudes y buzones comprometidos: Capacidad de detectar actividad anómala en buzones y posibles casos de fraude como el fraude del CEO.
+
+-Detección de exploits: Análisis de comportamiento al abrir enlaces y/o adjuntos para detectar posibles explotaciones del sistema para desplegar malware, tomar el control del sistema, etc.
+
+#### Monitorización de actividad en BBDD y almacenes de datos:
+
+Las bases de datos y los repositorios de ficheros son objetivos primordiales para los atacantes debido a la sensibilidad de la información contenida de manera general. Por ello, un método de proteger los datos es monitorizar la actividad realizada en los mismos a bajo nivel con el objeto de descubrir posibles comportamientos sospechosos o directamente delictivos. Una solución de este tipo debería ofrecer la siguiente funcionalidad:
+
+-Automatizar el descubrimiento y la clasificación de datos sensibles: Es vital que una solución de este tipo permita analizar el tráfico y los repositorios/bases de
+datos a las que tiene acceso con el objeto de encontrar tanto nuevos repositorios como nueva información susceptible de protección.
+
+-Monitorización en tiempo real actividad de los usuarios: Debe ser capaz de poder analizar la actividad a nivel granular y auditarla para diferentes repositorios, bases de datos SQL y no SQL, data warehouses, etc.
+
+-Soporte al cumplimiento legal y normativo: Debe incluir plantillas para auditar y reportar el cumplimiento legal y normativo para diferentes de estas como RGPD, PCI-DSS, HIPAA, SOX, etc.
+
+-Políticas predefinidas y adaptables: Debe incluir por defecto multitud de políticas adaptables para auditar y bloquear actividades sospechosas y/o potencialmente peligrosas.
+
+-Bloqueo de acciones y enmascaramiento de datos: Debe permitir actuar como un cortafuegos de capa 7 con el objeto de bloquear acciones que se hayan definido previamente, a la vez que permite otras acciones enmascarando los datos (cubriendo una parte de los mismos por protección, por ejemplo para la protección de datos personales.
+
+#### Seguridad operacional
