@@ -1877,3 +1877,159 @@ En este aspecto deberemos controlar que las auditorias para obtener esta informa
 ### Seguridad de las comunicaciones
 
 Los sistemas, aplicaciones e información de las organizaciones se encuentran desplegadas en redes informáticas que facilitan su comunicación, tanto a nivel interno como externo. Así, en la red se pueden originar nuevas amenazas que deben ser paradas, a la vez que aporta información que puede ayudar a detectar un ataque en curso.
+
+-Segmentación y microsegmentación de la red: La segmentación de la red consiste en dividir una gran red en segmentos más pequeños, filtrando por cada uno de ellos las entradas y salidas de tráfico de red, de forma que se facilite minimizar la superficie de exposición de los sistemas en el interior. Ls criterios para la selección de sistemas a incluir en un segmento puede tomar en cuenta aplicaciones con un nivel de criticidad mayor que su entorno, sistemas con funcionalidades complementarias, entornos de un sistema, etc.
+
+Para poder llegar a un nivel superior de segmentación, se creo el término micro-segmentación, donde el objetivo es llegar a segmentar por servicios dentro de una misma aplicación, de forma que casi cada sistema cuenta con su propio segmento y reglas de filtrado. Para poder llegar a tal nivel, se introdujo un nuevo tipo de tecnología, Red Definida por Software, un conjunto de técnicas relacionadas con el área de redes computacionales, cuyo objetivo es facilitar la implementación e implantación de
+servicios de red de una manera determinista, dinámica y escalable, evitando al administrador de red gestionar dichos servicios a bajo nivel.
+
+-IDS/IPS (Detección/Prevención de intrusiones en red): Un sistema de detección de intrusiones es un programa de detección de accesos no autorizados a una red. Se basa en el análisis pormenorizado del tráfico de red, el cual al entrar al analizador es comparado con firmas de ataques conocidos, o comportamientos sospechosos, como puede ser el escaneo de puertos, paquetes malformados, etc. 
+
+El IDS no solo analiza qué tipo de tráfico es, sino que también revisa el contenido y su comportamiento. Un IPS añade capacidad de bloqueo del tráfico de acuerdo a reglas predefinidas.
+
+-Cortafuegos (FWs): Un cortafuegos es la parte de una red informática que está diseñada para bloquear el acceso no autorizado, permitiendo al mismo tiempo comunicaciones autorizadas, todo mediante reglas definidas. En base a este principio, se recomienda definir qué está permitido y bloquear el resto que definir lo que no está permitido y permitir el resto. Los FW han evolucionado en los siguientes modelos:
+
+.A nivel de paquetes: En este caso se crean reglas para paquetes de datos, debiendo crear reglas en ambos sentidos, lo cual era un problema de seguridad.
+
+.Con estado: En este caso se mantenía una tabla dentro del FW que controlaba las sesiones creadas, de forma que sólo era necesario crear una regla del origen al destino, permitiendo el paso al resto de paquetes que fuesen parte de la sesión.
+
+.A nivel de aplicación: Son aquellos que actúan sobre la capa de aplicación pudiendo entender entender ciertas aplicaciones y protocolos, y permite detectar si un protocolo no deseado se coló a través de un puerto no estándar o si se está abusando de un protocolo de forma perjudicial. El ejemplo más claro es el WAF que permite proteger aplicaciones web frente a ataques como SQL Injection o XSS.
+
+.Con inspección profunda de paquetes (DPI): El DPI combina las funciones de un sistema de detección/prevención de Intrusiones con un tradicional cortafuegos de estado permitiendo detectar ciertos ataques que ni los sistemas de detección de intrusiones ni los sistemas de prevención de intrusiones ni los cortafuegos de estado pueden detectar por sí solos. Así por ejemplo, es capaz de asociar sesiones a usuarios y a protocolos  y filtrar por estos aspectos.
+
+.Software Defined Firewall: Con el advenimiento de las redes definidas por software, un nuevo tipo de cortafuegos nació definido a través de las reglas de control del SDN, de forma que se libera el cortafuegos del plano de datos.
+
+#### Seguridad en la adquisición, desarrollo y mantenimiento de SI
+
+El objetivo es:
+
+-Asegurar la inclusión de controles de seguridad y validación de datos en la adquisición y el desarrollo de los sistemas de información.
+
+-Definir y documentar las normas y procedimientos que se aplicarán durante el ciclo de vida de los aplicativos y en la infraestructura base en la cual se apoyan.
+
+-Definir los métodos de protección de la información crítica o sensible.
+
+El diseño e implantación de los sistemas de información que sustentan los procesos de negocio son cruciales para la seguridad. Esto aplica a todos los sistemas informáticos, tanto desarrollos propios o de terceros, y a todos los Sistemas Operativos y/o Software que integren cualquiera de los entornos administrados por la organización en donde residan los desarrollos mencionados.
+
+Se debe garantizar la seguridad de la información en los entornos de diseño e implementación dentro del ciclo de vida de desarrollo de los sistemas de información:
+
+-Política de desarrollo seguro de software: Se deberían establecer y aplicar reglas para el desarrollo de software y sistemas dentro de la organización.
+
+-Procedimientos de control de cambios en los sistemas: En el ciclo de vida de desarrollo se deberían hacer uso de procedimientos formales de control de cambios.
+
+-Revisión técnica de las aplicaciones tras efectuar cambios en el sistema: Las aplicaciones críticas para el negocio se deberían revisar y probar para garantizar que no se han generado impactos adversos en las operaciones o en la seguridad de la organización tras la realización de cambios.
+
+-Restricciones a los cambios en los paquetes de software: Se deberían evitar modificaciones en los paquetes de software suministrados por terceros, limitándose a cambios realmente necesarios. Todos los cambios se deberían controlar estrictamente.
+
+-Uso de principios de ingeniería en protección de sistemas: Se deberían establecer, documentar, mantener y aplicar los principios de seguridad en ingeniería de sistemas para cualquier labor de implementación en el sistema de información.
+
+-Seguridad en entornos de desarrollo: Las organizaciones deberían establecer y proteger adecuadamente los entornos para las labores de desarrollo e integración de sistemas que abarcan todo el ciclo de vida de desarrollo del sistema.
+
+-Externalización del desarrollo de software: La organización debería supervisar y monitorear las actividades de desarrollo del sistema que se hayan externalizado, estableciendo a la vez cláusula de seguridad en los contratos 
+
+-Pruebas de funcionalidad durante el desarrollo de los sistemas: Se deberían realizar pruebas de funcionalidad en aspectos de seguridad durante las etapas del desarrollo.
+
+-Pruebas de aceptación: Se deberían establecer programas de prueba y criterios relacionados para la aceptación de nuevos sistemas de información, actualizaciones y/o nuevas versiones.
+
+Por último, los datos de pruebas se deberían seleccionar cuidadosamente y se deberían proteger y controlar.
+
+Existen también aplicaciones que permiten la gestión segura de librerías de terceros y open source con el objeto de detectar librerías deprecadas o con vulnerabilidades conocidas. Dado que un desarrollo dese cero es casi imposible, el uso de librerías es cada vez más común. Si bien este enfoque permite una mayor agilidad y eficiencia, debemos asegurar que no se convierte en un vector de vulnerabilidad para los sistemas.
+
+#### Continuidad de negocio y recuperación ante desastre
+
+El objetivo es preservar la seguridad de la información durante las fases de activación, de desarrollo de procesos, procedimientos y planes para la continuidad de negocio y de vuelta a la normalidad. Se deberían integrar dentro de los procesos críticos de negocio aquellos requisitos de gestión de la seguridad de la información con atención especial a la legislación, las operaciones, el personal, los materiales, el transporte, los servicios y las instalaciones adicionales, alternativos y que estén dispuestos de un modo distinto a la operativa habitual.
+
+Entre los controles necesarios podemos hallar los siguientes:
+
+-Continuidad de la seguridad de la información: El objetivo es que la seguridad de la información sea integrada en los sistemas de gestión de la continuidad del negocio de la organización.
+
+-Planificación de la continuidad de la seguridad de la información: La organización debería determinar los requisitos para la seguridad de la información y su gestión durante situaciones adversas como situaciones de crisis o de desastre.
+
+-Implantación de la continuidad de la seguridad de la información: La organización debería establecer, documentar, implementar y mantener los procesos, procedimientos y controles para garantizar el mantenimiento del nivel necesario de seguridad de la información durante situaciones adversas.
+
+-Verificación, revisión y evaluación de la continuidad de la seguridad de la información: La organización debería verificar regularmente los controles de continuidad de seguridad de la información establecidos e implementados para poder garantizar su validez y eficacia ante situaciones adversas.
+
+-Redundancias: El objetivo es asegurar la disponibilidad de los recursos de tratamiento de la información. Se debería implementar la suficiente redundancia en las instalaciones de procesamiento de la información y en correspondencia con los requisitos de disponibilidad.
+
+Entre las diferentes estrategias para la recuperación ante desastres, podemos encontrar las siguientes:
+
+-Espera pasiva (cold sites): Se basa en centros donde se pueden contratar servidores en caso necesario, pero se deben desplegar los mismos así como los sistemas y configurar todo. La organización envía regularmente copias de seguridad para una reconstrucción completa a almacenamientos externos. Esta estrategia puede llevar días o semanas y sólo es recomendable para aplicaciones con bajos requisitos de disponibilidad.
+
+-Espera semiactiva (warm sites). En este caso se dispondría de servidores desplegados con las aplicaciones base también desplegados y sería necesario realizar la carga de los datos y finalizar las últimas configuraciones. Esta estrategia llevaría desde unas horas a unos pocos días y puede servidor para aplicaciones que no sean especialmente críticas.
+
+-Espera activa (hot sites): Se trata de centros espejo donde todas las configuraciones y datos de las aplicaciones se encuentran replicadas en tiempo real. Esta estrategia es muy cara pero efectiva para aplicaciones muy críticas, dado que permite tiempos de indisponibilidad nulos o de minutos.
+
+Hoy en día, gracias a la nube, es mucho más sencillo disponer de una estrategia de recuperación ante desastres, ya sea con los sistemas principales en la nube o bien con los sistemas en local y el respaldo en la nube.
+
+Los elementos esenciales para un plan sólido de recuperación ante desastres son estos:
+
+-Definición del plan: Para que un plan de recuperación ante desastres funcione, tiene que involucrar a la gerencia. Ellos son los responsables de su coordinación y deben asegurar su efectividad. Adicionalmente, deben proveer los recursos necesarios para un desarrollo efectivo del plan. Todos los departamentos de la organización participan en la definición del plan.
+
+-Establecimiento de prioridades: A continuación, la organización debe preparar un análisis de riesgo y crear una lista de posibles desastres naturales o causados por errores humanos, y clasificarlos según sus probabilidades. Una vez terminada la lista, cada departamento debe analizar las posibles consecuencias y el impacto relacionado con cada tipo de desastre. Esto servirá como referencia para identificar lo que se necesita incluir en el plan. Un plan completo debe considerar una pérdida total del centro de datos y eventos de larga duración de más de una semana. Una vez definidas las necesidades de cada departamento, se les asigna una prioridad. 
+
+-Selección de estrategias de recuperación: En esta etapa se determina las alternativas más prácticas para proceder en caso de un desastre. Todos los aspectos de la organización son analizados, incluyendo hardware, software, comunicaciones, archivos, bases de datos, instalaciones, etc. Las alternativas a considerar varían según la función del equipo y pueden incluir duplicación de centros de datos, alquiler de equipos e instalaciones, contratos de almacenamiento y muchas más. Igualmente, se analiza los costos asociados. La virtualización representa un avance considerable al aplicarse en el Plan de Recuperación ante Desastres. 
+
+-Componentes esenciales: Entre los datos y documentos que se debe proteger se encuentran listas, inventarios, copias de seguridad de software y datos, cualquier otra lista importante de materiales y documentación. La creación previa de plantillas de verificación ayuda a simplificar este proceso. Un resumen del plan debe ser respaldado por la gerencia. Este documento organiza los procedimientos, identifica las etapas importantes, elimina redundancias y define el plan de trabajo. La persona o personas que escriban el plan deben detallar cada procedimiento, tomando en consideración el mantenimiento y la  actualización del plan a medida de que el negocio evoluciona. El plan asigna responsabilidad a diferentes equipos o departamentos y alternos.
+
+-Criterios y procedimientos de prueba del plan: La experiencia indica que los planes de recuperación deben ser probados en su totalidad por lo menos una vez al año. La documentación debe especificar los procedimientos y la frecuencia con que se realizan las pruebas. Las razones principales para probar el plan son: verificar la validez y funcionalidad del plan, determinar la compatibilidad de los procedimientos e instalaciones, identificar áreas que necesiten cambios, entrenar a los empleados y demostrar la habilidad de la organización de recuperarse de un desastre.
+
+-Después de las pruebas el plan debe ser actualizado. Se sugiere que la prueba original se realice en horas que minimicen trastornos en las operaciones. Una vez demostrada la funcionalidad del plan, se debe hacer pruebas adicionales donde todos los empleados tengan acceso virtual y remoto a estas posiciones y funciones en el caso de un desastre. Antes de las pruebas totales, y para evitar impactos no previstos, se deben realizar otro tipo de pruebas, desde revisión de la documentación por el personal, crear escenarios simulados donde cada responsable comunica los pasos a realizar y se valida contra una serie de pasos predefinidos correctos, o bien pruebas parciales reales.
+
+-Aprobación final: Después de que el plan haya sido puesto a prueba y corregido, la gerencia deberá aprobarlo. Ellos son los encargados de establecer las pólizas, los procedimientos y responsabilidades en caso de contingencia, y de actualizar y dar el visto al plan anualmente. A la vez, sería recomendable evaluar los planes de contingencia de proveedores externos.
+
+#### Gestión de incidentes
+
+Un incidente de seguridad es cualquier suceso que afecte a la confidencialidad, integridad o disponibilidad de los activos de información de la empresa, por ejemplo: acceso o intento de acceso a los sistemas, uso, divulgación, modificación o destrucción no autorizada de información.
+
+La gestión de incidentes de seguridad es el conjunto de procesos en una organización para la gestión de un incidente de seguridad a lo largo de todo su ciclo de vida, así como una serie de actividades relacionadas para asegurar la mejora continua de dichos procesos. Estos procesos deben plasmarse en un Plan de Gestión de Incidentes, documento que recoge la categorización de incidentes, pasos a dar de forma general, los pasos específicos por tipo de incidente, roles y responsabilidades, tiempos de respuesta de cada paso, procedimientos de notificación, escalado y declaración de un incidente, etc. Los pasos a tomar, de forma general, son los siguientes:
+
+-Fase 1: Preparación:
+
+Esta etapa dentro del ciclo de vida de respuesta a incidentes suele hacerse pensando no sólo en crear un modelo que permita a la entidad estar en capacidad de responder ante estos, sino también en la forma como pueden ser detectados, evaluados y gestionar las vulnerabilidades para prevenirse, asegurando que los sistemas, redes, y aplicaciones son lo suficientemente seguros.
+
+-Fase 2: Detección y análisis:
+
+Los indicadores son los eventos que nos señalan que posiblemente un incidente ha ocurrido generalmente algunos de estos elementos son:
+
+.Alertas en sistemas de seguridad.
+
+.Caídas de servidores.
+
+.Reportes de usuarios.
+
+.Software antivirus dando informes.
+
+.Otros funcionamientos fuera de lo normal del sistema.
+
+.Una vez detectado por cualquiera de los medios (reporte de usuario, alerta en un SIEM, etc), se debe hacer un análisis inicial del incidente recopilando información básica que permita descartar falsos positivos y priorizar. Se debe recopilar información como: Cuándo ocurrió? / Cómo se descubrió? / Quién lo descubrió? / Han sido impactadas otras áreas? / Cuál es el alcance del compromiso? / Afecta a las operaciones? / Se ha descubierto el punto de entrada/origen?
+
+Finalmente, en caso de no ser descartado como un falso positivo, se debe priorizar de acuerdo a su criticidad y el impacto en la organización y asignar a un gestor de incidentes cualificado.
+
+-Fase 3: Contención, erradicación y recuperación:
+
+.Contención: esta actividad busca la detección del incidente con el fin de que no se propague y pueda generar más daños a la información o a la arquitectura de TI, para facilitar esta tarea la entidad debe poseer una estrategia de contención previamente definida para poder tomar decisiones por ejemplo: apagar sistema, desconectar red, deshabilitar servicios. La estrategia de contención varía según el tipo de incidente y los criterios deben estar bien documentados para facilitar la rápida y eficaz toma de decisiones.
+
+.Erradicación y Recuperación: Después de que el incidente ha sido contenido se debe realizar una erradicación y eliminación de cualquier rastro dejado por el incidente como código malicioso y posteriormente se procede a la recuperación a través de la restauración de los sistemas y/o servicios afectados para lo cual el administrador de TI o quien haga sus veces deben restablecer la funcionalidad de los sistemas afectados, y realizar un endurecimiento del sistema que permita prevenir incidentes similares en
+el futuro. Para la recuperación se pueden tener también varias estrategias, como recuperar información dañada desde una copia de seguridad, reinstalar un sistema desde cero, etc.
+
+-Fase 4: Actividades post-incidente:
+
+Las actividades Post-Incidente básicamente se componen del reporte apropiado del Incidente, la generación de lecciones aprendidas, el establecimiento de medidas tecnológicas, disciplinarias y penales de ser necesarias así como el registro en la base de conocimiento para alimentar los indicadores.
+
+Una de las partes más importantes de un plan de respuesta a incidentes es la de aprender y mejorar. Cada equipo de respuesta a incidentes debe evolucionar para reflejar las nuevas amenazas, la mejora de la tecnología, y las lecciones aprendidas. Mantener un proceso de lecciones aprendidas después de un incidente grave, y periódicamente después de los incidentes menores, es sumamente útil en la mejora de las medidas de seguridad y el proceso de gestión de incidentes. Mantener un adecuado registro de lecciones aprendidas permite conocer:
+
+.Exactamente lo que sucedió, en qué momento y cómo el personal gestionó el incidente.
+
+.Los procedimientos documentados.
+
+.Si se tomaron las medidas o acciones que podrían haber impedido la recuperación.
+
+.Cuál sería la gestión de personal y que debería hacerse la próxima vez que ocurra un incidente similar.
+
+.Acciones correctivas pueden prevenir incidentes similares en el futuro.
+
+.Cuales herramientas o recursos adicionales son necesarios para detectar, analizar y mitigar los incidentes en el futuro.
+
+El proceso de lecciones aprendidas puede poner de manifiesto la falta de un paso o una inexactitud en un procedimiento y son un punto de partida para el cambio, y es precisamente debido a la naturaleza cambiante de la tecnología de la información y los cambios en el personal, que el equipo de respuesta a incidentes debe revisar toda la documentación y los procedimientos para el manejo de incidentes en determinados intervalos.
+
+### Monitorización del riesgo
