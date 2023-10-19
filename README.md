@@ -2032,4 +2032,185 @@ Una de las partes más importantes de un plan de respuesta a incidentes es la de
 
 El proceso de lecciones aprendidas puede poner de manifiesto la falta de un paso o una inexactitud en un procedimiento y son un punto de partida para el cambio, y es precisamente debido a la naturaleza cambiante de la tecnología de la información y los cambios en el personal, que el equipo de respuesta a incidentes debe revisar toda la documentación y los procedimientos para el manejo de incidentes en determinados intervalos.
 
+#### Carrera Proyecto de clases Día 9: 19/10/2023
+
 ### Monitorización del riesgo
+
+La monitorización continua y el reporte del riesgo es un proceso dinámico que requiere una participación a nivel global. Para ser efectiva, la función de gestión del riesgo deben tratar las tendencia clave antes de que se conviertan en problemas y ser reportadas de forma periódica a los stakeholders clave. El reporte del riesgo es el proceso de comunicación los riesgos en tiempo real, o de forma regular y el rendimiento a los diferentes stakeholders. La monitorización del riesgo es una actividad continua que permite la concienciación de qué está sucediendo actualmente en diferentes partes de la organización. De forma estratégica, a lo largo del tiempo, la monitorización del riesgo permite a la gerencia
+
+-Identificar tendencias críticas.
+
+-Responder de forma apropiada y eficiente.
+
+-Descubrir oportunidades de negocio o mejoras en procesos que de otra forma no serían aparentes sin una
+
+-correcta monitorización.
+
+Esto se pude lograr mediante diferentes técnicas:
+
+-Los mapas de riesgo y el perfil de riesgo se pueden generar en cualquier momento y ser compartidos con diferentes stakeholder como medio de reporte.
+
+-Los resultados de pruebas y los valores de aseguramiento se pueden obtener mediante agregación desde el registro del riesgo hasta la evaluación del riesgo estratégico para el reporte estratégico, proveyendo la capacidad de ver el riesgo en un cuadro de mandos.
+
+-Las métricas pueden ser enlazadas a los riesgos para seguir y monitorizar el riesgo y diferentes disparadores o alarmas se pueden utilizar en combinación con las métricas para notificar a los stakeholders y conducir la toma de decisiones en tiempo real.
+
+-Los informes de seguimiento y desviaciones, así como todas las evaluaciones del riesgo se pueden enlazar con los diferentes indicadores y métricas para facilitar la detección de problemas potenciales y facilitar la toma de decisiones sobre las estrategias de tratamiento y correcciones sobre las mismas.
+
+A nivel más operativo, la monitorización del riesgo provee a las organizaciones de formas de:
+
+-Validar el cumplimiento legal, regulatorio y contractual.
+
+-Determinar la efectividad continua de las medidas de respuesta al riesgo.
+
+-Identificar los cambios que impactarían al riesgo sobre SI y entornos de operación.
+
+Analizar los resultados de la monitorización da a las organizaciones la capacidad de mantener la concienciación sobre el riesgo incurrido, destacar la necesidad de revisitar otros pasos en el proceso de gestión del riesgo e iniciar actividades de mejora del proceso según sean requeridas. Las organizaciones pueden establecer la monitorización en cualquiera de las capas de gestión.
+
+-Las actividades de monitorización en capa 1 pueden incluir evaluaciones del riesgo continuas y cómo los cambios en el espacio del riesgo pueden afectar a las actividades de la capa 2 y 3.
+
+-Las actividades a nivel de capa 2 podrían incluir el análisis de tecnologías nuevas o existentes para identificar debilidades explotables y/o deficiencias que podrían afectar al éxito del negocio.
+
+-En la capa 3, las actividades se centran en los SI y podría incluir, por ejemplo, la monitorización automática de los valores de configuración estándar de los productos TI, escaneo de vulnerabilidades y valoraciones continuas de los controles de seguridad.
+
+#### Requisitos para la monitorización del riesgo
+
+Las entradas para este proceso incluyen las estrategias de implementación de las respuestas al riesgo y la implementación actual de los cursos de acción seleccionados. Así mismo, el proceso puede recibir información desde el marco de gestión del riesgo.
+
+En algunos casos, las salidas de la evaluación del riesgo pueden ser entradas útiles para este proceso. Por ejemplo, las condiciones umbral de evaluación del riesgo.
+
+#### Actividades para la monitorización y reporte del riesgo
+
+Las organizaciones implementan programas de monitorización del riesgo para:
+
+-Verificar que las medidas de respuesta están implementadas y que los requisitos de seguridad de la información derivados de y trazables a los objetivos del negocio, leyes y regulaciones, directivas, políticas y estándares se satisfacen.
+
+-Determinar la efectividad continua de las medidas de respuesta al riesgo tras su implementación
+
+-Identificar cambios de los SI y entornos de la organización en los cuales los sistemas operan que puedan afectar al riesgo.
+
+Determinar el propósito de los programas de monitorización del riesgo impacta de forma directa en los medios utilizados por la organización para realizar dichas actividades y dónde se realiza la monitorización.
+
+Las estrategias de monitorización desarrolladas en la capa 1 influencian y proveen de dirección a las estrategias similares desarrolladas en las capas 2 y 3,incluyendo las actividades de monitorización asociadas con el marco de gestión del riesgo al nivel de SI.
+
+Una vez se han desarrollado las estrategias de monitorización, estas deben ser implementadas a nivel organizacional. Dado que existen tantos aspectos en la monitorización, no todos serán realizados, o pueden ser realizados en momentos diferentes.
+
+Los aspectos particulares que serán ejecutados serán dictados principalmente por las asunciones, restricciones, tolerancia al riesgo y prioridades establecidas por las organizaciones en el establecimiento del marco de gestión del riesgo.
+
+Esta coordinación facilita la compartición de información relacionada con el riesgo, que podría ser útil para proveer de una alerta temprana, desarrollar información de tendencias o asignar medidas de respuesta al riesgo de forma eficiente y oportuna.
+
+Los resultados de la monitorización se aplicarán en la realización de evaluaciones del riesgo incrementales para mantener el conocimiento del riesgo incurrido, para destacar los cambios en el riesgo y para indicar la necesidad de revisitar otros pasos del proceso de gestión del riesgo cuando sea necesario.
+
+#### Comunicación del riesgo
+
+La comunicación del riesgo es una parte integral del proceso de evaluación y en general de la monitorización y reporte de la gestión del riesgo, que implica los procesos de comunicación entre los diferentes roles y responsabilidades 
+
+-El proceso de comunicación se debe diseñar para ser iterativo y para informar de las decisiones de evaluación y gestión.
+
+-El objetivo es que todos los stakeholders tengan una comprensión común de los procesos y asunciones realizados.
+
+-El nivel y tipo de comunicación varía dependiendo de la complejidad de la organización y el nivel de riesgo potencial y la percepción del mismo por las partes.
+
+#### KRIs (Indicadores Clave del Riesgo)
+
+Estos indicadores son métricas que miden la probabilidad de que ocurra un riesgo. Un indicador de riesgo es un elemento cuyos valores se calculan con base en datos históricos. De esa manera se representan los factores de riesgo a los cuales se expone una compañía. El uso de indicadores es importante porque permite tener una visión multidimensional del perfil de riesgo, además de que son dinámicos y ayudan a validar el marco de gestión.
+
+Estos indicadores:
+
+-Sirven como herramienta de monitorización y mitigación de los riesgos.
+
+-Avisan cuando algo no funciona como debería.
+
+-Ofrecen una alerta temprana a los gerentes para que tomen las acciones oportunas.
+
+-Identifican la exposición actual al riesgo y las tendencias de riesgo emergentes.
+
+-Subrayan las debilidades de los controles.
+
+-Ayudan a fortalecer los controles deficientes.
+
+-Facilitan el proceso de informe y escalado de riesgos.
+
+-Validan y mejoran el marco de evaluación de riesgos.
+
+-Pueden usarse en procesos de benchmarking.
+
+Para que estos indicadores sean efectivos, deben cumplir los siguientes requisitos:
+
+-Medibles: deben ser cuantificables.
+
+-Predictivos: deben generar alertas tempranas.
+
+-Comparables: deben mostrar una evolución en el tiempo.
+
+-Informativos: deben promocionar datos útiles para tomar decisiones.
+
+Estos KRIs pueden ser divididos en diferentes tipologías:
+
+-Causales: Indicadores que miden las causas de los riesgos.
+
+-Efectividad de los controles: Cómo de bien está funcionando un control o salvaguarda.
+
+-Volumen: Indicadores que miden volumen de situaciones o datos cuya variación afecta los riesgos 
+
+En el diseño de los indicadores se deben tomar en cuenta varios aspectos:
+
+-Fuentes de las que se medirán: Si son automáticas o manuales.
+
+-También el cómo se recopilará la información de dichas fuentes.
+
+-Establecimiento de umbrales de alerta y alarma, lo que permitirá actuar antes de que un indicador llegue a un valor crítico que impacte a la organización.
+
+-Proceso de mejora y madurez: Según la organización madura en su proceso de seguridad, se deberán crear nuevas métricas o actualizar las existentes, todo ello con el objetivo de reflejar las necesidades en cada momento.
+
+En este proceso es conveniente ser muy prudente y no intentar medir todo al mismo tiempo. Dependiendo del nivel de madurez de la organización puede ser necesario comenzar con unos pocos indicadores básicos y de alto nivel, y desde ahí comenzar a madurar dichos indicadores según maduran a la vez los procesos de seguridad de la información.
+
+#### Herramientas para monitorización del riesgo
+
+Existen una serie de técnicas que permiten hacer un seguimiento del riesgo y por tanto monitorizarlo:
+
+-Reevaluaciones del riesgo: Tanto de forma total como parcial o incremental, se deberían realizar nuevos análisis para validar el nivel de riesgo actual por áreas, servicios o procesos. Si bien los análisis de riesgos suelen realizarse cada 2 años o tras cambios con un gran impacto, los análisis incrementales o bien parciales sobre ciertas áreas/servicios/procesos permitirán actualizar el nivel de riesgo de la organización e incluir en el riesgo presente las nuevas medidas implementadas o mejoradas.
+
+-Auditorías del riesgo: Examinar y documentar la efectividad de la planificación de la respuesta al riesgo para el control del riesgo y la efectividad de los propietarios del riesgo.
+
+-Análisis de varianza y tendencia: Las desviaciones significativas indican que se debería realizar una identificación y análisis de riesgos actualizada.
+
+-Reuniones de seguimiento: Si bien esto es un trabajo bastante manual y la interpretación de los resultados compleja, es una herramienta muy poderosa de cara a evaluar aspectos más subjetivos de le gestión del riesgo, incluyendo el clima respecto al proceso.
+
+Así mismo, existen una serie de herramientas que facilitarán ejecutar la monitorización:
+
+-Registro del riesgo: Como repositorio central de todos los riesgos y el estado del mismo, será la pieza central de cara a obtener el estado en cada momento. Dependiendo de si se trata de una herramienta simple o una herramienta específica, se podrán además generar informes con la información contenida.
+
+-Herramientas GRC (Gobierno, Riesgo y Cumplimiento): El software de GRC permite a las organizaciones integrar y gestionar las operaciones de TI que están sujetas a regulación. Asimismo, permite adoptar un enfoque sistemático y organizado para la gestión e implementación de estrategias relacionadas con GRC. En lugar de guardar los datos en diferentes silos, los administradores pueden utilizar un marco único para monitorizar y hacer cumplir las reglas y procedimientos. Estas herramientas generalmente se aplican a nivel corporativo para diferentes funciones, no sólo seguridad, siendo bastante complejas. Desde el punto de vista de la seguridad, una herramienta de este tipo debería permitir:
+
+.Realizar un modelado de activos y su valoración.
+
+.Permitir el análisis y gestión de riesgos.
+
+.Permitir el análisis del cumplimiento legal y regulatorio.
+
+.Gestión de la continuidad de negocio.
+
+.Disponer de un catálogo modificable en base a estándares y mejores prácticas de activos, amenazas, vulnerabilidades y salvaguardas.
+
+.Disponer de plantillas documentales y repositorio documental para la gestión de seguridad y cumplimiento.
+
+.Permitir la gestión de empresas complejas creando diferentes capas a la vez que unidades de negocio y la gestión multiempresa.
+
+.Proporcional métricas y capacidad de monitorización y reporte de seguridad y de la gestión del riesgo
+
+-SIEM: Las herramientas de monitorización de información y eventos de seguridad, además de servir para detectar posibles incidentes de seguridad, gracias a integrar múltiples fuentes de seguridad y disponer de catálogos de informes y cuadros de mando para cumplimiento y gestión del riesgo permitirán realizar una monitorización de ciertos aspectos más técnicos.
+
+-Plantillas excel (o sistemas similares): Si bien resulta un elemento muy poco tecnológico, dado que es imposible automatizar el análisis y lectura de toda la información necesaria, en muchos casos será necesario crear plantillas para poder introducir la información necesaria dentro de otras herramientas de gestión y monitorización del riesgo.
+
+Otro tipo de herramientas para la gestión TI generalista, pero que serán fundamentales para la monitorización del riesgo de seguridad son las siguientes:
+
+-CMDB: Una base de datos de la gestión de configuración es una base de datos que contiene detalles relevantes de cada CI y de la relación entre ellos, incluyendo el equipo físico, software y la relación entre incidencias, problemas, cambios y otros datos del servicio de TI. 
+
+-Herramientas de descubrimiento de activos: Estas herramientas, de forma pasiva o activa, permiten descubrir diferentes activos así como información sobre los mismos, pudiendo en algunos casos integrarla directamente en la CMDB.
+
+-Herramientas de monitorización de salud: Estas herramientas permiten monitorizar el estado de los servidores, aplicaciones, dispositivos de red, BBDD, etc desde el punto de vista de la salud.
+
+Por otro lado, se debe tener en cuenta que se debería integrar, en la medida de los posible, las diferentes herramientas de ciberseguridad con las herramientas de monitorización del riesgo con el objeto de disponer de una imagen actualizada y completa de la
+organización.
+
+->|(POR FIN TERMINO CON ESTA PARTE, POR AMOR DE DIOS QUE EL SIGUIENTE PROFESOR NO SEA TAN CARGANTE)|
