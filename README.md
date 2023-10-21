@@ -2303,6 +2303,10 @@ Como resultado, podemos ser de gran ayuda para su empresa sobre todo si cuenta c
 
 En conclusión, una empresa que no tiene datos para tomar sus decisiones va sin rumbo. Los datos se han convertido en la mejor manera de asegurar que los objetivos se cumplan. Además, tenemos que aprovechar la cantidad de información que Internet nos brinda.
 
-Por ejemplo usando las siguientes herramientas:
+Por ejemplo usando las siguientes herramientas listadas anteriormente como LinkedIn, que son principales para temas empresariales.
 
--LinkedIn:
+Aquí nos enseña a como usar kali en linux con el comando "theharvester -d" y el nombre.es de una empresa para obtener una serie de datos de esta y añadiendo "-l 100" para obtener 100 registros, aconseja no obtener muchos más ya que estas herramientas hacen mucho ruido y el provedor de servicios podría banearnos la Ip. También añade "-b google" para que busque en google.
+
+Entre los resultados se obtienen 3 emails de la empresa. También 9 rutas de hosts para acceder a páginas de la empresa.
+
+Al usar el comando anterior pero cambiando google por linkedIn, Nos enseña Los nombres y ocupaciones en la empresa de los trabajadores que usaron su correo en linkedIn
