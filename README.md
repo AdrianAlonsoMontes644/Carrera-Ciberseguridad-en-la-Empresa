@@ -2313,4 +2313,8 @@ Al usar el comando anterior pero cambiando google por linkedIn, Nos enseña Los 
 
 Ahora enseña Hunter.io, donde introduce el nombre de una empresa y devuelve los correos de un monton de trabajadores y donde se han puesto esos correos ->(|Que censure la segunda y tercera letra del correo solamente no sirve de mucho deja que te diga|)
 
-Usando pdfyeah.com nos muetra como ver los metadatos de un pdf descargado
+Usando pdfyeah.com y metadata2go.com nos muetra como ver los metadatos de un pdf descargado.
+
+Usando: "intitle:index of passwords" en el bucador podemos ver las contraseñas y datos publicos de una empresa.
+
+->(|Esta parte del curso se llamaba taller y esperaba que fuese más practica pero no, se dedico 15 minutos a mostrar metadatos, el escribir palabras claves en el buscador para bucar más facilmente información y nisiquiera detallo realmente los metodos usados en profundidad, la verdad fué como los otros dos modulos anteriores de teoría pero más corto|)
