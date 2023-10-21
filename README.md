@@ -2246,3 +2246,63 @@ organización.
 ● 13. Redes Sociales
 
 ##
+
+En las empresas tenemos adquisición, procesamiento y análisis de la inteligencia OSINT y puede ser utilizada por o para:
+
+-Consumidores
+
+-Competencia
+
+-Predicción de eventos
+
+-Prevenir Fugas de información
+
+-Marqueting
+
+OSINT es un acrónimo de Open Source Intelligent. En internet hay millones de terabytes de información de dominio público de los millones de usuarios que lo usamos diariamente. Por no decir de la Deep Weeb ->(|Tardaba en aparecer, se hizo de rogar|)
+
+Utilizando herramientas de OSINT y nuestras habilidades, se realiza un proceso de investigación sonre la información solicitada. Consiste en:
+
+-Busqueda    -Selección   -Adquisición de Información   -Procesado   -Análisis   -Presentación
+
+#### Usos más habituales
+
+-Conocer la reputación online de su empresa, marca o persona.
+
+-Conocer tendencias de mercado y evaluarlas.
+
+-Estudios del lenguaje, psicológicos, etc...
+
+-Medio para evaluar la privacidad de una empresa u organismo.
+
+-Identificar y evaluar posibles amenazas en el ámbito militar y policial.
+
+-Ayudar a localizar fuentes públicas para eliminarlas.
+
+Como resultado, podemos ser de gran ayuda para su empresa sobre todo si cuenta con los siguientes departamentos:
+
+-Periodismo: localizamos información que le puede resultar útil para sus investigaciones o noticias.
+
+-Recursos Humanos: Si quieres saber más sobre un posible candidato o sobre sus propios empleados.
+
+-Marketing: Información y estudios muy útiles para su producto o servicio.
+
+-Fuerzas y seguridad del estado: Información que ayude a prevenir atentados o actos delictivos en general.
+
+-Abogados y detectives: Primero para ayudar a sus clientesen su defensa y segundo para conocer corrientes de opinión.
+
+-Agentes Encubiertos: Ayudar a detener a personas que realizan actos delictivos creando y difundiendo perfiles creíbles.
+
+-Rastreo de Criptomonedas y transacciones: Unido a la tecnología Blockchain permite indagar sobrecuentas y sus movimientos.
+
+-Evitar robos y hackeos: no saber que Información hay suya en la red hace posible que ciberdelincuentes encuentren vulnerabilidades. Por ejemplo un viejo correo electrónico que se hizo hace tiempo y ya no usa.
+
+-Información sobre la empresa: saber si hay datos públicos que no deberían serlos, están obsoletos o no se tenía idea. Encontrar autores de esas publicaciones en caso de no ser correctas. También detectar vulnerabilidades por la información publicada que pueda ser usada por cibercriminales.
+
+-Mejoras de Productos: Se puede conocer mejor que opinión tiene la sociedad de un determinado producto y así mejorarlo. Ocurre lo mismo con la calidad o el servicio.
+
+En conclusión, una empresa que no tiene datos para tomar sus decisiones va sin rumbo. Los datos se han convertido en la mejor manera de asegurar que los objetivos se cumplan. Además, tenemos que aprovechar la cantidad de información que Internet nos brinda.
+
+Por ejemplo usando las siguientes herramientas:
+
+-LinkedIn:
