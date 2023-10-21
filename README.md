@@ -2214,3 +2214,35 @@ Por otro lado, se debe tener en cuenta que se debería integrar, en la medida de
 organización.
 
 ->|(POR FIN TERMINO CON ESTA PARTE, POR AMOR DE DIOS QUE EL SIGUIENTE PROFESOR NO SEA TAN CARGANTE)|
+
+#### Carrera Proyecto de clases Día 10: 21/10/2023
+
+## "OSINT para fuga de datos empresariales"
+
+● 1. Linkedin
+
+● 2. www.qdq.com
+
+● 3. librebor.me/
+
+● 4. Busqueda de Curriculo con Google
+
+● 5. Infobel.com
+
+● 6. www.Twago.es
+
+● 7. es.Indeed.com
+
+● 8. Páginas Amarillas
+
+● 9. Ivenes
+
+● 10. Hunter.io
+
+● 11. Boletín del BOE
+
+● 12. GOB.es
+
+● 13. Redes Sociales
+
+##
