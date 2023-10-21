@@ -2309,4 +2309,8 @@ Aquí nos enseña a como usar kali en linux con el comando "theharvester -d" y e
 
 Entre los resultados se obtienen 3 emails de la empresa. También 9 rutas de hosts para acceder a páginas de la empresa.
 
-Al usar el comando anterior pero cambiando google por linkedIn, Nos enseña Los nombres y ocupaciones en la empresa de los trabajadores que usaron su correo en linkedIn
+Al usar el comando anterior pero cambiando google por linkedIn, Nos enseña Los nombres y ocupaciones en la empresa de los trabajadores que usaron su correo en linkedIn ->(|que bien que Nunca me gusto linkedIn|)
+
+Ahora enseña Hunter.io, donde introduce el nombre de una empresa y devuelve los correos de un monton de trabajadores y donde se han puesto esos correos ->(|Que censure la segunda y tercera letra del correo solamente no sirve de mucho deja que te diga|)
+
+Usando pdfyeah.com nos muetra como ver los metadatos de un pdf descargado
