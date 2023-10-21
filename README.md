@@ -2317,4 +2317,10 @@ Usando pdfyeah.com y metadata2go.com nos muetra como ver los metadatos de un pdf
 
 Usando: "intitle:index of passwords" en el bucador podemos ver las contraseñas y datos publicos de una empresa.
 
-->(|Esta parte del curso se llamaba taller y esperaba que fuese más practica pero no, se dedico 15 minutos a mostrar metadatos, el escribir palabras claves en el buscador para bucar más facilmente información y nisiquiera detallo realmente los metodos usados en profundidad, la verdad fué como los otros dos modulos anteriores de teoría pero más corto|)
+Nos enseña usando Tor como accede a la hidden wiki, la wikipedia de la dark web y luego busca en Tor información de telefonica que no muestra para proteger información
+
+Muestra la herramienta OSINTUX que permite ver la funcionalidad y potencia que dan ciertos frameworks. ->(|La contraseña base es OSINT... No me parece muy segura la verdad.|) 
+
+Nos enseña la interfaz de escritorio de Huron y nos habla de sus aplicaciones ->(|Sin mostrar ninguna o profundizar... decepción|)
+
+->(|Esta parte del curso se llamaba taller y esperaba que fuese más practica pero no, se dedico 15 minutos a mostrar metadatos, el escribir palabras claves en el buscador para bucar más facilmente información y nisiquiera detallo realmente los metodos usados en profundidad, como shodan, página que explicó rápido en menos de 2 minutos. La verdad fué como los otros dos modulos anteriores de teoría pero más corto. Lo unico que fué interesante fué la parte de Tor que duró un minuto|).
