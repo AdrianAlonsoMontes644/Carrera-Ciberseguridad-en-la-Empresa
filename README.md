@@ -2346,3 +2346,11 @@ Nos enseña la interfaz de escritorio de Huron y nos habla de sus aplicaciones -
 ● 8. Criptografía Cuántica
 
 ##
+
+### ¿Qué es Criptografía?
+
+Se trata de crear mensajes ininteligibles para receptores no autorizados aplicando un algoritmo garantiza la confidencialidad de la información. La descripción literal sería: Es el arte de escribir con clave secreta o de un modo enigmático.
+
+Los 4 objetivos de la seguridad informática: Confidencialidad / Disponibilidad / Integridad / No Repudio.
+
+Dentro de la criptografía el objetivo en el que habrá que centrarse es la Confidencialidad
