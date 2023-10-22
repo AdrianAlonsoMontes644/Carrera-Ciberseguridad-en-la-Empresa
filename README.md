@@ -2417,7 +2417,77 @@ Contiene clave matemáticamente relacionadas. Lo que cifras con una solo lo pued
 
 El cifrado asimétrico solo puede hacerse sobre Linux usando los mismos programas que el cifrado simétrico
 
+Al momento de crear estas claves, se puede indicar durante cuanto tiempo serán validas, luego de ese periodo caducan y quedan inutilizadas.
+
 ### Criptografía Función Hash
 
-Algoritmo que transforma unos datos en una serie de caracteres con longitud fija
+Serie de algoritmos que transforman unos datos en una serie de caracteres con longitud fija. Se genera a partir de una cadena de texto usando una función matemática identificando de forma única a un fichero.
 
+Sirve para proteger la integridad de los datos, ya que si hay datos duplicados o incorrectos esto permite saberlo.
+
+Los principales algoritmos son: MD5 y SHA
+
+-Reglas:
+
+○ Números generados con un mismo método tienen igual tamaño
+
+○ Imposible reconstruir texto base a partir del Hash
+
+○ Computacionalmente sencillo de calcular
+
+
+-Ejemplos:
+
+○ Código ASCII
+
+○ Agrupar de 3 en 3
+
+○ Función matemática (1º - 2º) * 3º
+
+-Para comprobar el Hash se puede usar:
+
+○ VLC 
+
+○ Hash Generator. 
+
+-Para crear un Hash se utiliza
+
+○ WinMD5 en Windows
+
+○ MD5sum en Linux
+
+-Reverse Hashing: Tecnica de hacking que a través de un Hash intenta recupar el texto original y así por ejemplo obtener contraseñas. ->(|Cifrar contraseñas no es tan seguro como pense viendo lo facil que es usar esto. Con lo facil que parece que es desencriptar cosas con Hash no me parece muy buena idea usarlo para encriptar en primer lugar|) 
+
+->(|La mejor analogía hasta ahora, las frutas son un imput, la batidora la función hash y el zumo resultante el output que no permite saber las futas iniciales. La verdad me hizo bastante gracia, me pillo desprevenido|)
+
+###  Firma Digital
+
+Es un método criptográfico para asociar la identidad de una persona o un equipo a un mensaje.
+
+Internamente coje los datos y les aplica una función Hash utilizando la clave privada para firmar ese hash, el cual mezclado con un certificado digital da los datos firmados. Para que una persona pueda comprobar la firma,  utiliza la clave pública para descifrar la firma digital y la compara con el código hash que obtiene al pasar los datos por la función Hash. Si los códigos coinciden, la firma es válida. 
+
+La firma digital puede hacerse:
+
+-Con GnuPG sobre Linux
+
+-Con Gpg4win sobre Windows
+
+-La firma puede ir a parte del mensaje o junto a este.
+
+○ Firma a parte ejemplo linux: "gpg -a -detach-sign nombrearchivo.algo" 
+
+○ Firma adjunta ejemplo linux: "gpg -a --sign nombrearchivo.algo"
+
+○ Comprobar firma ejemplo linux: "gpg --verify nombrearchivo.algo"
+
+->(|Los ejemplos de Firma en Windows ya si tal estarán por ahí en clave hush por que de ellos no muestra nada|)
+
+#### Criptografía Cuántica
+
+La criptografía futura tendrá que ver con la física cuántica y funciona con "superposiciones" de bits que valen tanto 0 como 1 a la vez ->(|Vale, igual que la física cuantica, esa frase no tuvo ningún puñetero sentido. Como no sabemos que inventar hacemos supocisiones imposibles y ya vamos tirando.|)
+
+->(Este taller fue bastante más interesante que el anterior, aun así no era lo que esperaba de algo llamado taller, pillé el curso más teorico de toda la página o que? Porque los 5 módulos que quedan ya ninguno más vuelve a ser taller tampoco.)
+
+#### Carrera Proyecto de clases Día 12: 23/10/2023
+
+## "Curso de Seguridad de red en el ámbito corporativo: Capa 2 del modelo OSI"
