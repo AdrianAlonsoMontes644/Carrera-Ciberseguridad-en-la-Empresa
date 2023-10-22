@@ -2354,3 +2354,70 @@ Se trata de crear mensajes ininteligibles para receptores no autorizados aplican
 Los 4 objetivos de la seguridad informática: Confidencialidad / Disponibilidad / Integridad / No Repudio.
 
 Dentro de la criptografía el objetivo en el que habrá que centrarse es la Confidencialidad
+
+### Historia de la Criptografía
+
+Empezó con los jeroglíficos de los egipcios usando un sistema de sustición ->(|Nunca lo había pensado la verdad pero si que son cifrados a su manera. Tambíen acabo de descubrir que llevo 20 años escribiendo jeroglíficos con G cuando es con J|) cambiando las letras por símbolos. Más adelante los espartanos usarían la Escítala que usaba la Transposición, es decir, cambiar el orden de los caracteres en el mensaje. 
+
+Uno de los más conocidos es el cifrado César de los Romanos, que sustituian desplazando el alphabeto ciertas posiciones.
+
+### Criptografía Actual
+
+Tenemos 2 metodos:
+
+-Criptografía Simétrica o de Clave Privada: Tanto el receptor como el emisor conocen la clave para cifrar y descifrar el mensaje.
+
+● Ventajas:
+
+○ Eficiente en grupos reducidos
+
+○ Sencillos de utilizar
+
+○ Eficientes (poco tiempo cifrar/descifrar)
+
+● Desventajas:
+
+○ Posible intercambio de claves por medios no seguros
+
+○ Gran cantidad de claves a memorizar/almacenar
+
+El cifrado simétrico se puede hacer sobre Linux usando:
+
+.VirtualBox (Gratuito)
+
+.Kali (Gratuito)
+
+.GnuPG (Viene Preinstalado)
+
+El cifrado simétrico se puede hacer sobre Windows usando:
+
+.Windows 10
+
+.IZArc (Gratuito)
+
+-Criptografía Asimétrica o de Clave Pública: El receptor y emisor disponen de una clave pública para cifrar y otra privada para descifrar el mensaje
+
+Contiene clave matemáticamente relacionadas. Lo que cifras con una solo lo puedes descifrar con la otra clave y es imposible deducir la clave privada con la pública.
+
+● Ventajas:
+
+○ Menor número de claves
+
+○ Utilización medios no seguros
+
+○ Firma digital (no repudio)
+
+● Desventajas:
+
+○ Poco eficientes
+
+○ Proteger clave privada (con criptografía simétrica)
+
+○ Importante backup de la clave privada
+
+El cifrado asimétrico solo puede hacerse sobre Linux usando los mismos programas que el cifrado simétrico
+
+### Criptografía Función Hash
+
+Algoritmo que transforma unos datos en una serie de caracteres con longitud fija
+
