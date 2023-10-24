@@ -2672,3 +2672,59 @@ Modelo OSI y modelo TCP/IP
 
 ### "Aseguramiento básico de dispositivos"
 
+● formas de acceso a los dispositivos:
+
+-Acceso por consola: Consiste en conectarse de manera local al dispositivo con un cable, recomendados RJ45 a DB9. Acceso fuera de banda. Es recomendable para configuraciones iniciales (no necesita servicios de red).
+
+-Acceso por Consola: Conectar el cable al dispositivo y posteriormente desde el ordenador acceder a los puertos y comprobar el tipo de conección que tenemos ya que puede variar desde COM1 a COM6. Con este valor accedemos a un programa que permite conectarnos como PuTTY por ejemplo.
+
+-Acceso por Telnet: Conexión remota no segura que viene en muchos dispositivos por defecto. Utiliza el puerto 23 del protocolo TCP. Necesita servicios de red obligatoriamente. Toda la información se envían en texto plano y No hay esquema de autenticación. Se hace similar al acceso por consola pero en vez de usar el typo de conección serial se elige other y se selecciona Telnet además de escribir la dirección I.P.
+
+-Acceso por Secure Shell(SSH): Una conexión remota segura y encriptada. Utiliza el puerto 22 del protocolo TCP y necesita servicios de red obligatoriamente. Tiene dos etapas para establecer una conexión:
+
+.Negociación de cifrado de sesión: El dispositivo al que queremos conectarnos y el pc se comunican y establecen las claves para cifrar la información.
+
+.Autenticación del usuario: Las credenciales del usuario para conectarse.
+
+También puede hacerse a traves de PuTTY seleccionando SSH y con la dirección I.P.
+
+● Modos de acceso CLI:
+
+-Sistemas operativos: Detras de ellos se encuentra al más bajo nivel el hardware que para conectarse a el se establece un Kernell y por otro lado se tiene un Shell que es el encargado de comunicarse con la interfaz de usuario que puede ser CLI o GUI.
+
+CLI: Ventana de comandos, todo lo que se recibe es en texto. Los dispositivos de red se configuran principalmente con CLI.
+
+GUI: Interfaz gráfica, es más sencillo pero limita mucho las funcionalidades y consume más.
+
+-Modos del IOS de CISCO
+
+.Modo de ejecución de usuario: Switch>
+
+.Modo de ejecución privilegiado: Switch#
+
+.Modo configuración global: Switch(config)#
+
+-Modos subconfiguración:
+
+.Modo configuración de líneas: Switch(config-line)#
+
+.Modo configuración de interfaz: Switch(config-if)#
+
+-Navegación entre modos del IOS: Son necesarios una serie de comandos. Una vez se arranque se está en el modo de ejecución de usuario, estableciendo la palabra "enable" en el terminal se pasa al modo de ejecucion privilegiado y si queremos realizar una ejecución en el dispositivo añadimos las palabras "configure terminal" y de esa manera entramos en el modo de configuración global desde donde se puede acceder a los modos de subconfiguración ya sea el de "line" o el de "interface". Desde cualquiera de estos de puede saltar de uno a otro de manera automática. Para volver atrás se puede usar "exit" para regresar al modo de configuración global o "end" para volver al modo de ejecución privilegiado desde donde con un "disable" salimos a la ejecución de usuario.
+
+-Estructura Basica de los comandos: En primer lugar se encuentra el indicador, siendo este el nombre del dispositivo generalmente seguido de un "mayor que" indicando que estamos en el modo ejecución donde se pueden hacer un par de ejecuciones básicas como show (muestra info del dispositivo) o ping (permite ver si hay conección con otros dispositivos), esto va seguido de un espacio y lugeo una palabra clave como por ejemplo una dirección ip o ip protocols.
+
+-Sintaxis de los comandos:
+
+.Negrita: Comandos y palabras clave
+
+.Cursiva: Valor proporcionado por el usuario
+
+.[x] : Elemento opcional
+
+.{x} : Elemento obligatorio
+
+.[x {y | z}] : Posibles opciones dentro de un elemento
+
+● Configuración del dispositivo y aseguramiento del acceso local:
+
