@@ -2672,7 +2672,7 @@ Modelo OSI y modelo TCP/IP
 
 ### "Aseguramiento básico de dispositivos"
 
-● formas de acceso a los dispositivos:
+#### formas de acceso a los dispositivos:
 
 -Acceso por consola: Consiste en conectarse de manera local al dispositivo con un cable, recomendados RJ45 a DB9. Acceso fuera de banda. Es recomendable para configuraciones iniciales (no necesita servicios de red).
 
@@ -2688,7 +2688,7 @@ Modelo OSI y modelo TCP/IP
 
 También puede hacerse a traves de PuTTY seleccionando SSH y con la dirección I.P.
 
-● Modos de acceso CLI:
+#### Modos de acceso CLI:
 
 -Sistemas operativos: Detras de ellos se encuentra al más bajo nivel el hardware que para conectarse a el se establece un Kernell y por otro lado se tiene un Shell que es el encargado de comunicarse con la interfaz de usuario que puede ser CLI o GUI.
 
@@ -2726,5 +2726,84 @@ GUI: Interfaz gráfica, es más sencillo pero limita mucho las funcionalidades y
 
 .[x {y | z}] : Posibles opciones dentro de un elemento
 
-● Configuración del dispositivo y aseguramiento del acceso local:
+#### Configuración del dispositivo y aseguramiento del acceso local:
 
+-Nombre de los dispositivos:
+
+.Nombre único y descriptivo
+
+.Comenzar con una letra
+
+.No contener espacios
+
+.Finalizar con una letra o dígito
+
+.Utilizar únicamente letras, dígitos y guiones
+
+.Tener menos de 64 caracteres de longitud
+
+Cuando hayamos decidido el nombre, desde la configuración local usamos "hostname NuevoNombre"
+
+-Pautas para la contraseña:
+
+.Al menos 8 caracteres, preferiblemente 10 o más caracteres
+
+.Combinación de letras mayúsculas y minúsculas, números, símbolos y espacios
+
+.Evite contraseñas predecibles
+
+.Contraseñas con errores de ortografía a propósito
+
+.Cambio de contraseñas periódico
+
+.No anote ni deje en lugares visibles las contraseñas
+
+.Ejemplo de contraseñas débiles: secreto, perez, toyota, bob1967, rojo1234…
+
+.Ejemplo de contraseñas seguras: b67n42d39f, 12^h u4@1p7…
+
+Se pueden hacer de 2 contraseñas:
+
+.Modo ejecución de usuario: Desde el modo de configuración global escribimos "password ContraseñaUsar" y luego un "login" para que se registre
+
+.Modo ejecución privilegiado: Desde el modo de configuración global escribimos "enable secret ContraseñaUsar"
+
+-Encriptación de contraseña:
+
+Desde el modo de configuración global escribimos ->(|Siento que voy a pegar esta frase bastante|)-> "service password-encryption". 
+
+-Mensajes de aviso: Hay de tres tipos
+
+.Desde el modo de configuración global escribimos "banner motd -Mensaje-". Llamado mensaje del día, este banner de mensaje se muestra al entrar en el dispositivo.
+
+.Desde el modo de configuración global escribimos "banner login -Mensaje-". Aparece cuando se conecta alguien de manera remota.
+
+.Desde el modo de configuración global escribimos "banner exec -Mensaje-". Se utiliza sobre todo para dar recordatorios a si mismo el administrador.
+
+-Archivos de configuración: Hay dos tipos de archivos
+
+.Startup-config: Es no volatil / Se almacena en la NVRAM / Se usa al inicio o reinicio / No pierde su contenido cuando se apaga el dispositivo
+
+.Running-config: Se almacena en la RAM / Refleja la config. actual/ Es volátil, pierde el contenido al apagar el dispositivo / al apagar el dispositivo
+
+Para pasar de Running a Startup se usa "copy running-config startup-config" ->(|A que no adivinas el modo de configuración :) |).-> Si usamos el comando "reload" se borra el running pero el dispositivo se reinicia por completo. Con "erase startup-config" borramos el startup y con "reload" volvemos a los ajustes iniciales.
+
+-Copia de seguridad - Archivo TXT
+
+Se puede hacer de forma manual con copiar y pegar pero se recomienda "Tera Term", desde donde con file/log estableciendo el nombre del archivo y abriendolo saldra una consola de comandos donde todo lo que salga por pantalla se guardará en un .txt ->(|Hay caray, eso si es bastante útil, fijate|).
+
+-Copia de seguridad - Uso de TFTP: Un servidor que permite hacer una copia de seguridad más no por interfaz grafica
+
+Hacer copia de seguridad con "copy running-config tftp:" y luego la dirección ip del servidor
+
+Restaurar copia de seguridad con "copy tftp: running-config" y luego la dirección ip del servidor
+
+-Copia de seguridad - Usos de USB:
+
+Hacer copia de seguridad con "copy running-config NombreUSB:"
+
+Restaurar copia de seguridad con "copy NombreUSB:/NombreFichero-Config running-config"
+
+#### Carrera Proyecto de clases Día 13: 25/10/2023
+
+#### Aseguramiento de las líneas de acceso remoto
