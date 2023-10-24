@@ -2488,6 +2488,187 @@ La criptografía futura tendrá que ver con la física cuántica y funciona con 
 
 ->(Este taller fue bastante más interesante que el anterior, aun así no era lo que esperaba de algo llamado taller, pillé el curso más teorico de toda la página o que? Porque los 5 módulos que quedan ya ninguno más vuelve a ser taller tampoco.)
 
-#### Carrera Proyecto de clases Día 12: 23/10/2023
+#### Carrera Proyecto de clases Día 12: 24/10/2023
 
 ## "Curso de Seguridad de red en el ámbito corporativo: Capa 2 del modelo OSI"
+
+● 1.Introducción a las redes
+
+● 2.Aseguramiento básico de dispositivos
+
+● 3.Capa 2
+
+● 4.ARP
+
+● 5.STP
+
+● 6.CDP
+
+● 7.VLAN
+
+● 8.DTP
+
+● 9.VTP
+
+##
+
+### Introducción a las redes:
+
+-La importancia de las redes:
+
+.Comunicación instantánea.
+
+.Elimina los límites físicos.
+
+.Múltiples finalidades: sociales, comerciales, personales, ocio…
+
+.Almacenamiento en la nube.
+
+.Confiabilidad y seguridad.
+
+Representaciones de Red:
+
+-Componentes principales:
+
+.Dispositivos finales
+
+.Dispositivos intermediarios 
+
+.Medios de red
+
+-Forma de conexión entre sí:
+
+.Tarjeta de red (NIC)
+
+.Puerto físico
+
+.Interfaz
+
+Intranet, Extranet e Internet:
+
+-Intranet: Empresa únicamente.
+
+-Extranet: Proveedores, clientes, colaboradores.
+
+-Internet: Resto del mundo.
+
+Arquitectura de red:
+
+-Tolerancia a fallos
+
+-Escalabilidad
+
+-Calidad de servicio (QoS)
+
+-Seguridad: Confidencialidad, Integridad ○ Disponibilidad
+
+Seguridad en la Red: Amenazas:
+
+-Virus, gusanos y caballos de Troya
+
+-Spyware y adware
+
+-Ataques de día cero
+
+-Denegación de servicios
+
+-Intercepción y robo de datos
+
+-Suplantación de identidad
+
+Seguridad en la Red: Soluciones:
+
+-Red doméstica o de oficina pequeña:
+
+.Antivirus y antispyware
+
+.Filtrado de firewall
+
+-Red corporativa o grande:
+
+.Sistema de firewall dedicado
+
+.Listas de control de acceso (ACL)
+
+.Sistemas de prevención de intrusiones (IPS)
+
+.Redes privadas virtuales (VPN)
+
+Modelo OSI y modelo TCP/IP
+
+● Beneficios del modelo de capa:
+
+-Ayuda en el diseño de protocolos
+
+-Fomenta la competencia
+
+-Evita que los cambios en una capa afecten a otras
+
+-Proporciona un lenguaje común
+
+● Modelo OSI (Open Systems Interconnections)
+
+-Unidad de datos (PDU)
+
+.Capa 5-7: Dato
+
+.Capa 4: Segmento
+
+.Capa 3: Paquete
+
+.Capa 2: Trama
+
+.Capa 1: Bit
+
+● Modelo TCP/IP
+
+-Unidad de datos (PDU)
+
+.Capa aplicación: Dato
+
+.Capa transporte: Segmento
+
+.Capa Internet: Paquete
+
+.Capa enlace de datos: Frame
+
+● Capa de transporte: TCP VS UDP
+
+-TCP (Transmission Control Protocol)
+
+.Orientado a conexión: Establece una sesión
+
+.Confiable
+
+.Garantiza la entrega en el mismo orden y control de flujo
+
+-UDP (User Datagram Protocol)
+
+.No orientado a conexión: No establece una sesión
+
+.No confiable
+
+.Garantiza velocidad pero no la entrega (voz o vídeo)
+
+.Soporta multicast y broadcast
+
+● Modelo OSI vs TCP/IP
+
+-Similitudes:
+
+.Capa 3 (red) y Capa Internet
+
+.Capa 4 (transporte) y Capa transporte
+
+.Encapsulación y desencapsulación
+
+-Diferencias:
+
+.Capas 1-2 y Capa de acceso a la red
+
+.Capas 5-7 y Capa de aplicación
+
+->|(Inicio bastante básico)|
+
+### "Aseguramiento básico de dispositivos"
+
