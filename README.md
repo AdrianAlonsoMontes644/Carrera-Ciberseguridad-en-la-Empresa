@@ -2893,3 +2893,107 @@ En primer lugar en El pc se establece una dirección ip, la máscara de subred y
 .Seguridad adicional: longitud mínima de contraseña y bloqueo de acceso
 
 ### Introducción a la Capa 2
+
+-Se trata de la capa de enlace de datos:
+
+.Gestiona el acceso a los medios
+
+.Encapsula los datos de la Capa 3 (Tx)
+
+.Interpreta los bits de la Capa 1 (Rx)
+
+.Controla el envío y la recepción de información en los medios
+
+.Intercambia tramas entre puntos finales
+
+.Detección de errores y tramas dañadas
+
+-Subcapa según IEEE 802:
+
+.Control de enlace lógico (LLC): 
+
+<Implementado en software 
+
+<Identifica el protocolo de Capa 3
+
+.Control de acceso al medio (MAC): 
+
+<Implementado en hardware
+
+<Encapsulación de datos:
+
+■ Delimitación de tramas
+
+■ Direccionamiento
+
+■ Detección de errores
+
+<Control de acceso a medios
+
+->(|Me estoy quedando sin iconos para las subclases de las subclases de las subclases de las subclases...|)
+
+-Tipos de comunicación:
+
+.Simplex: Transmiten Información en una sola dirección
+
+.Semi-Dúplex: Transmiten Información en ambas direcciones pero no de manera simultanea
+
+.Dúplex: Transmiten Información en ambas direcciones de manera simultanea
+
+-Métodos de control de acceso:
+
+.Acceso por contienda
+
+<Acceso múltiple con detección de colisiones (CSMA/CD)
+
+<Acceso múltiple con prevención de colisiones (CSMA/CA)
+
+.Acceso controlado (Medios compartidos sin un intermediario)
+
+-Campos de la trama ETHERNET
+
+.Tecnología Ethernet
+
+<Funciona en las Capas 1 y 2
+
+<Se define en los estándares IEEE 802.2 y 802.3
+
+.Trama Ethernet
+
+<Tamaño mín.: 64 bytes
+
+<Tamaño máx.: 1518 bytes
+
+-Tipos de direcciones:
+
+.Dirección MAC unicast
+
+<Un único dispositivo de destino
+
+<MAC Dest.: MAC Dispositivo
+
+.Dirección MAC broadcast
+
+<Todos los dispositivos de la red local reciben y procesan la trama
+
+<MAC Dest.: FF-FF-FF-FF-FF-FF
+
+.Dirección MAC multicast
+
+<Grupo de dispositivos como destino
+
+<MAC Dest.: 01-00-5E-XX-XX-XX
+
+-SWITCH: Aprendizaje: 
+
+En primer lugar el la dirección MAC del dispositivo que quiere enviar información es examinada por el switch y comprueba de que puerto viene, se comprueba si se encuentra en la tabla y se añade en caso negativo.
+
+-SWITCH: Reenvío:
+
+Si un dispositivo quiere conectarse a otra, pero la tabla ya está llena por el proceso anterior, actualiza el temporizador de la tabla y se envía sin comprobar los puertos no afectados.
+
+#### Carrera Proyecto de clases Día 14: 26/10/2023
+
+### ARP 
+
+#### Funcionamiento de ARP
