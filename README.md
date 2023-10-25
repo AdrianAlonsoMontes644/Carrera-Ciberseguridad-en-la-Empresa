@@ -2807,3 +2807,89 @@ Restaurar copia de seguridad con "copy NombreUSB:/NombreFichero-Config running-c
 #### Carrera Proyecto de clases Día 13: 25/10/2023
 
 #### Aseguramiento de las líneas de acceso remoto
+
+-Conexión de las líneas - TELNET: Opción menos segura
+
+Para configurar TELNET en las líneas aunque venga por defecto hay que establecerle una contraseña. Desde el modo de configuración global acceder a las líneas con "line vty 0 15" y luego "password ContraseñaDeseada" y por último un "login".
+
+-Conexión de las líneas - SSH: La opción más recomendada y segura.
+
+Primero hay que verificar que el dispositivo soporta SSH con "show ip ssh" en el dispositivo y si no lo soporta dará error. Una vez comprobado, se puede configurar el acceso con. Primero se configura el ip domain con  "ip domain-name NombreDeDominio", luego se genera un par de claves RSA con "crypto key generate rsa" y luego pregunta cuantos bits se usará, el mínimo es 512, el recomendado es 1024 y el máximo es 2048.
+
+Una vez se tienen las claves, se lleva a cabo la autenticación de usuarios con "username NombreUsuario secret ContraseñaUsar". Luego configurar las líneas vty con "line vty 0 15" seguido de "transport input ssh" y "login local". Por último se habilita SSH versión 2 con "ip ssh version 2" ya que algunos dispositivos no la traen activa de normal.
+
+-Componentes AAA:
+
+● Autenticación:
+
+. El cliente establece la conexión con el router
+
+. El router solicita las credenciales
+
+. El router autentica las credenciales contra servidor AAA remoto
+
+. Se acepta o se deniega el acceso
+
+● Autorización:
+
+. El usuario está autenticado, la sesión está establecida
+
+. El router pide autorización para la solicitud de servicio
+
+. El servidor responde PASS/FAIL a la solicitud
+
+● Registro
+
+. Al autenticarse el usuario, se genera un mensaje para comenzar el proceso de registro
+
+. Cuando el usuario termina, se registra mensaje de finalización del proceso de registro
+
+-Seguridad adicional en las líneas:
+
+.Establecer longitud mínima de contraseña aceptable con "security password min-length 8".
+
+.Disuasión de ataques de fuerza bruta con "login block for 120 attemps 3 within 60" (si en 60 segundos alguien intenta tres veces se bloquea durante 120 segundos).
+
+.Deshabilitar acceso tras un tiempo de inactividad "line vty 0 4"  "exec-timeout 5 30" (Tras 5 minutos 30 segundos se cierra la sesión).
+
+#### Ejemplo de configuración en Packet Tracer
+
+-Topología de Red: Se hace la muestra usando un Pc, un switch y un Router. 
+
+En primer lugar en El pc se establece una dirección ip, la máscara de subred y la ip del router. Con el pc configurado, lo siguiente es el router, ya que el switch no es necesario configurarlo. En el router dentro de la pestaña de CLI, se accede a la configuración global y desde ahí se accede a la interfaz que nos interesa, en el caso del ejemplo la Gig0/0 donde se establece la ip del router y la misma máscara de red que el pc. Por último se activa el puerto con "no shutdown"
+
+-Pasos a configurar: Con la topología lista, toca configurar parámetros en el CLI del router.
+
+.Nombre de dispositivo.
+
+.Notificación legal (banner motd).
+
+.Protección modo ejecución de usuario.
+
+.Protección modo ejecución privilegiado.
+
+.Encriptación contraseñas del archivo de configuración.
+
+.Acceso remoto (Ya sea con TELNET o SSH).
+
+.Seguridad adicional.
+
+.Guardar configuración.
+
+-Reiniciar dispositivo después de guardar y comprobar:
+
+.Cambio de nombre
+
+.Aviso legal correcto al iniciar
+
+.Accesos con contraseña vía consola correctos
+
+.Contraseñas encriptadas en fichero de configuración
+
+.Conexión habilitada vía Telnet
+
+.Conexión habilitado vía SSH
+
+.Seguridad adicional: longitud mínima de contraseña y bloqueo de acceso
+
+### Introducción a la Capa 2
