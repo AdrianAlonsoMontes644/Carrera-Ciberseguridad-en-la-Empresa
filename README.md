@@ -2997,3 +2997,237 @@ Si un dispositivo quiere conectarse a otra, pero la tabla ya está llena por el 
 ### ARP 
 
 #### Funcionamiento de ARP
+
+-Protocolo de la capa de enlace de datos responsable de encontrar la dirección MAC asociada a una determinada dirección IP
+
+-Mantiene una tabla de asignaciones de direcciones IPv4 a MAC
+
+-Esencial en la transmisión de datos en redes Ethernet
+
+-Se distinguen dos modos de almacenar las relaciones: estática o dinámica
+
+-Existen dos tipos de paquetes: ARP Request y ARP Reply
+
+.ARP Request: Para descubrir la dirección MAC de una ip envía una solicitud a todos los dispositivos
+
+.ARP Reply: Para descubrir la dirección MAC de una ip envía una solicitud a todos los dispositivos
+
+-Tablas ARP:
+
+<ARP estático:
+
+<Añadidas por el administrador (manual)
+
+<Únicamente read-only
+
+<Más seguro pero menos escalable
+
+<ARP dinámico
+
+<Se aprenden a través del protocolo ARP
+
+<Tienen fecha de vencimiento
+
+<Menos seguro pero más escalable
+
+-Variaciones ARP:
+
+.Reverse ARP (RARP):
+
+<Encuentra la dirección IP asociada a una determinada dirección MAC
+
+<Necesidad de un servidor RARP especializado
+
+<A día de hoy no se utiliza casi, se ha reemplazado por BOOTP y DHCP
+
+.Proxy ARP:
+
+<Un host responde a peticiones ARP destinadas a un host que se encuentra fuera de la red local. No es necesario enrutamiento o puerta de enlace. Se usa "ip proxy-arp"
+
+-DEMO PACKET TRACER
+
+.Comprobar que inicialmente la tabla está vacía
+
+.Ver como se rellena la tabla tras hacer ping a otros PCs
+
+.Borrar la información de la tabla
+
+.Ver los paquetes que se envían de ARP (Request y Reply) desde el modo simulación
+
+#### Fallo de Seguridad ARP
+
+-Funcionamiento Normal:
+
+Usuario intenta comunicarse con otro pero necesita saber cual es la ip, para eso gace una consulta ARP request a todos los usuarios de la red, el usuario al que quiere contactar contesta y su ip se guarda en la tablas
+
+-ARP Spoofing:
+
+En caso de que haya un atacante, tanto este como el usuario receptor contestan, siendo que el atacante envía muchas respuestas para engañar a la tabla ARP y que la entrada que se introduzca sea la del atacante haciendo que la información vaya al atacante
+
+.Denegación de Servicio (DoS)
+
+<Se asocia la MAC del atacante o una inexistente con la IP de la puerta de enlace
+
+<Borrado parcial o total de los paquetes capturados
+
+.Man in the middle
+
+<Todos los paquetes enviados entre dos extremos son interceptados por el atacante
+
+<Uso más común: session hijacking (secuestro de cookie)
+
+#### Configuración Segura de ARP
+
+-Mitigación de ARP Spoofing:
+
+.Utilizar ARP estático:
+
+<Configuración manual de tabla ARP
+
+<Comando para PC Windows "arp -s interface mac_add ip_add"
+
+<Comando para dispositivos Cisco " arp ip-address mac-address encapsulation–type"
+
+.Software de detección y prevención de ARP Spoofing:
+
+<Se limitan a escuchar y detectar patrones peligrosos (Arpwatch, ArpDefender, XArp…)
+
+.Configurar DAI (Dynamic ARP Inspection):
+
+<Con DHCP Snooping:
+
+■ Configuración DAI : "ip arp inspection vlan vlan".
+
+■ Puertos con DAI : "ip arp inspection trust".
+
+■ Puertos sin DAI : "ip arp inspection limit rate rate".
+
+<Sin DHCP Snooping (no recomendable): "ip source binding mac_add vlan vlan ip_add interface interface"
+
+### STP 
+
+#### Funcionamiento de STP
+
+-Protocolo de la capa de enlace de datos que gestiona la presencia de bucles en topologías de red debido a enlaces redundantes
+
+-Permite a los switches activar o desactivar automáticamente los enlaces según las necesidades de la topología
+
+-Para conseguir eliminar bucles se determina un root en función de la prioridad y 3 tipos de puerto: root, designado y alternativo
+
+-Para el intercambio de información entre los switches de la topología se utilizan tramas BPDU
+
+-Bucles de capa 2
+
+.Broadcast storm: La PC2 reenvía una trama de disfusión pero no se puede procesar debido a la sobrecarga del tráfico de red
+
+-Algoritmo STP: En un bucle, se ejecuta el algoritmo STP, se determina cual es el root y los switches determinan cual es la mejor ruta para llegar al root. Los puertos que no se utilizen se bloquean. En caso de que falle un enlace se recalcula el algoritmo y cambia los puertos bloqueados.
+
+-Unidad con datos STP: BPDU
+
+.Prioridad del puente:
+
+<Valor personalizable que influye en la elección del root (de 0 a 61440)
+
+.ID del sistema extendido:
+
+<Valor agregado al valor de la prioridad que identifica la VLAN para esta BPDU
+
+.Dirección MAC
+
+<Prioridad del puente
+
+<Id del sistema extendido
+
+<Dirección MAC
+
+-Pasos para topología sin bucles:
+
+.Elegir el root
+
+.Seleccionar los puertos root
+
+.Seleccionar los puertos designados
+
+.Seleccionar los puertos alternativos (bloqueados)
+
+-Elección de root: Aquel que tenga la dirección MAC más pequeña tendra mayor prioridad
+
+-Tipos de puerto:
+
+.Puerto root: Conectan los switches directamente con la ruta más rapida para llegar al root
+
+.Puerto designado: Es aquel que conecta desde todos lados a si mismo
+
+.Puerto alternativo (bloqueado)
+
+-Temporizadores:
+
+.Hello Timer:
+
+<Intervalo entre BPDU
+
+<Valor predeterminado: 2 segundos
+
+.Forward Delay Timer:
+
+<Tiempo que se pasa en el estado de escucha y aprendizaje
+
+<Valor predeterminado: 15 segundos
+
+.Max Age Timer:
+
+<Duración máxima de espera antes de cambiar la topología STP
+
+<Valor predeterminado: 20 segundos
+
+-Estados del puerto:
+
+.Bloqueo:
+
+<Puerto alternativo que no participa en el reenvío de tramas.
+
+<Recibe tramas BPDU para determinar la ubicación e ID del root.
+
+.Escucha:
+
+<Recibe tramas BPDU. Envía tramas BPDU propias.
+
+<Informa a los switches adyacentes que el puerto se está preparando
+
+<para participar en la topología STP
+
+.Aprendizaje:
+
+<Recibe, procesa (aprende direcciones MAC) y envía tramas BPDU.
+
+<Se prepara para participar en el reenvío de tráfico de usuario.
+
+.Reenvío:
+
+<Envía y recibe tramas BPDU. Reenvía tráfico de usuario.
+
+.Deshabilitado:
+
+<No participa en ninguna operación STP ni reenvía tráfico.
+
+<Puerto administrativamente deshabilitado
+
+-Versiones STP
+
+.PVST: Proporciona una instancia de árbol diferente por cada VLAN
+
+.RSTP: Proporciona una convergencia más veloz que STP
+
+.PVST+ rapid: Mejora de RSTP con una instancia de árbol diferente por cada VLAN
+
+.MSTP: Asigna varias VLAN en la misma instancia de árbol
+
+#### Fallo de Seguridad STP
+
+-Funcionamiento Normal
+
+-Cambio del rol del root
+
+#### Configuración segura del root
+
+-Mitigación de los ataques
