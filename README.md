@@ -85,7 +85,7 @@ Son cualquier aparato electrónico que permita interactuar con otras personas. M
 -BYOD: anagrama de "Bring Your Own Device". Se trata de los dispositivos personales que la empresa permite usar para el trabajo. Puede tener un gran impacto corporativo, debido a que en caso de una brecha de seguridad es más dificil identíficarlo y se tiene menos control sobre el dispositivo. También un gran impacto personal debido a que pueden existir nomas de uso obligatorias de la empresa y en caso de avería el costo 
 deberá ser una inversión de la persona, es decir, la empresa no es responsable del dispositivo.
 
-#### Carrera Proyecto de clases Día 2: 10/10/2023
+####  Proyecto de clases Día 2: 10/10/2023
 
 ### Usuarios Y Contraseñas
 
@@ -127,7 +127,7 @@ Los navegadores nos permiten movernos por la red para obtener información por e
 
 -Certificados en internet: Información relacionada con la página web, que ayuda a verificar al propietario de una web y nos ayuda en la protección contra terceros en el intercambio de información.
 
-#### Carrera Proyecto de clases Día 3: 11/10/2023
+####  Proyecto de clases Día 3: 11/10/2023
 
 ### Correo electrónico seguro
 
@@ -214,7 +214,7 @@ Consiste en dejar el dispositivo sin conección a la corriento o la batería par
 ● 7.Monitorización del riesgo
 
 ##
-#### Carrera Proyecto de clases Día 4: 12/10/2023
+####  Proyecto de clases Día 4: 12/10/2023
 ### Introducción a la terminología
 
 -Análisis de riesgos informáticos: proceso que comprende la identificación de activos informáticos y de información, sus vulnerabilidades y las amenazas a los que se encuentran expuestos, así como su probabilidad de ocurrencia y el impacto de las mismas. 
@@ -430,7 +430,7 @@ Por cada riesgo se debería recopilar la siguiente información:
 
 |(Al final de cada parte del modulo hay un mini examen. Las preguntas no se corresponden con el manual, te dicen unas cosas y el manual otras totalmente diferente. Un autentico desastre la verdad...)|
 
-#### Carrera Proyecto de clases Día 5: 13/10/2023
+####  Proyecto de clases Día 5: 13/10/2023
 
 ### Evaluación del riesgo
 
@@ -1266,7 +1266,7 @@ Los tiers proporcionan un contexto sobre cómo una organización ve el riesgo de
 
 -Estos niveles reflejan una progresión desde respuestas informales y reactivas hasta enfoques que son ágiles y están informados sobre el riesgo. 
 
-#### Carrera Proyecto de clases Día 6: 15/10/2023
+####  Proyecto de clases Día 6: 15/10/2023
 
 ### Controles de mitigación: Seguridad administrativa y física
 
@@ -1512,7 +1512,7 @@ Controles específicos para crear y mantener áreas seguras:
 
 -Áreas de entrega y carga: Los puntos de carga y de entrega de mercancía suelen ser puntos sensibles para la seguridad física por lo se debería tomar en cuenta algunos aspectos como horarios definidos de apertura y cierre, control de apertura y cierre de puertas externas e internas, control de personal, realización de inventarios de materiales entregados, revisión de mercancías entregadas para detectar materiales peligrosos o separar entregas entrantes y salientes o barreras adicionales de seguridad.
 
-#### Carrera Proyecto de clases Día 7: 17/10/2023
+####  Proyecto de clases Día 7: 17/10/2023
 
 ### Controles de mitigación: Seguridad Lógica
 
@@ -1872,7 +1872,7 @@ En este aspecto deberemos controlar que las auditorias para obtener esta informa
    
 2. Evaluar y considerar el impacto. Se debe evaluar el impacto o consumo de recursos de auditorías que supongan un consumo de recursos importante dentro de los sistemas. En este caso debe existir un procedimiento por el cual se evite realizar estas tareas que pueden comprometer la capacidad de los sistemas realizándolas en periodos de baja carga de trabajo.
 
-#### Carrera Proyecto de clases Día 8: 18/10/2023
+####  Proyecto de clases Día 8: 18/10/2023
 
 ### Seguridad de las comunicaciones
 
@@ -2032,7 +2032,7 @@ Una de las partes más importantes de un plan de respuesta a incidentes es la de
 
 El proceso de lecciones aprendidas puede poner de manifiesto la falta de un paso o una inexactitud en un procedimiento y son un punto de partida para el cambio, y es precisamente debido a la naturaleza cambiante de la tecnología de la información y los cambios en el personal, que el equipo de respuesta a incidentes debe revisar toda la documentación y los procedimientos para el manejo de incidentes en determinados intervalos.
 
-#### Carrera Proyecto de clases Día 9: 19/10/2023
+####  Proyecto de clases Día 9: 19/10/2023
 
 ### Monitorización del riesgo
 
@@ -2215,7 +2215,7 @@ organización.
 
 ->|(POR FIN TERMINO CON ESTA PARTE, POR AMOR DE DIOS QUE EL SIGUIENTE PROFESOR NO SEA TAN CARGANTE)|
 
-#### Carrera Proyecto de clases Día 10: 21/10/2023
+####  Proyecto de clases Día 10: 21/10/2023
 
 ## "OSINT para fuga de datos empresariales"
 
@@ -2325,7 +2325,7 @@ Nos enseña la interfaz de escritorio de Huron y nos habla de sus aplicaciones -
 
 ->(|Esta parte del curso se llamaba taller y esperaba que fuese más practica pero no, se dedico 15 minutos a mostrar metadatos, el escribir palabras claves en el buscador para bucar más facilmente información y nisiquiera detallo realmente los metodos usados en profundidad, como shodan, página que explicó rápido en menos de 2 minutos. La verdad fué como los otros dos modulos anteriores de teoría pero más corto. Lo unico que fué interesante fué la parte de Tor que duró un minuto|).
 
-#### Carrera Proyecto de clases Día 11: 22/10/2023
+####  Proyecto de clases Día 11: 22/10/2023
 
 ## "Criptografía Simétrica y Asimétrica en la práctica"
 
@@ -2488,7 +2488,7 @@ La criptografía futura tendrá que ver con la física cuántica y funciona con 
 
 ->(Este taller fue bastante más interesante que el anterior, aun así no era lo que esperaba de algo llamado taller, pillé el curso más teorico de toda la página o que? Porque los 5 módulos que quedan ya ninguno más vuelve a ser taller tampoco.)
 
-#### Carrera Proyecto de clases Día 12: 24/10/2023
+####  Proyecto de clases Día 12: 24/10/2023
 
 ## "Curso de Seguridad de red en el ámbito corporativo: Capa 2 del modelo OSI"
 
@@ -2804,7 +2804,7 @@ Hacer copia de seguridad con "copy running-config NombreUSB:"
 
 Restaurar copia de seguridad con "copy NombreUSB:/NombreFichero-Config running-config"
 
-#### Carrera Proyecto de clases Día 13: 25/10/2023
+####  Proyecto de clases Día 13: 25/10/2023
 
 #### Aseguramiento de las líneas de acceso remoto
 
@@ -2992,7 +2992,7 @@ En primer lugar el la dirección MAC del dispositivo que quiere enviar informaci
 
 Si un dispositivo quiere conectarse a otra, pero la tabla ya está llena por el proceso anterior, actualiza el temporizador de la tabla y se envía sin comprobar los puertos no afectados.
 
-#### Carrera Proyecto de clases Día 14: 26/10/2023
+####  Proyecto de clases Día 14: 26/10/2023
 
 ### ARP 
 
@@ -3224,10 +3224,74 @@ En caso de que haya un atacante, tanto este como el usuario receptor contestan, 
 
 #### Fallo de Seguridad STP
 
--Funcionamiento Normal
+-Funcionamiento Normal: Un root por el que pasa toda la información, un root secundario de respaldo. Se calcula el root con mayor prioridad y se detectan las rutas más rápidas.
 
--Cambio del rol del root
+-Cambio del rol del root: Un atacante envía una BPDU con una prioridad de 0 y su MAC, el resto de dispositivos lo connsiderarán legitimo y se configurará como nuevo root haciendo que toda la información vaya al atacante
 
 #### Configuración segura del root
 
--Mitigación de los ataques
+-Mitigación de los ataques:
+
+.Usar Portfast BPDUGuard:
+
+<Configuración global: "spanning-tree portfast bpduguard default"
+
+<Configuración por interfaz: "spanning-tree bpduguard enable"
+
+.Usar Root Guard: "spanning-tree guard root"
+
+### CDP
+
+#### Funcionamiento de CDP
+
+Protocolo de capa 2 patentado por Cisco que se utiliza para obtener información de los dispositivos Cisco que comparten enlace de datos.
+
+-Envía mensajes CDP (multicast) periódicos a los dispositivos conectados.
+
+-Información que contienen los paquetes: nombre del dispositivo, imagen del OS, tipo y modelo, dirección IP, VLAN nativa, etc.
+
+-Ayuda a tomar decisiones de diseño y solucionar problemas en la red.
+
+-Configuración:
+
+.CDP global activo por defecto ("show cdp")
+
+.Desactivar/Activar CDP globalmente ("no cdp run" / "cdp run")
+
+.Activar CDP por interfaz ("cdp enable")
+
+-Verificación de la Configuración: Usando "show cdp interface" nos muestra las interfaces con "cdp enable" y cuantas tienen conectados dispositivos 
+
+-Detección de Vecinos: Usando "show cdp neighbors" podremos ver los dispositivos conectados y algo de información. Si se usa "show cdp neighbors detail" se obtendrá información más detallada, entre esta la ip.
+
+-LLDP: Descripcción y Configuración
+
+.Idéntico a CDP pero no es específico únicamente de dispositivos Cisco
+
+.LLDP no depende del proveedor, por lo que es compatible con dispositivos Cisco
+
+Se arranca con "lldp run" a nivel global o si se quiere una interfaz concreta se usa "lldp transmit" y "lldp receive" y luego de ve con "show lldp"
+
+-LLDP: Detección de Vecinos: Con "show lldp neighbors" vemos los dispositivos conectados y de que tipo son. Con "show lldp neighbors detail" vemos más detalles incluidas las descripciones del puerto y las ip
+
+#### Fallo de Seguridad de CDP
+
+-Funcionamiento Normal: Por ejemplo, se tienen 3 switches conectados entre ellos todos con CDP activos y envian mensajes periodicos con información, de esta manera saben quienes son sus vecinos y la topología que tienen alrededor
+
+-Ataque de CDP Flooding: Si un atacante se conecta y envía muchos mensajes de CDP fraudulentos con información aleatoria causando que el swithc colapse y la única forma de arreglarlo sea reiniciandolo cosa que rompería la topología
+
+-Recopilación de información Sensible: Estos paquetes transmiten información importante y si capturan uno podrían obtener información del software cosa que permitiría descifrar la topología y alterarla por ejemplo.
+
+#### Configuración Segura de CDP
+
+-Mitigación de los ataques:
+
+.Desactivación CDP por interfaz con "no cdp enable"
+
+.Desactivación CDP globalmente con "no cdp run"
+
+#### Carrera Proyecto de clases Día 15: 27/10/2023
+
+### VLAN
+
+#### Conceptos de VLAN y tipos
