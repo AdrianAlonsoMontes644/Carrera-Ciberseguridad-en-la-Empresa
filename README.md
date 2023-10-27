@@ -3294,4 +3294,298 @@ Se arranca con "lldp run" a nivel global o si se quiere una interfaz concreta se
 
 ### VLAN
 
-#### Conceptos de VLAN y tipos
+#### Conceptos de VLAN y Tipos
+
+Permiten dividir la red en grupos con una agrupación o estructura jerárquica lógica en lugar de una física. Esto ayuda a liberar al personal de TI de las restricciones del diseño de red y la infraestructura de cableado existente.
+
+Facilitan el diseño, la implementación y la administración de la red.
+
+-Tipos de enlace: 
+
+.Enlace de acceso:
+
+<Tráfico de una única VLAN
+
+<Conexión con dispositivos finales
+
+.Enlace troncal:
+
+<Tráfico de múltiples VLAN
+
+<Conexión entre switches o de un switch con la capa superior
+
+-Ventajas de un diseño con VLAN:
+
+.Dominios de difusión más pequeños
+
+.Seguridad mejorada
+
+.Mejora la eficiencia del departamento de TI
+
+.Reducción de costes
+
+.Mejor rendimiento
+
+.Administración más simple de proyectos y aplicaciones
+
+-Tipos de VLAN:
+
+.VLAN predeterminada:
+
+<Por defecto, VLAN 1
+
+<VLAN de datos
+
+.VLAN nativa:
+
+<Por defecto, VLAN 1
+
+<Mismo en ambos extremos
+
+.VLAN de administración:
+
+<Por defecto, VLAN 1
+
+.VLAN de voz
+
+#### Etiquetado Y Configuración de VLAN
+
+-Trama ETHERNET - Campo VLAN TAG
+
+Al inicio de las redes no se utilizaba VLAN, por lo que estas eran: Mac de destino, Mac de origen, Tipo/Longitud, Datos y FCS. Luego de las VLAN se introdujo también una etiqueta dividida en 4 campos: Tipo(0 x 8100), Pri, CFI y VID
+
+-Etiquetado 802.1Q VLAN Nativa
+
+.Marcos etiquetados en la VLAN nativa:
+
+<Tráfico de la VLAN nativa no se debe etiquetar
+
+.Marcos sin etiquetas en la VLAN nativa:
+
+<Enlace troncal: Se asigna ID de la nativa al ID de la VLAN de puerto (PVID)
+
+<Todo el tráfico sin etiquetar del puerto 802.1Q se envía según el valor de PVID
+
+-Etiquetado VLAN de voz
+
+.Puerto 1
+
+<Conecta teléfono IP con el switch
+
+.Puerto 2
+
+<Puerto interno
+
+.Puerto 3
+
+<Conecta con el PC
+
+-Rango de VLAN en Switches
+
+.Rango normal VLAN
+
+<Redes pequeñas y medianas
+
+<VLAN ID: 1-1005
+
+<1002-1005 reservadas
+
+<Se guardan en vlan.dat (memoria flash)
+
+.Rango extendido VLAN
+
+<Proveedores de servicio y empresas globales
+
+<VLAN ID: 1006-4094
+
+<Se guardan en el archivo de configuración
+
+-Creación y Borrado de VLAN
+
+.Creación VLAN en un rango normal: "vlan vlan-id" seguido de "name vlan-name"
+
+.Borrado de una VLAN de la memoria flash (permanente): "no vlan vlan-id"
+
+.Borrado de toda la configuración de VLAN de la memoria flash (permanente): "delete flash:vlan.dat"
+
+-Puertos de Acceso:
+
+.Desde la configuración global, usar "interface interface-id" y luego "switchport mode access" para tener el puerto de acceso y por último "switchport access vlan" para establecer la VLAN que circulará por en enlace
+
+.Si queremos quitar ese puerto de acceso: Desde la configuración global, usar "interface interface-id" y luego "no switchport access vlan"
+
+.VLAN de voz y datos: Puerto que permite 2 VLAN: esde la configuración global, usar "interface interface-id" y después "switchport mode access" seguido de "switchport access vlan vlan-id". Luego "mls qos trust cos" y por último "switchport voice vlan vlan-id"
+
+-Puertos Trocales (Permiten pasar múltiples VLAN): Desde la configuración global, usar "interface interface-id" y luego "switchport mode trunk" seguido de "switchport trunk native vlan vlan-id" y por último "switchport trunk allowed vlan vlan-list"
+
+-Verificación de la configuración:
+
+."show vlan brief"
+
+."show vlan id vlan-id"
+
+."show vlan name vlan-name"
+
+."show vlan summary"
+
+-Verificación de la configuración de VLAN de voz y datos: "show interface interface-id switchport"
+
+#### Fallo de Seguridad de VLAN
+
+-VLAN HOPPING (SPOOFING): Suplantación de identidad, el atacante se conecta a la red y accede a todas las VLAN sin pasar por un router. Consiste en conectarse a uno de los switch de la red y aprovechar una funciones de DTT que permite la generación automática de enlaces troncales.
+
+-VLAN DOUBLE-TAGGING: Establece dos etiquetas a la trama ethernet. La nativa del enlace troncal y la del objetivo que se busca alcanzar. A través del enlace troncal se llega a los switchs del otro extremo, es decir, el dispositivo y puede enviar datos a este.
+
+#### Configuración Segura de VLAN
+
+-Mitigación de VLAN HOPPING:
+
+.No usar la VLAN por defecto como VLAN nativa, "switchport trunk native vlan vlan-id"
+
+.Deshabilitar la formación automática de enlaces troncales con "switchport mode access" y "switchport nonegotiate"
+
+.Apagar los puertos no utilizados con "shutdown"
+
+-Mitigación de VLAN DOUBLE-TAGGING:
+
+.No usar la VLAN por defecto como VLAN nativa, "switchport trunk native vlan vlan-id"
+
+.Apagar los puertos no utilizados con "shutdown" 
+
+->(|Misma vaina|)
+
+### DTP 
+
+#### Funcionamiento de DTP
+
+.Protocolo de capa 2 exclusivo de Cisco que se habilita de manera automática en los switches
+
+.Maneja la negociación de enlaces troncales
+
+.Una interfaz se puede establecer como troncal, de acceso o para negociar troncal con la interfaz vecina
+
+.Ayuda al administrador a acelerar el proceso de configuración de la red
+
+-Modos de Interfaz y configuración :
+
+.nonegotiate: Detiene la negociación DTP en la interfaz ("switchport mode { trunk | access }" "switchport nonegotiate")
+
+.access: Modo acceso de forma permanente, convierte en enlace no troncal ("switchport mode access")
+
+.dynamic auto: Puede convertir el enlace en troncal ("switchport mode dynamic auto")
+
+.dynamic desirable: Intenta convertir el enlace en troncal (troncal, desirable o dinámico) ("switchport mode dynamic desirable")
+
+.trunk: Modo troncal de forma permanente, convierte en enlace troncal ("switchport mode trunk")
+
+-Verificación de la Configuración: Con "show dtp interface fa0/1" se puede observar el tipo y si está disponible
+                               
+#### Fallo de seguridad de DTP
+
+-Funcionamiento Normal: Depende del tipo de switch, si ambos switchs son 2950 será "Dynamic desirable por defecto" creando un enlace troncal y si son 2960 será "Dynamic auto por defecto" creando un enlace acceso. Si es uno de cada será una Combinación auto y desirable que cree un enlace troncal
+
+-Envío de Mensaje DTP Fraudulento: Un atacante puede colar un mensaje DTP fraudulento inidcando la formación de un enlace troncal con el usuario a atacar y manda un mensaje cada 30 segundos para mantener la conección. Esto le da acceso a las VLAN de capa 2 gracias al enlace troncal
+
+#### Configuración segura de DTP
+
+-Mitigación de ataques:
+
+.Configurar manualmente los puertos utilizados con "switchport mode access" y "switchport access vlan vlan-id" / "switchport mode trunk" y "switchport trunk allowed vlan vlan-id"
+
+.Deshabilitar los anuncios DTP con "switchport nonegotiate "
+
+.Apagar los puertos no utilizados con "shutdown"
+
+.Configurar los puertos no utilizados como acceso:
+
+<Asignar una VLAN no utilizada por los usuarios o una VLAN no existente con "switchport mode access" y "switchport access vlan vlan-id"
+
+### VTP
+
+#### Funcionamiento de VTP
+
+.Protocolo de capa 2 usado para administrar y configurar VLANs en los dispositivos Cisco
+
+.Simplifica y centraliza la administración de las VLANs de una red, reduciendo así el número de fallos de configuración
+
+.Se distinguen 3 modos de operación VTP: servidor, cliente y transparente
+
+.VTP sólo aprende VLAN de rango normal (1-1005) almacenadas en el fichero vlan.dat
+
+-Modos de Operación de VTP:
+
+.Servidor (modo por defecto):
+
+<Puede crear, borrar y modificar VLANs del dominio
+
+<Todas las VLANs configuradas en el servidor se anuncian
+
+.Cliente:
+
+<No puede crear, borrar ni modificar VLANs del dominio
+
+<Sincroniza su información con la que recibe de los anuncios del servidor
+
+.Transparente:
+
+<No procesa anuncios VTP, simplemente los reenvía
+
+-Anuncios VTP:
+
+.Anuncios de resumen:
+
+<Sincronización de la información de las VLAN dentro del dominio
+
+.Anuncios de subconjunto:
+
+<Informa de cambios en alguna VLAN
+
+.Publicación de solicitud:
+
+<Se envía cuando un cliente necesita actualizar la configuración
+
+-Configuración:
+
+.Definir en el switch con rol de servidor las VLANs que se desea anunciar
+
+.Definir como troncales los puertos que conectan los switches VTP
+
+<Versión de VTP deseada con "vtp version {1 | 2 | 3}"
+
+<Modo VTP del switch con "vtp mode {server | client | transparent}"
+
+<Dominio VTP con "vtp domain domain_name"
+
+<Contraseña VTP con "vtp password password"
+
+-Verificación de la Configuración:
+
+Usando "sh vtp status" puedes ver que versión está en uso junto a la información de los VLAN
+
+#### Fallo de Seguridad de VTP
+
+-Funcionamiento Normal: Un servidor con dos VLAN definida, dos enlaces troncales que conectan con los otros 2 switches y se propaga la información de los VLAN a los otros switches
+
+-Borrado VLANS Legítimas: Si un atacante de conectase a un enlace troncal de nuestro servidor y enviase un anuncio con un número de revisión superior al que se envía actualmente a la red. Si en este anuncio indica que quiere borrar las VLAN 10 y 20 el servidor obedecería provocando que los servidores asociados quedasen inoperativos, cosa que deberá ser arragleda manualmente por el usuario.
+
+#### Configuración segura de VTP 
+
+-No usar VTP
+
+.Para deshabilitar VTP en el switch debe configurarse en modo transparente ("vtp mode transparent")
+
+-Autenticación
+
+.Todos los switches del dominio deben usar la misma contraseña ("vtp password password")
+
+-Apagar los puertos no utilizados con "shutdown"
+
+-Usar versión 3  ("vtp version 3")
+
+.Añade el concepto de Primary Server
+
+->(|En resumen del curso: Como funcionan ARP/STP/CDP/VLAN/DTP/VTP, sus fallos de seguridad y su configuración segura, todo siguiendo un mismo orden monótono en cada uno|)
+
+#### Carrera Proyecto de clases Día 16: 28/10/2023
+
+## Curso de Seguridad Y Red en el Ámbito Corporativo: Capa 3 y 7 del modelo OSI
