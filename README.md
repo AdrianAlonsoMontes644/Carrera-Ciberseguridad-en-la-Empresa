@@ -3992,3 +3992,16 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 #### Funcionamiento de RIP
 
+.Protocolo de encaminamiento dinámico interior
+
+.Puerto 520 de UDP
+
+.Usa el número de saltos como métrica
+
+.Para determinar el camino más corto utiliza el algoritmo de Bellman Ford
+
+.Número máximo de saltos: 15
+
+.Emplea la regla de horizonte dividido y el envenenamiento de rutas
+
+.Actualmente existen 3 versiones: RIPv1, RIPv2 y RIPng (RIP para IPv6)
