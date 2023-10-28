@@ -4068,10 +4068,26 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 #### Fallo de Seguridad de RIP
 
--Funcionamiento Normal:
+-Funcionamiento Normal: Tabla donde se registra la información aprendida de las redes, si un usuario intenta comunicarse con otro, envía un mensaje a través de la puerta de enlace del router, comprobaría la mejor ruta y se manda en tráfico hasta el router del usuario a recibir donde se verifica que la red esté conectada al usuario y se envía el mensaje.
 
--RIP Poisining:
+-RIP Poisining: Si un atacante envía un mensaje RIP fraudulento a la red y no tenemos la interfaz establecida como pasiva, el atacante estaría podiendo observar que tipo de información y tablas de router tenemos configurados así como los saltos de la red. El router lo considera válido y actualiza la tabla de rutas. Si el usuario intentase comunicarse con otro usando la tabla de rutas alteradas, al llegar al primer router calcularía que la mejor ruta es de solo un salto, por lo que volvería al switch pero esta vez al atacante, el cual con una conexión independiente le envía la información al receptor original si es que no la elimina. 
 
 #### CONFIGURACIÓN SEGURA DE RIP
 
--Mitigación RIP Poisoning
+-Mitigación RIP Poisoning:
+
+.Usar la versión 2 del protocolo con "version 2"
+
+.Definir interfaces pasivas con "passive-interface interface-id"
+
+.Usar redistribute connected con "redistribute connected"
+
+.Usar autenticación: "ip rip authentication mode md5" seguido de "ip rip authentication key-chain key-chain-name"
+
+.Definir las rutas de formas estáticas con "ip route network-address subnet-mask { ip-address | exit-intf [ip-address]} [distance]"
+
+.Usar ACLs (por defecto: deny implícito):
+
+<Standard: Permite o deniega por origen.
+
+<Extendida: Permite o deniega por origen y destino además de por aplicación
