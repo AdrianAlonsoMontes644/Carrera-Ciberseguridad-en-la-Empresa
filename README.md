@@ -3986,4 +3986,4 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
           Fácil de implementar en redes pequeñas             /                      Baja escalabilidad
                         Muy seguro                           /              Mayor complejidad en redes grandes
        La ruta hacia el destino siempre es la misma          /           Requiere intervención manual, no recalcula
-           No se necesitan recursos adicionales
+           No se necesitan recursos adicionales              /
