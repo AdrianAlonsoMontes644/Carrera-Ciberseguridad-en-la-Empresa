@@ -1,4 +1,4 @@
-![image](https://github.com/AdrianAlonsoMontes644/Carrera-Ciberseguridad-en-la-Empresa/assets/115784737/b65b4821-8318-484f-a3d1-226db30b831e)# Carrera Ciberseguridad en la Empresa
+# Carrera Ciberseguridad en la Empresa
 Comentarios propios que surgiran a lo largo del curso -> |(Iran dispuestos de esta manera, ayudaran a que sea más ameno de llevar a cabo y si lo leo un futuro no sera un simple resumen aburrido en texto)|
 
 #### Carrera Proyecto de clases Día 1: 09/10/2023
