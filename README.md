@@ -3987,3 +3987,8 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
                         Muy seguro                           /              Mayor complejidad en redes grandes
        La ruta hacia el destino siempre es la misma          /           Requiere intervención manual, no recalcula
            No se necesitan recursos adicionales              /
+
+### RIP
+
+#### Funcionamiento de RIP
+
