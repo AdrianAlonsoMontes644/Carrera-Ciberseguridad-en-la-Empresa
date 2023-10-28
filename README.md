@@ -3608,4 +3608,6 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 ##
 
+->|(La introducción menos por el nuevo indice es la misma que el curso anterior, la misma profesora que antes también, almenos ya se como reutiliza y como va a ir este curso)|
+
 ### Capa 3
