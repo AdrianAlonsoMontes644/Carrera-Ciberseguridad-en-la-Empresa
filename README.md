@@ -3744,4 +3744,138 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
     Predictibilidad de ruta:           Definido por administrador      /        Depende de la topología
 
--Clasificación del Routing Dinámico:
+->(|He intendado hacer que pareciera una tabla y sin querer descubrí que podía hacer esto en github jaja|)
+
+-Conceptos de Routing Dinámico:
+
+.Estructura de datos:
+
+<Tablas o bases de datos
+
+.Mensajes del protocolo de routing:
+
+<Intercambia información con vecinos
+
+.Algoritmo:
+
+<Determina el mejor camino
+
+-Mejor Camino:
+
+.Protocolo de enrutamiento:    
+
+<RIP (Routing Information Protocol):
+
+■ “Recuento de saltos”
+
+■ Cada router un salto
+
+■ Límite de saltos: 15
+
+<OSPF (Open Shortest Path First):
+
+■ “Coste”
+
+■ BW acumulado origen-destino
+
+■ A mayor velocidad, menor coste
+
+<EIGRP (Enhanced Interior Gateway Routing Protocol):
+
+■ BW más lento y retardos anormales
+
+■ Podría incluir carga y fiabilidad
+
+-Balanceo de Carga: En caso de tener 2 rutas, si ambas tienen la misma prioridad, se puede hacer un balanceo envíando la información una vez a través de una y una vez a través de otra
+
+#### Tabla de enrutamiento y elección de la mejor ruta
+
+-Tabla de enrutamiento: Usando el comando "show ip route" obtendremos la información
+
+.S - Ruta estática
+
+.* - Ruta predeterminada
+
+.O - Ruta dinámica (OSPF)
+
+.C - Red conectada directamente
+
+.L - Interfaz del router
+
+-Principios de la tabla de Routing:
+
+.Cada router toma su decisión por sí solo
+
+.Las tablas de enrutamiento no coinciden necesariamente
+
+.La información de enrutamiento no proporciona enrutamiento de retorno al secundario
+
+-Entradas de la tabla de Routing:
+
+.La primera identifica de que manera el router identífico la red
+
+.La segunda indentifica la red de destino
+
+.La trercera identifica la distancia administrativa del origen de la ruta.
+
+.La cuarta identifica la métrica para llegar a la red remota
+
+.La quinta identifica la dirección IP del siguiente salto para llegar a la red remota
+
+.La sexta identifica el tiempo transcurrido desde la última comunicación con la ruta
+
+.La séptima identifica la interfáz de salida en el router para llegar a la red de destino
+
+-Tipos de ruta: 
+
+.Redes conectadas directamente:
+
+<La red se indica con una C seguido de la dirección IP y la máscara
+
+<La interfaz se indica con una L y un prefijo /32 (IPv4) o /128 (IPv6)
+
+.Rutas estáticas:
+
+<ip route 10.0.4.0 255.255.255.0 10.0.3.2
+
+<ipv6 route 2001:db8:acad:4::/64 2001:db8:acad:3::2
+
+.Rutas dinámicas:
+
+<Las redes no se configuran manualmente, se descubren a través de otros routers.
+
+.Ruta predeterminada:
+
+<Se usa en ausencia de otra posible ruta que se ajuste mejor
+
+<Reduce el número de rutas en la tabla
+
+<Tienen una entrada de ruta 0.0.0.0/0 (IPV4) o ::/0 (IPV6)
+
+-Mejor ruta:
+
+.La mejor ruta se conoce también como la de coincidencia más larga
+
+#### Reenvío de paquetes
+
+-Proceso de decisión de reenvío:
+
+.Reenvío a un dispositivo en una red conectada directamente
+
+.Reenvío a un router de siguiente salto
+
+<Red Ethernet: Resolución de direcciones MAC
+
+<Red P2P: No hay direcciones MAC en interfaces serial
+
+.No hay ninguna coincidencia en la tabla de routing
+
+<Descarta el paquete
+
+-Mecanísmos de reenvío:
+
+.Conmutación de procesos (Process Switching)
+
+.Conmutación rápida (Fast Switching)
+
+.CEF (Cisco Express Forwarding)
