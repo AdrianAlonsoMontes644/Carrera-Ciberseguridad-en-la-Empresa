@@ -3730,18 +3730,18 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 -Estático o Dinámico:
  
-                                        Routing estático           /          Routing dinámico
+                                            Routing estático           /          Routing dinámico
 
-Complejidad de configuración:        Dependiente del tamaño        /        Independiente del tamaño
+    Complejidad de configuración:        Dependiente del tamaño        /        Independiente del tamaño
 
-Cambios de topología:                 Requiere intervención        /         Adaptación automática
+    Cambios de topología:                 Requiere intervención        /         Adaptación automática
 
-Escalabilidad:                                NO                   /                 SI
+    Escalabilidad:                                NO                   /                 SI
 
-Seguridad:                                 Inherente               /           Debe configurarse
+    Seguridad:                                 Inherente               /           Debe configurarse
 
-Uso de recursos:                    Sin recursos adicionales       /        CPU, memoria, BW enlaces
+    Uso de recursos:                    Sin recursos adicionales       /        CPU, memoria, BW enlaces
 
-Predictibilidad de ruta:           Definido por administrador      /        Depende de la topología
+    Predictibilidad de ruta:           Definido por administrador      /        Depende de la topología
 
 -Clasificación del Routing Dinámico:
