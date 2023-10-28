@@ -3898,4 +3898,92 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 "ipv6 unicast-routing" seguido de "ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ip-address]} [distance]
 
--Ruta estática estándar:
+-Ruta estática estándar: Indica la forma de llegar a una red concreta
+
+.Para IPV4:
+
+<(config)# ip route 192.168.1.0 255.255.255.0 172.16.2.2
+
+<(config)# ip route 192.168.1.0 255.255.255.0 s0/1/0
+
+<(config)# ip route 192.168.1.0 255.255.255.0 s0/1/0 172.16.2.2
+
+.Para IPV6:
+
+<(config)# ipv6 route 2001:db8:cafe:1::/64 2001:db8:acad:2::2
+
+<(config)# ipv6 route 2001:db8:cafe:1::/64 s0/1/0
+
+<(config)# ipv6 route 2001:db8:cafe:1::/64 s0/1/0 fe80::2
+
+-Ruta Estática Predeterminada: Es la que se usa cuando no hay más opciones. Se usa para cualquier red no conectada directamente.
+
+.Para IPV4:
+
+<(config)# ipv6 route 2001:db8:cafe:1::/64 2001:db8:acad:2::2
+
+<(config)# ipv6 route 2001:db8:cafe:1::/64 s0/1/0
+
+<R1(config)# ipv6 route 2001:db8:cafe:1::/64 s0/1/0 fe80::2
+
+.Para IPV6:
+
+<(config)# ipv6 route ::/0 2001:db8:acad:2::2
+
+<(config)# ipv6 route ::/0 s0/0/0
+
+<(config)# ipv6 route ::/0 s0/0/0 fe80::2 
+
+-Ruta Estática Flotante: Si la ruta preferida fallase se tendría otra como Backup
+
+.Distancia administrativa por defecto: 
+
+<Conectado directamente: 0
+
+<Estática: 1
+
+<BGP (externo): 20
+
+<EIGRP: 90
+
+<OSPF: 110
+
+<RIP: 120
+
+.Para IPV4:
+
+<(config)# ip route 0.0.0.0 0.0.0.0 172.16.2.2
+
+<(config)# ip route 0.0.0.0 0.0.0.0 172.16.3.2 5
+
+.Para IPV6:
+
+<(config)# ipv6 route ::/0 2001:db8:acad:2::2
+
+<(config)# ipv6 route ::/0 2001:db8:cafe:2::2 5
+
+-Ruta Estática Resumida: Se pueden representar las siguientes 4 redes usando solo la primera:
+
+.(config)# ip route 172.20.0.0 255.255.0.0 s0/0/0
+
+.(config)# ip route 172.21.0.0 255.255.0.0 s0/0/0
+
+.(config)# ip route 172.22.0.0 255.255.0.0 s0/0/0
+
+.(config)# ip route 172.23.0.0 255.255.0.0 s0/0/0
+
+-Verificación de las Rutas Estáticas:
+
+."show ip route static" 
+
+."show ip route ip_Verificar"
+
+."show running-config | section ip route"
+
+-Ventajas y Desventajas:
+
+                         Ventajas                            /                         Desventajas
+          Fácil de implementar en redes pequeñas             /                      Baja escalabilidad
+                        Muy seguro                           /              Mayor complejidad en redes grandes
+       La ruta hacia el destino siempre es la misma          /           Requiere intervención manual, no recalcula
+           No se necesitan recursos adicionales
