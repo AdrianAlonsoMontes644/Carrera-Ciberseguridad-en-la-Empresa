@@ -1,4 +1,4 @@
-# Carrera Ciberseguridad en la Empresa
+![image](https://github.com/AdrianAlonsoMontes644/Carrera-Ciberseguridad-en-la-Empresa/assets/115784737/b65b4821-8318-484f-a3d1-226db30b831e)# Carrera Ciberseguridad en la Empresa
 Comentarios propios que surgiran a lo largo del curso -> |(Iran dispuestos de esta manera, ayudaran a que sea más ameno de llevar a cabo y si lo leo un futuro no sera un simple resumen aburrido en texto)|
 
 #### Carrera Proyecto de clases Día 1: 09/10/2023
@@ -3611,3 +3611,137 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 ->|(La introducción menos por el nuevo indice es la misma que el curso anterior, la misma profesora que antes también, almenos ya se como reutiliza y como va a ir este curso)|
 
 ### Capa 3
+
+-Operaciones básicas de la capa 3:
+
+.Direccionamiento de dispositivos finales
+
+.Encapsulación
+
+.Enrutamiento
+
+.Desencapsulación
+
+-Características de IP:
+
+.Sin conexión:
+
+<El emisor no sabe si el receptor está presente
+
+<El emisor no sabe si el paquete llegó
+
+<El emisor no sabe si el receptor puede leer el paquete
+
+<El receptor no sabe cuando llegará
+
+.Mejor esfuerzo o poco confiable:
+
+<Los paquetes se enrutan velozmente a través de la red
+
+<Algunos paquetes se pueden perder por el camino
+
+.Medios independientes:
+
+<El paquete se envía por medios independientes uno del otro. Por ejemplo: Un usuario envía un paquete IP por un ethernet de cobre a switch, desde este va a otro switch por un serial de cobre, desde ahí a un tercer switch por fibra óptica, de ahí a un ruter a través de un ethernet de cobre y por último vía inalámbrica hasta el receptor.
+
+-Paquete IPV4
+
+.El primer Paquete ip que se diseñó. Tiene los siguientes campos importantes:
+
+<Versión
+
+<Servicios diferenciados
+
+<Suma de comprobación del encabezado
+
+<Dirección ip de origen
+
+<Dirección ip de Destino
+
+<Tiempo de duración
+
+<Protocolo
+
+-Limitaciones IPV4
+
+.Agotamiento de las direcciones IPv4
+
+<Solución temporal: NAT
+
+.Falta de conectividad de extremo a extremo
+
+.Mayor complejidad de la red:
+
+<Solución óptima: Transición a IPv6
+
+-NAT: Traducción de direcciones
+
+.Las direcciones Privadas no se pueden enrutar a través de internet.
+
+.Rango de direcciones privadas:
+
+<10.0.0.0 - 10.255.255.255
+
+<172.16.0.0 - 172.31.255.255
+
+<192.168.0.0 - 192.168.255.255
+
+-Paquete IPV6:
+
+.Presenta una serie de ventajas respecto a IPV4:
+
+<Tiene un mayor espacio de direccionamiento ya que usa 128 bits
+
+<No utiliza NAT
+
+<Mejor manejo de los paquetes
+
+.Campos:
+
+<Versión
+
+<Clase de tráfico
+
+<Etiqueta de flujo
+
+<Longitud del contenido
+
+<Encabezado siguiente
+
+<Límite de saltos
+
+<Dirección ip de origen
+
+<Dirección ip de Destino
+
+-Coexistencia IPV4 E IPV6:
+
+.Dual-stack: Dispositivos que trabajan en ámbas versiones.
+
+.Tunelización: Intento de conectar dos redes IPV6 a traves de una red IPV4
+
+.Traducción: A través de un Router NAT64, se traducen los datos de una red IPV6 e IPV4 cuando se mandan datos de una a otra
+
+#### Tipos de Enrutamiento
+
+-Elemento principal de capa 3 -> Router:
+
+.Determina qué interfaz debe usar para el reenvío eligiendo la mejor ruta.
+
+-Estático o Dinámico:
+ 
+                                        Routing estático           /          Routing dinámico
+
+Complejidad de configuración:        Dependiente del tamaño        /        Independiente del tamaño
+
+Cambios de topología:                 Requiere intervención        /         Adaptación automática
+
+Escalabilidad:                                NO                   /                 SI
+
+Seguridad:                                 Inherente               /           Debe configurarse
+
+Uso de recursos:                    Sin recursos adicionales       /        CPU, memoria, BW enlaces
+
+Predictibilidad de ruta:           Definido por administrador      /        Depende de la topología
+
+-Clasificación del Routing Dinámico:
