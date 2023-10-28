@@ -4008,12 +4008,11 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 -Comparativa RIPv1 y RIPv2:
 
-    RIPv1 / RIPv2
-
-    Métrica: número de saltos / Métrica: número de saltos
-    Número límite de saltos: 15  / Número límite de saltos: 15
-    Distancia administrativa: 120 / Distancia administrativa: 120
-    Con clase                    /       Sin clase
-    No soporta VLSM y CIDR         /     Soporta VLSM y CIDR
-    Transmisión broadcast (255.255.255.255) /   Transmisión multicast (224.0.0.9)
-    No soporta autenticación       /         Soporta autenticación (MD5)
+                          RIPv1                         /                    RIPv2
+                 Métrica: número de saltos              /          Métrica: número de saltos
+                Número límite de saltos: 15             /         Número límite de saltos: 15
+               Distancia administrativa: 120            /        Distancia administrativa: 120
+                        Con clase                       /                Sin clase
+                  No soporta VLSM y CIDR                /            Soporta VLSM y CIDR
+         Transmisión broadcast (255.255.255.255)        /      Transmisión multicast (224.0.0.9)
+                 No soporta autenticación               /         Soporta autenticación (MD5)
