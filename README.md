@@ -4091,3 +4091,9 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 <Standard: Permite o deniega por origen.
 
 <Extendida: Permite o deniega por origen y destino además de por aplicación
+
+#### Carrera Proyecto de clases Día 17: 29/10/2023
+
+### OSPF
+
+#### Conceptos Clave de OSPF
