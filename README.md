@@ -3874,8 +3874,28 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 -Mecanísmos de reenvío:
 
-.Conmutación de procesos (Process Switching)
+.Conmutación de procesos (Process Switching): Bastante antiguo y casi no se usa, Cada paquete que llega se pasa al plano de control y la CPU se encarga de calcular la mejor ruta y enviarlo.
 
-.Conmutación rápida (Fast Switching)
+.Conmutación rápida (Fast Switching): Mejora el rendimiento aunque también es antiguo y se usa poco, Solo el primer paquete que llega se pasa al plano de control y el resto de paquetes si van al mismo destino pasarán por el caché del envío pasando directamente.
 
-.CEF (Cisco Express Forwarding)
+.CEF (Cisco Express Forwarding): La más recomendada, En ningún momento se pasa por el plano de control si no que toda la información va directa por el plano de datos, donde se establece una tabla FIB y un tabla de adyacencia que muestra las opciones para llegar a los distintos sitios de la red.
+
+### Rutas Estáticas
+
+#### Tipos de rutas Estáticas
+
+-Definición de la ruta estática
+
+.Ruta del siguiente salto
+
+<Opción recomendada en interfaces que requieren capa 2 (Ethernet)
+
+.Ruta conectada directamente
+
+.Ruta completamente especificada
+
+"ip route network-address subnet-mask { ip-address | exit-intf [ip-address]} [distance]"
+
+"ipv6 unicast-routing" seguido de "ipv6 route ipv6-prefix/prefix-length {ipv6-address | exit-intf [ip-address]} [distance]
+
+-Ruta estática estándar:
