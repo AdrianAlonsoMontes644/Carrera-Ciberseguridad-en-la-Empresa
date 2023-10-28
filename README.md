@@ -3589,3 +3589,23 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 #### Carrera Proyecto de clases Día 16: 28/10/2023
 
 ## Curso de Seguridad Y Red en el Ámbito Corporativo: Capa 3 y 7 del modelo OSI
+
+● Capa 3
+
+● Rutas estáticas
+
+● RIP
+
+● OSPF
+
+● HSRP
+
+● Capa 7
+
+● DHCP
+
+● SNMP
+
+##
+
+### Capa 3
