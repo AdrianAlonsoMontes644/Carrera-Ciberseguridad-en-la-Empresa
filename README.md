@@ -4016,3 +4016,62 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
                   No soporta VLSM y CIDR                /            Soporta VLSM y CIDR
          Transmisión broadcast (255.255.255.255)        /      Transmisión multicast (224.0.0.9)
                  No soporta autenticación               /         Soporta autenticación (MD5)
+
+-Modos de Funcionamiento y Mensajes:
+
+.Modos de funcionamiento de las interfaces:
+
+<Activo: Normalmente solo los router operan en este modo
+
+<Pasivo: Normalmente conecta con usuarios finales
+
+.Tipos de mensaje (sólo en interfaces activas):
+
+<Request: Solicita parte o toda la tabla de rutas
+
+<Reply:
+
+■ Respuesta a un request
+
+■ Actualización periódica
+
+■ Actualización por cambio en topología
+
+-Tipos de Temporizadores:
+
+.Temporizador periódico (update timer): 30 segundos
+
+.Temporizador de caducidad (invalid timer): 180 segundos
+
+.Temporizador de purga (flush timer): 240 segundos
+
+.Temporizador de retención (holddown timer): 180 segundos
+
+-Configuración:
+
+.Configuración RIPv2: "router rip" seguido de "version 2" seguido de "no auto-summary" seguido de "network network-address"
+
+.Redistribución de rutas predeterminadas: "ip route 0.0.0.0 0.0.0.0 [next-hop-address | exit-intf]" seguido de "redistribute static"
+
+.Interfaz pasiva (usuario final): "passive-interface interface-id"
+
+-Verificación de la configuración:
+
+.Comprobar que soporta VLSM y CIDR: usando "show ip route"
+
+-Ventajas y desventajas:
+
+                            Ventajas                      /                                       Desventajas
+                 Fácil de entender y configurar           /          Únicamente tiene en cuenta el número de saltos, descartando otros criterios
+              No requiere actualizaciones manuales        /                           Límite máximo en el número de saltos
+              Soportado por la mayoría de fabricantes     /                                Tiempo de convergencia largo
+
+#### Fallo de Seguridad de RIP
+
+-Funcionamiento Normal:
+
+-RIP Poisining:
+
+#### CONFIGURACIÓN SEGURA DE RIP
+
+-Mitigación RIP Poisoning
