@@ -4495,3 +4495,71 @@ Protocolos de la capa de la aplicación:
 .Web: HTTP, HTTPS
 
 ### DHCP
+
+#### Funcionamiento de DNS
+
+.Sistema de nombres de dominio (DNS)
+
+.Traduce nombres de dominios web a la dirección IP del servidor en el que se aloja la página web
+
+.Se encapsula sobre el puerto 53 tanto de UDP como TCP
+
+.Sigue una arquitectura de cliente/servidor
+
+.Utiliza una base de datos distribuida y jerárquica
+
+-Jerarquía DNS: "DNS-Root zone"(<<.>>) -> "1º level zone"(.com / .edu / .gov) -> "2º level zone"(google.com) -> "3º level zone"(drive.google.com / mail.google.com)
+
+-Funcionamiento DNS:
+
+.La primera consulta se hace al servidor DNS local del sistema operativo. Se comprueba la memoria caché
+
+.En caso de no encontrarse, la consulta se envía al servidor DNS del ISP
+
+-Comando NSLOOKUP: Al usar este comando en el cmd nos muestra en primer lugar el servidor DNS al que se harán las consultas y da la opción de escribir al terminar.
+
+#### Funcionamiento de DHCP
+
+.Protocolo de red de tipo cliente/servidor
+
+.Se encarga de la asignación dinámica de direcciones IP y otros parámetros de configuración de red
+
+.Se encapsula sobre el puerto 67 (servidor) y 68 (cliente) de UDP
+
+.Un servidor DHCP es escalable y relativamente fácil de administrar
+
+.Las direcciones IP se asignan un tiempo configurable (período de concesión)
+
+.DHCPv6 proporciona servicios similares pero sin compartir el gateway
+
+-Funcionamiento: Un cliente DHCPv4 desea solicitar una dirección con "DHCPDISCOVER Difusion" y contacta con el servido DHCPv4 el cual le responde con una oferta de dirección usando "CHCPOFFER Unidifusion / Difusion". El cliente acepta la oferta de la dirección con "DHCPREQUEST Difusion" y el servidor hace un acuse de recivo de la aceptación con "DHCPACK Unidifusion"
+
+-Renovar una dirección Temporal: El cliente envía una petición para renovar al servidor usando "DHCPREQUEST Unidifusion" y el servidor hace un acuse de recivo de la aceptación con "DHCPACK Unidifusion"
+
+-Configuración:
+
+.Exclusión de direcciones IP con "ip dhcp excluded-address ip-address"
+
+.Configuración pool DHCP: "ip dhcp pool pool-name"
+
+<Red: "network network-address mask" 
+
+<Puerta de enlace: "default-router gateway-address"
+
+<Servidor DNS: "dns-server dns-server-address"
+
+<Nombre de dominio: "domain-name domain"
+
+<Duración de la concesión: lease {days [hours [ minutes]] | infinite}
+
+.Desactivar y activar DHCP: "no service dhcp"  /  "service dhcp"
+
+-Verificación de la Configuración:
+
+."show running-config | section dhcp" muestra la información relativa a shcp, es decir, los comados que fuimos incluyendo
+
+."show ip dhcp binding" muetsra la relación entre la dirección ip y la dirección MAC que tenemos
+
+-Verificación del cliente DHCP: "ipconfig /all": Podemos ver el DNS asignado y su dirección ip. También otros servidores DNS.
+
+#### Fallo de Seguridad de DHCP
