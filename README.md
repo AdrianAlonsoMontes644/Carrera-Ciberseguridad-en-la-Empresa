@@ -4097,3 +4097,35 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 ### OSPF
 
 #### Conceptos Clave de OSPF
+
+.Protocolo de encaminamiento dinámico interior
+
+.Se encapsula sobre el protocolo IP (campo protocolo: 89)
+
+.Se tiene en cuenta el ancho de banda para calcular la métrica
+
+.Protocolo de estado de enlace y el concepto de áreas
+
+.Existen 2 versiones: OSPFv2 (OSPF para IPv4) y OSPFv3 (OSPF para IPv6)
+
+.Componentes de OSPF:
+
+<Mensajes de protocolo de enrutamiento
+
+<Estructura de datos
+
+<Algoritmo: Dijkstra
+
+-Tipos de Paquetes:
+
+     Tipo             /              Nombre del paquete                    /                                  Descripción
+      1               /                     Hello                          /                     Descubre vecinos y construye adyacencias
+      2               /       Descriptores de bases de datos (DBD)         /                 Controla la sincronización de BBDD entre routers
+      3               /       Solicitud de estado de enlace (LSR)          /       Solicita registros específicos del estado de enlace de router a router
+      4               /      Actualización de estado de enlace (LSU)       /         Envía los registros de estado de enlace específicamente solicitados
+      5               /    Acuse de recibo de estado de enlace (LAck)      /                          Confirma la recepción de LSU
+
+-Estructura de Datos:
+
+      Base de datos   /                   Tabla                            /                                 Descripción
+      
