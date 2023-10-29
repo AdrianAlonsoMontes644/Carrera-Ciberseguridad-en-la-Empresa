@@ -4325,3 +4325,101 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 .VRRPv3: Proporciona la capacidad de admitir direcciones IPv4 e IPv6. Más escalable que VRRPv2
 
 .GLBP para IPv6: Proporciona la misma funcionalidad que GLBP pero en un entorno IPv6. Ofrece un único router IPv6 virtual de primer salto mientras reparte la carga entre los diferentes routers físicos
+
+#### Funcionamiento de HSRP
+
+.Protocolo de capa 3 propiedad de Cisco
+
+.Uso de puertas de enlace redundantes (conmutación por fallo transparente)
+
+.Definición de MAC y dirección IP virtuales
+
+.Se forma un grupo HSRP compuesto por un router activo y un router de respaldo (elimina SPOF)
+
+.Comunicación mediante la dirección multicast 224.0.0.2 (versión 1) o 224.0.0.102 (versión 2) y el puerto UDP 1985
+
+-Prioridad y Preferencia:
+
+.Prioridad:
+
+<Valor entre 0 y 255. Por defecto: 100
+
+<Se elige como router activo el que tenga mayor prioridad
+
+<Si las prioridades iguales, se elige aquel con la dirección IPv4 más alta
+
+.Preferencia:
+
+<Fuerza un nuevo proceso de elección de HSRP
+
+<Si se habilita, el router con la prioridad más alta asume el rol de activo
+
+<Si la prioridad es igual en los routers, no se modifica el rol de activo
+
+-Estados:
+
+.Inicial: El router comienza el proceso HSRP
+
+.Aprendizaje: El router espera para escuchar al router activo. No hay IP virtual
+
+.Escucha: El router no es ni activo ni de respaldo, pero escucha los mensajes de estos dos. Se conoce la IP virtual
+
+.Hablar: El router participa en la elección del router activo y el de respaldo. Envía mensajes de saludo periódicos (cada 3 segundos)
+
+.Standby: El router se convierte en el siguiente router activo (espera 10 segundos)
+
+.Activo: El router gana la elección del rol de activo
+
+-Configuración:
+
+.Configuración router activo: tras "interface interface-id" se usa "standby version 2", luego "standby 1 ip virtual-ip-address" seguido de "standby 1 priority priority-value" y por último "standby 1 preempt".
+
+.Configuración router de respaldo: tras "interface interface-id" se usa "standby version 2" y luego "standby 1 ip virtual-ip-address".
+
+-Verificación de la Configuración:
+
+.Comprobar la configuración del grupo HSRP con "show standby"
+
+#### Fallo de Seguridad de HSRP
+
+-Funcionamiento Normal: Un router activo, uno en stand by, una ip virtual a la que responden ambos y cuando el usuario se quiera comunicar con el exterior envía la información a la ip virtual y el router que se encuentre activo se encargará de enrutar la info.
+
+-Robo de Router Activo:
+
+.Man in the middle:
+
+<Los datos transmitidos por ambos extremos son interceptados por el atacante
+
+<La principal finalidad es leer , modificar o borrar la información enviada por los usuarios
+
+.Denegación de servicio (DoS)
+
+<Provoca que el acceso a un recurso o dispositivo no sea posible
+
+.Degradación de servicio
+
+<Envío intermitente de paquetes fraudulentos generando períodos de corte
+
+#### Configuración segura de HSRP
+
+-Mitigación de los ataques:
+
+.Usar autenticación MD5 ("standby 1 authentication md5 key-chain key-chain-name")
+
+.Poner la máxima prioridad al router activo con "standby 1 priority 255"
+
+.Usar ACLs (por defecto: deny implícito):
+
+<Standard: Permite o deniega por origen
+
+<Extendida: Permite o deniega por origen y destino, además de por aplicación
+
+.Implementar HSRP con IPSec
+
+<IPSec es un protocolo encargado de que las conexiones sobre IP se cifren y se autentiquen para una mayor seguridad.
+
+<Cumple los 3 criterios principales: confidencialidad, integridad y autenticación 
+
+### Introducción a la Capa 7
+
+#### Capa 7 (modelo OSI)
