@@ -3588,7 +3588,7 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 #### Carrera Proyecto de clases Día 16: 28/10/2023
 
-## Curso de Seguridad Y Red en el Ámbito Corporativo: Capa 3 y 7 del modelo OSI
+## "Curso de Seguridad Y Red en el Ámbito Corporativo: Capa 3 y 7 del modelo OSI"
 
 ● Capa 3
 
@@ -4118,14 +4118,196 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 -Tipos de Paquetes:
 
-     Tipo             /              Nombre del paquete                    /                                  Descripción
-      1               /                     Hello                          /                     Descubre vecinos y construye adyacencias
-      2               /       Descriptores de bases de datos (DBD)         /                 Controla la sincronización de BBDD entre routers
-      3               /       Solicitud de estado de enlace (LSR)          /       Solicita registros específicos del estado de enlace de router a router
-      4               /      Actualización de estado de enlace (LSU)       /         Envía los registros de estado de enlace específicamente solicitados
-      5               /    Acuse de recibo de estado de enlace (LAck)      /                          Confirma la recepción de LSU
+            Tipo         /              Nombre del paquete                    /                                  Descripción
+             1           /                     Hello                          /                     Descubre vecinos y construye adyacencias
+             2           /       Descriptores de bases de datos (DBD)         /                 Controla la sincronización de BBDD entre routers
+             3           /       Solicitud de estado de enlace (LSR)          /       Solicita registros específicos del estado de enlace de router a router
+             4           /      Actualización de estado de enlace (LSU)       /         Envía los registros de estado de enlace específicamente solicitados
+             5           /    Acuse de recibo de estado de enlace (LAck)      /                          Confirma la recepción de LSU
 
 -Estructura de Datos:
 
-      Base de datos   /                   Tabla                            /                                 Descripción
-      
+              Base de datos                   /                           Tabla                       /                                               Descripción
+       Base de datos de adyacencia            /                     Tabla de vecinos                  /               Routers vecinos a los que se ha conectado un router y Única para cada router
+    Base de datos de estado de enlace         /                    Tabla de topología                 /         Muestra información sobre la topología de la red e Idéntica para todos los routers del área
+         Base de datos de reenvío             /                   Tabla de enrutamiento               /       Lista de rutas generada cuando se ejecuta el algoritmo de estado de enlace. Única para cada router
+
+-Algoritmo de DIJKSTRA ->(|Algoritmo de que? Como carajos se lee eso?|)->: Se tienen 5 nodos y la distancia de uno a otro. Nos situamos en un nodo y de primeras se consideran el resto inalcanzables y uno a uno se comprueba la distancia real. Este proceso se repite con todos y cada uno de los nodos.
+
+-Área única: Todos los routers están dentro de una misma área
+
+-Área multitarea: Se implementan varias áreas y siempre se debe tener el área 0 como área troncal. La ventaja es que reduce mucho la sobrecarga de la red.
+
+-Tipos de routers:
+
+.Designated Router (DR)
+
+.Backup Designated Router (BDR)
+
+.Internal Router (IR)
+
+.Area Border Router (ABR)
+
+.Backbone Router (BR)
+
+.Autonomous System Boundary Router (ASBR)
+
+#### Estados de funcionamiento de OSPF
+
+-Funcionamiento del estado de enlace:
+
+1. Establecimiento de adyacencias de vecinos
+
+2. Intercambio de anuncios de estado de enlace
+
+3. Crear la base de datos de estados de vínculo
+
+4. Ejecutar el algoritmo SPF (Dijkstra)
+
+5. Elección de la mejor ruta
+
+-Tipos de estados:
+
+.Down: Ningún paquete Hello recibido. El router envía paquetes Hello
+
+.Init: Se reciben paquetes Hello del vecino (contienen router ID)
+
+.Two-Way: Comunicación bidireccional entre los dos routers. Elección de DR y BDR
+
+.ExStart: Se decide quien inicia el intercambio de paquetes DBD y el nº de secuencia
+
+.Exchange: Los routers intercambian paquetes DBD
+
+.Loading: Se obtiene información adicional de la ruta. (Paso opcional)
+
+.Full: Base de datos de estado de vínculo completamente sincronizada
+
+-Establecimiento de Adyacencia:
+
+1. Estado Down a estado Init
+
+2. Estado Init
+
+3. Estado Two-Way
+
+4. Elección DR y BDR
+
+-Sincronización de bases de datos:
+
+1. Decidir el router que envía primero
+
+2. Intercambio DBD
+
+3. Enviar un LSR
+
+-Importancia de Elegir un DR y BDR:
+
+.¿Por qué se necesita elegir un DR y un BDR?:
+
+<Creación de muchas adyacencias: n * ( n-1 ) / 2
+
+<Saturación intensa con mensajes OSPF
+
+.Cómo se eligen el DR y el BDR?:
+
+<Prioridad más alta (0 a 255)
+
+<ID más alta
+
+■ Router ID más alto
+
+■ IPv4 de loopback más alta
+
+■ Dirección IPv4 activa más alta
+
+-Fallo y Recuperación del DR: Luego de recibir información periódica del DR, se busca un BDR para que asuma el rol.
+
+#### Funcionamiento de OSPF (Área Única)
+
+-Prioridad y router ID:
+
+.Configuración OSPFv2 con "router ospf process-id"
+
+.Configuración prioridad: después de "interface interface-id utilizar "ip ospf priority priority-value"
+
+.Configuración router-ID con "router-id rid"
+
+.Configuración interfaz loopback: usar "interface Loopback 1" y luego "ip address ip-address mask
+
+-Configuración de las redes:
+
+.Comando network: "network network-address wildcard-mask area area-id"
+
+.Comando ip ospf: luego de "interface interface-id" usar "ip ospf process-id area area-id"
+
+-Tipos de Redes OSPF:
+
+.Broadcast: "show ip ospf interface GigabitEthernet 0/0/0"
+
+.Punto a punto: tras "interface interface-id" y usar "ip ospf network point-to-point"
+
+-Configuración adicional:
+
+.Interfaz pasiva (usuario final): "passive-interface interface-id"
+
+.Redistribución de rutas predeterminadas: "ip route 0.0.0.0 0.0.0.0 [next-hop-address | exit-intf]" seguido de "default-information originate"
+
+-Verificación de los Vecinos OSPF: "default-information originate"
+
+.Posibles estados:
+
+<FULL/DROTHER
+
+<FULL/DR
+
+<FULL/BDR
+
+<2-WAY/DROTHER
+
+-Verificación de la configuración con "show ip protocols"
+
+#### Fallo de seguridad de OSPF
+
+-Funcionamiento Normal:
+
+-Robo de la identidad de DR:
+
+-Alteración del DR:
+
+-Otros posibles ataques:
+
+.Denegación de servicio
+
+<Envío de una cantidad elevada de LSA fraudulentos hasta saturar la red
+
+<Desviación del tráfico y generación de cuellos de botella
+
+.Remote False Adjacency
+
+<Se anuncia un router “fantasma”. Se genera un “black hole”
+
+.Disguised LSA
+
+<Suplantación de un LSA legítimo mediante la inundación de la red con LSA fraudulentos en nombre del router víctima
+
+#### Configuración Segura de OSPF
+
+-Mitigación de los ataques:
+
+.Usar autenticación MD5:
+
+<Configuración del protocolo OSPF usando "area area-id authentication message-digest"
+
+<Configuración en cada interfaz con "ip ospf message-digest-key key-number md5 password"
+
+.Definir interfaces pasivas: "passive-interface interface-id"
+
+.Números de secuencia aleatorios:
+
+<Evita ataques de tipo LSA Disguised
+
+.Habilitar TTL Security:
+
+<Evita ataques de tipo Remote False Adjacency con "ttl-security all-interfaces [ hops hop-count ]"
+
+### HSRP
