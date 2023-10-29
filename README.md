@@ -4268,11 +4268,9 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 
 #### Fallo de seguridad de OSPF
 
--Funcionamiento Normal:
+-Funcionamiento Normal: La información fluye por los diferentes enlaces de la red con los anuncios OSPF correspondientes y si no se tiene configurada una interfaz pasiva, los paquetes bajarian hasta los enlaces de los usuarios.
 
--Robo de la identidad de DR:
-
--Alteración del DR:
+-Robo de la identidad de DR: El atacante manda un paquete "hello" fraudulento haciendo creer a la red que es un router legítimo, de esta forma puede llegar a engañar a el resto de la topología y hacerles creer que es el DR por lo que toda la información pasará por el y tendrá control absoluto de la red
 
 -Otros posibles ataques:
 
