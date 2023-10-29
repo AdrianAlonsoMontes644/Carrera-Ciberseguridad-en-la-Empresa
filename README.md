@@ -4309,3 +4309,19 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 <Evita ataques de tipo Remote False Adjacency con "ttl-security all-interfaces [ hops hop-count ]"
 
 ### HSRP
+
+-Opciones de FHRP para IPV4:
+
+.HSRP: Propiedad de Cisco. Permite la conmutación por error de forma transparente de un dispositivo IPv4 de primer salto.
+
+.VRRPv2: Protocolo estándar abierto. Permite que varios routers en un enlace multiacceso utilicen la misma dirección IPv4 virtual.
+
+.GLBP: Propiedad de Cisco. Similar a HSRP y VRRPv2, mientras que también permite el balanceo de carga entre los routers.
+
+-Opciones de FHRP para IPV6:
+
+.HSRP para IPv6: Proporciona la misma funcionalidad que HSRP pero en un entorno IPv6. Tiene una MAC virtual derivada del número de grupo HSRP y una dirección link-local IPv6 virtual derivada de la MAC virtual
+
+.VRRPv3: Proporciona la capacidad de admitir direcciones IPv4 e IPv6. Más escalable que VRRPv2
+
+.GLBP para IPv6: Proporciona la misma funcionalidad que GLBP pero en un entorno IPv6. Ofrece un único router IPv6 virtual de primer salto mientras reparte la carga entre los diferentes routers físicos
