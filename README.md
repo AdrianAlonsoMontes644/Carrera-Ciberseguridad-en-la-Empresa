@@ -4609,3 +4609,75 @@ Protocolos de la capa de la aplicación:
 ### SNMP
 
 #### Funcionamiento de SNMP
+
+.Protocolo de la capa de aplicación que facilita el intercambio de información de administración de los dispositivos de red
+
+.Se encapsula sobre el puerto 161 y el 162 (traps) de UDP
+
+.Se distinguen 4 componentes principales: administrador SNMP (NMS), agente SNMP, dispositivos y recursos administrados por SNMP y MIB
+
+.Arquitectura simple basada en el modelo cliente/servidor
+
+.Existen 3 versiones del protocolo: SNMPv1, SNMPv2c y SNMPv3
+
+-Tipos de mensajes SNMP:
+
+.get-request: El agente obtiene el valor de la variable de MIB solicitada y responde al administrador de red con dicho valor
+
+.get-next-request: Se realiza una búsqueda secuencial para encontrar la variable necesaria dentro de una tabla
+
+.get-bulk-request: Recupera grandes bloques de datos, como varias filas en una tabla (SNMPv2)
+
+.get-response: Respuesta del agente con los datos solicitados por el administrador de red
+
+.set-request: El agente de SNMP cambia el valor de la variable de MIB al valor especificado por el administrador de red
+
+.trap: Mensajes enviados por los agentes ante un evento previamente especificado
+
+-Versiones:
+
+.SNMPv1 y v2c: Usan coincidencia de cadena de comunidad para autenticación
+
+.SNMPv3:
+
+<noAuthNoPriv: Sin autenticación (solo nombre de usuario sin contraseña) ni privacidad
+
+<authNoPriv: Con autenticación (contraseña con MD5 o SHA) pero sin privacidad
+
+<authPriv: Con autenticación (contraseña con MD5 o SHA) y privacidad (cifrado DES o AES)
+
+                           SNMPv1     /     SNMPv2c     /          SNMPv3
+    Autenticación        Comunidad    /    Comunidad    /     Usuario, MD5 o SHA
+       Cifrado               No       /       No        /         DES o AES
+
+-Configuración SNMPv2c:
+
+.Cadena de comunidad de sólo lectura:
+
+<No permite cambiar la configuración del dispositivo ("snmp-server community password ro").
+
+.Cadena de comunidad de lectura y escritura:
+
+<Permite modificar la configuración del dispositivo ("snmp-server community password rw").
+
+-Sondeo: Extraer de manera periodica información de un dispositivo con "snmpget -v2c -c community DireccionIP NumeroDeOID" 
+
+#### Fallo de Seguridad de SNMP
+
+-Funcionamiento Normal:
+
+-Obtención de Acceso Ilegítimo:
+
+.Formas de acceso a la información de gestión:
+
+<Uso de comunidades por defecto
+
+<Captura de paquetes con sniffer (man in the middle)
+
+-SNMP RECONNAISSANCE:
+
+.Obtención de información:
+
+<Información de sistema (nombre de host, descripción, SO, dirección IP…)
+
+<Información de red (modelo, fabricante, datos de ruteo, interfaces…)
