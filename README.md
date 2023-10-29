@@ -4664,7 +4664,7 @@ Protocolos de la capa de la aplicación:
 
 #### Fallo de Seguridad de SNMP
 
--Funcionamiento Normal:
+-Funcionamiento Normal: Un usuario envía una solicitud a un servidor y este responde con la respuesta
 
 -Obtención de Acceso Ilegítimo:
 
