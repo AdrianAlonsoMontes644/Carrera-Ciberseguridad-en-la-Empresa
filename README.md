@@ -4423,3 +4423,75 @@ Usando "sh vtp status" puedes ver que versión está en uso junto a la informaci
 ### Introducción a la Capa 7
 
 #### Capa 7 (modelo OSI)
+
+-La capa de aplicación:
+
+.Capa más cercana al usuario final
+
+.Interfaz para la comunicación con el usuario
+
+.Ejemplos de aplicaciones:
+
+<Terminal virtual
+
+<Gestión de ficheros
+
+<Servicio de correo
+
+<Servicio de directorio
+
+-La capa de Aplicación en TCP/IP:
+
+.Aplicación:
+
+<Interfaz entre la aplicación del usuario y la red
+
+.Presentación:
+
+<Tratamiento de los datos
+
+.Sesión:
+
+<Crea y mantiene diálogos
+
+-Modelo Cliente/Servidor:
+
+.Cliente: Solicita información
+
+.Servidor: Provee información
+
+.Puede requerir autenticación
+
+.Red centralizada (Servidor en el centro)
+
+.Problema SPOF (Single Point Of Failure)
+
+-Modelo P2P:
+
+.Consta de dos partes:
+
+<Red P2P y Aplicaciones P2P
+
+.Red P2P:
+
+<Cada PC es servidor y cliente
+
+<Compartir recursos (conexión a Internet, juegos…)
+
+.Aplicación P2P:
+
+<Permite que cada dispositivo actúe como cliente y servidor
+
+Protocolos de la capa de la aplicación:
+
+.Nombre de dominio: DNS
+
+.Configuración de dispositivos: DHCP
+
+.Email: SMTP, POP3, IMAP
+
+.Transferencia de ficheros: FTP, TFTP
+
+.Web: HTTP, HTTPS
+
+### DHCP
