@@ -4563,3 +4563,49 @@ Protocolos de la capa de la aplicación:
 -Verificación del cliente DHCP: "ipconfig /all": Podemos ver el DNS asignado y su dirección ip. También otros servidores DNS.
 
 #### Fallo de Seguridad de DHCP
+
+-Funcionamiento Normal: El cliente envía un mensaje a través de la red de DISCOVERY y el servidor será encargado de responder con un OFFER donde se indicaran los parámetros correspondientes, si el cliente está de acuerdo enviará un REQUEST el cual es servidor contestará con un ACK
+
+-Posibles ataques:
+
+.DHCP Starvation:
+
+<Agota todas las direcciones de las que dispone el servidor DHCP
+
+.DHCP Spoofing:
+
+<El atacante escucha las solicitudes DHCP de los clientes y responde antes que el servidor legítimo
+
+.DHCP Ack Injection:
+
+<Mejora de DHCP Spoofing. Se deja que el servidor legítimo proporcione las direcciones antes de enviar el mensaje fraudulento
+
+#### Configuración Segura de DHCP
+
+-Mitigación de Ataque DHCP:
+
+.Usar ACLs (por defecto: deny implícito):
+
+<Standard: Permite o deniega por origen
+
+<Extendida: Permite o deniega por origen y destino además de por aplicación
+
+.Implementar DHCP Snooping:
+
+<Configuración DHCP Snooping con "ip dhcp snooping" / " ip dhcp snooping vlan vlan-number"
+
+<Puertos confiables con " ip dhcp snooping trust"
+
+<Puertos no confiables con "ip dhcp snooping limit rate rate"
+
+.Usar port-security:
+
+<Es necesario que el puerto se configure como acceso o troncal:
+
+"switchport port-security" -> "switchport port-security number-max-MACs" -> "switchport port-security violation { protect | restrict | shutdown }" -> "switchport port-security mac-address { mac address | sticky }"
+
+.Apagar los puertos no utilizados con "shutdown"
+
+### SNMP
+
+#### Funcionamiento de SNMP
