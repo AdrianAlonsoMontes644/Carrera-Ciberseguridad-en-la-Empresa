@@ -4681,3 +4681,25 @@ Protocolos de la capa de la aplicación:
 <Información de sistema (nombre de host, descripción, SO, dirección IP…)
 
 <Información de red (modelo, fabricante, datos de ruteo, interfaces…)
+
+#### Configuración Segura de SNMP
+
+-Mitigación de los Ataques:
+
+.Desactivar de dispositivos que no lo precisen con "no snmp-server community password ro" y "no snmp-server community password rw"
+
+.Elegir una comunidad segura:
+
+<Cambiar las comunidades por defecto, usar pautas de contraseñas fuertes
+
+.Configurar la versión 3 de SNMP:
+
+<Se introduce a partir de Cisco IOS Software version 12.0
+
+.Utilizar SNMP view: "snmp-server view view-name oid {included | excluded}"
+
+.Establecer las comunidades con ACLs: "access-list acl-id permit ip-address" y "snmp-server community password {ro | rw} acl-id"
+
+#### Carrera Proyecto de clases Día 18: 30/10/2023
+
+## "Curso de Triage informático"
