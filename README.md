@@ -4740,6 +4740,8 @@ Protocolos de la capa de la aplicación:
 
 ### Conceptos y Definiciones
 
+#### Tipos de malwares y carácterísticas
+
 -Triaje: Proceso para analizar y priorizar las respuestas ante incidentes de seguridad informáticas
 
 -Malware: Es un código malicioso que se ha desarrollado con una finalidad específica, busca provocar un daño, una malfunción, un bloqueo, extracción de información o acceso no autorizado a una plataforma tecnológica. Hay diferentes tipos de codificación:
@@ -4811,3 +4813,63 @@ Protocolos de la capa de la aplicación:
 .Ingeniería inversa: Proceso con el objetivo de obtener información a partir de un producto, con el fin de determinar cuáles son sus componentes y de que manera interactúan entre sí
 
 .Sandbox: Entorno controlado y aislado para el estudio de programas
+
+#### Procesos y Conexiones: Identificación, puertos y protocolos
+
+-Procesos: Todas las instrucciones que recibe el ordenador a través del software. Tienen una finalidad específica. Están vinculados a todo lo que sucede internamente en el ordenador 
+
+-Puertos: Pueden ser lógicos(Los que conocemos en el router) o virtuales
+
+.PS2(Lila): Sirve para conectar el teclado, cuando es verde sirve para conectar el mouse
+
+.Puertos USB: Sirve para conectar dispositivos y periféricos 
+
+.Puerto Firewire: Sirve para conectar dispositivos digitales(cámaras, videocámaras, etc...)
+
+.Puerto VGA: Sirve para conectar el monitor
+
+.Puerto DVI: Sirve para conectar pantallas digitales
+
+.Puerto HDMI: Sirve para trasmititr video en alta definición
+
+.Puerto RJ45: Sirve para conectar a una red o a internet
+
+.Salida Estéreo(Negro): Sirve para conectar los altavocez traseros
+
+.Salida Estéreo(Amarillo): Sirve para conectar el altavoz central SUBWOOFER
+
+.Salida Estéreo(Azul): Sirve para capturar audio
+
+.Salida Estéreo(Verde): Sirve para conectar altavoces o auriculares
+
+.Salida Estéreo(Blanco): Sirve para conectar los altavocez delanteros
+
+.Entrada Mono: Sirve para conectar el micrófono
+
+#### Diferencias entre un Hacker y un Cracker 
+
+-Hacker: Solo es una forma de llamar a alguien con un alto conocimiento en informatica con el nivel de poder proteger, vulnerar, evaluar distintos aspectos de un computador dentro de un sitema.
+
+-Cracker: Es quien realmente desarrolla y comete los ciberdelítos
+
+-Equipo de Ciberseguridad: Son mantenidos por los hackers ya que son quienes evalúan y hacen los triajes, organizan, diseñan y planifican los análisis, pruebas y respuestas ante los accidentes de seguridad. Se divide en 3 equipos:
+
+.Red Team: Hacen pruebas de ataque, injectan malware o intentan romper criptografias. Son los que hacen las pruebas agresivas contra un equipo, todo en un ambiente controlado y autorizado.
+
+.Purple Team: Tienen como misión evaluar lo que sucede en el ataque y lo que debe ser remediado en la protección, son los estadistas que analizan para poder dar una respuesta adecuada para cada incidente de seguridad que suceda
+
+.Blue Team: Su función en proteger los sistemas haciendo un hardening, instalando antivírus, diseñar sistemas de conección, etc. Para que los procesos puedan ser identíficados y detener a los no fiables.
+
+#### C&C (Comand & Control) y direccionamiento
+
+En el campo de seguridad informática la estructura C&C consta de servidores y otros elementos que son utilizados para controlar el malware en remoto con un operador, a través de scripts o sistemas automáticos. Siempre estará como un sistema de administración de malware. Esto se observa en el monitor de recursos.
+
+El C&C muchas veces se utiliza para minería de datos y por lo tanto utiliza los recursos del ordenador en remoto para ejecutar esas acciones.
+
+Como ejemplo las botnet, que pueden ser miles de equipos infectados que están todos coordinados  a través de un Comand & Control. Los servidores de C&C pueden ser directamente operados por operadores humanos o por varios equipos de crackers.
+
+Importante mirar las conecciones que se establecen, donde y los periódos de tiempo. Si no se mira al momento no hay problema, hay los logs del sistema donde se puede ver información de actividades que ya han sucedido y podemos evaluar como ha transcurrido en el tiempo sobre diferentes aspectos. 
+
+El redireccionamiento es mayormente aplicado en páginas web falsas o sitios oficiales modificados por atacantes, para redireccionar algunos de sus enlaces a servidores controlados por los ciberdelincuentes, y de esa manera robar datos de usuarios, contraseñas o cualquier otra finalidad deseada suplantando o llevando el trafico de red a un sitio determinado.
+
+###  Búsqueda de Malware
