@@ -4700,6 +4700,114 @@ Protocolos de la capa de la aplicación:
 
 .Establecer las comunidades con ACLs: "access-list acl-id permit ip-address" y "snmp-server community password {ro | rw} acl-id"
 
-#### Carrera Proyecto de clases Día 18: 30/10/2023
+#### Carrera Proyecto de clases Día 18: 31/10/2023
 
 ## "Curso de Triage informático"
+
+● SECCIÓN 1: Conceptos y Definiciones
+
+ ○ CLASE1: Malware: Definición, Características y tipos.
+
+ ○ CLASE2: Procesos y Conexiones: Identificación, puertos y protocolos.
+
+ ○ CLASE3: Hacker, Cracker
+
+ ○ CLASE4: C&C, direccionamiento.
+
+● SECCIÓN 2: Búsqueda de Malware
+
+ ○ CLASE1: Mito y Realidad.
+
+ ○ CLASE2: Metadatos, Firma y Descripción.
+
+ ○ CLASE3: Herramientas de Análisis (Local – Online), Heurístico.
+
+● SECCIÓN 3: Análisis de Ejecutables
+
+ ○ CLASE1: Paquetes y Rutas
+
+ ○ CLASE2: Uso de Recursos
+
+ ○ CLASE3: Establecimiento de conexiones
+
+● SECCIÓN 4: Emails, phishing.
+
+ ○ CLASE: Email Sospechoso y Archivos Infectados
+
+ ○ CLASE: Laboratorio (virtualbox/VMware) 
+
+####
+
+### Conceptos y Definiciones
+
+-Triaje: Proceso para analizar y priorizar las respuestas ante incidentes de seguridad informáticas
+
+-Malware: Es un código malicioso que se ha desarrollado con una finalidad específica, busca provocar un daño, una malfunción, un bloqueo, extracción de información o acceso no autorizado a una plataforma tecnológica. Hay diferentes tipos de codificación:
+
+.Decimal: Sistema de base 10
+
+.Binario: Sistema de Base 2
+
+.Hexadecimal: Sistema de numeración de base 16
+
+.ASCII: código de carácteres basado en el alfabeto latino
+
+-Herramientas y Terminos:
+
+.Ensamblador: Lenguaje de programación de más bajo nivel. Es usado para programar los microprocesadores
+
+.Debugger: Aplicación para depurar errores de programación 
+
+.Bypasear: Alternativa para evitar un bloqueo
+
+.NOP: Operación nula escrita en ensamblador. Cuando llega a esta operación, continúa hasta la siguiente operación válida
+
+.NOP ->(|Enserio se llaman igual?|): Técnicas para bypasear un sistema de seguridad
+
+.Bindear: Metodología usada para unir un ejecutable con otro archivo, resultando otro ejecutable.
+
+.Joiner: Metodología usada para unir un ejecutable con otro archivo, resultando otro ejecutable.
+
+.Builder: Entorno gráfico para cifrar archivos 
+
+-Tipos de Malware:
+
+.Adware: Genera publicidad.
+
+.Clickers: Encargado de generar tráfico hacia la publicidad y pulsar sobre esta.
+
+.Ransomware/locker: Restringe el acceso al sistema o parte de él mediante claves criptográficas.
+
+.Troyano: Virus que debe ser ejecutado por la víctima.
+
+.Malwarw: Crea un daño específico para el usuario.
+
+.Keylogger: Troyano que roba la información, normalmentemediante mediante keyloggers
+
+.Spyware: Aplicación con el objetivo de extraer información
+
+.Gusano: Aplicación con el objetivo de extenderse por la red
+
+.Phishing: Recolectan datos primcipalmente bancarios
+
+.RAT: Herramientas de administración remotas, normalmente con disposición de Backdoors
+
+.Rootkits: Conjunto de aplicaciones ocultas para el equipo, con el objetivo de disponer de un acceso externo para futuras ocasiones
+
+-Cualidades del Malware:
+
+.Persistencia: Capacidad para mantenerse en el sistema
+
+.Ofuscación: Tecnica de modificación del código fuente de una aplicación para evitar ingeniería inversa.
+
+.Backdoor: Sistema encargado de evadir las medidad de seguridad, dando acceso fácil a otro dispositivo.
+
+.FUD: Full Undetectable
+
+.Firma: Código Hexadecimal almacenado en una base de datos de los AV
+
+.Heurística: Arte de descubrir mediante algorítmos predictivos comportamientos potencialmente peligrosos
+
+.Ingeniería inversa: Proceso con el objetivo de obtener información a partir de un producto, con el fin de determinar cuáles son sus componentes y de que manera interactúan entre sí
+
+.Sandbox: Entorno controlado y aislado para el estudio de programas
