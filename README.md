@@ -4873,3 +4873,39 @@ Importante mirar las conecciones que se establecen, donde y los periódos de tie
 El redireccionamiento es mayormente aplicado en páginas web falsas o sitios oficiales modificados por atacantes, para redireccionar algunos de sus enlaces a servidores controlados por los ciberdelincuentes, y de esa manera robar datos de usuarios, contraseñas o cualquier otra finalidad deseada suplantando o llevando el trafico de red a un sitio determinado.
 
 ###  Búsqueda de Malware
+
+#### Mito y Realidad sobre el Malware
+
+Lo principal es reconocer que hay muchas fantasías entorno al malware, y que, dentro de la realidad actual, existe una gran variedad de riesgos que exponen cada vez más a los usuarios de medios informáticos a estos actos delictivos. Por eso es importante eliminar ciertas creencias erróneas y ser consciente de nuestra vulnerabilidad y para ello nombrar estos siete MITOS:
+
+   1. Los firewalls protegen de los virus.
+
+Realidad: Aunque los firewalls representan una barrera aceptable entre tu equipo y este software, no es infalible. Ahora, cualquier virus competente puede desactivar el firewall. Aunque este alerte y prevenga algunos ataques, no puede limpiar, ni proteger a los equipos.
+
+   2. Los virus afectan el hardware de tu computadora.
+
+Realidad: No existe malware que pueda dañar las partes físicas de un equipo. Por más “peligroso” que un virus sea, ninguno puede hacer que una computadora sufra daño a nivel material, lo que si existe es un hardware (Killer USB) que puede causar daño físico por sobrecarga de voltaje al puerto del ordenador y un archivo de datos malicioso que puede saturar tu disco duro con 4.5 petabytes, llamado “Bomba ZIP”.
+
+   3. No existen virus para Mac, solo para Windows.
+
+Realidad: Las amenazas que existen para Windows, existen para Mac, aunque no sean tan comunes. Mac tiene un nivel de seguridad integrado que protege a sus equipos en un nivel básico-medio, así, el infectar estas computadoras no es tan sencillo. Incluso existe malware para IOS y Android, lo que no existe, es un único virus multiplataforma, que ataque a todos por igual.
+
+   4. Puedes darte cuenta si tu computadora ha sido infectada por un virus.
+
+Realidad: La mayoría de estos programas malignos pueden dar pistas del daño. Hoy en día, muchos pueden vivir dentro de un equipo sin que el usuario tenga la más mínima idea de que algo sucede.
+
+   5. Las compañías de antivirus son las que crean el Malware.
+
+Realidad: Esta teoría salió en 1988 y nunca ha podido ser probada. Aunque sonaría lógico por algunas razones, a estas compañías no les conviene invertir tiempo y dinero en crear algo que, después, tendrán que esforzarse en destruir.
+
+   6. Los archivos de personas conocidas siempre son seguros.
+
+Realidad: El hecho de que sea un contacto conocido, no significa que ellos no hayan sido atacados. Muchos usuarios, sin darse cuenta, cargan con equipos y cuentas infectadas. Así, el malware pasa desapercibido y logra llegar a otros usuarios. Es recomendable hacer una verificación de todo lo que llega a nuestras bandejas de entrada. (La “Ingeniería Social” es técnica de hacking muy utilizada, que se aprovecha de este mito)
+
+   7. Un antivirus es capaz de proteger al usuario de cualquier tipo de Malware.
+
+Realidad: Es imposible que un antivirus esté al corriente con los virus que salen a diario. Aunque tener un antivirus marca una gran diferencia, nunca se puede tener un margen de protección del 100%
+
+#### Metadatos, Firma y Descripción
+
+#### Análisis heurístico y Herramientas
