@@ -4915,3 +4915,14 @@ Existen diversas definiciones sobre los metadatos, sin embargo puede resumirse e
 -HASH: Es un algoritmo matemático que transforma cualquier bloque arbitrario de datos en una nueva serie de caracteres con una longitud fija. Independientemente de la longitud de los datos de entrada, el valor hash de salida tendrá siempre la misma longitud.
 
 #### Análisis heurístico y Herramientas
+
+Heurística es un conjunto de técnicas y procedimientos para determinar según la cantidad de puntos a favor o en contra, la condición o característica de un software o proceso. Es decir, se analizará qué es lo que pretende realizar ese ejecutable y al detectar que se trata de una acción maliciosa se bloqueará al instante.
+
+-Herramientas (Local – Online):
+
+.Local: Software instalado en nuestro ordenador para su protección. (antivirus)
+
+.Online: Aplicación Web que nos permite revisar archivos sin ejecutarlos en nuestro ordenador o que pueden remitirse a una web para su escaneo. (Virus total)
+
+
+
