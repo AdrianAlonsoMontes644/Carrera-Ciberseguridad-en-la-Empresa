@@ -4930,3 +4930,28 @@ Se recomienda tener dos o tres alternativas antes de hacer un triaje para asegur
 
 #### Paquetes, ruta de instalación y ruta de ejecución
 
+Es una serie de programas que se distribuyen conjuntamente de forma que cada uno de ellos complemente o necesita de los otros. Otra definición indica que es una colección de archivos de código fuente o binarios con un conjunto de archivos de instrucciones que especifican qué hacer con cada uno de ellos. Todos los archivos van comprimidos según un formato especial que depende de la distribución. Se debe tener presente que descomprimir y desempaquetar no es lo mismo.
+
+-Un paquete contiene:
+
+.Datos: conjunto de archivos que serán instalados y/o manipulados. Son los archivos del programa, bibliotecas, etc.
+
+.Cabecera: instrucciones para el proceso de instalación y configuración además de información como: datos técnicos del mismo paquete, dependencias, incompatibilidades, descripción, datos del responsable del paquete; y archivos con instrucciones para comprobar dependencias, preparación del sistema, etc.
+
+-Ruta de Instalación: Es la ubicación designada por el sistema para realizar la instalación de un software. Esta “ruta” puede ser modificada por el usuario mediante instalaciones personalizadas.
+
+-Ruta de Ejecución: Toda aplicación tiene un fichero .exe que es el ejecutable de la misma, por lo tanto, basta con hacer clic sobre este archivo para que la aplicación se lance automáticamente. Por defecto, en Windows 10 las aplicaciones instaladas las podemos encontrar bajo la ruta C:\Archivos de programa o C:\Archivos de programa (x86), siendo la unidad C: la unidad donde tenemos instalado el sistema operativo Windows. Esto está definido por las instrucciones predefinidas en el código y no es modificable por el usuario
+
+#### Uso de Recursos
+
+Un recurso del sistema, es cualquier componente físico o virtual de disponibilidad limitada dentro de un sistema informático. Cada dispositivo conectado a un sistema informático es un recurso. Cada componente interno del sistema es un recurso. Los recursos del sistema virtual incluyen archivos (concretamente manejos de archivos), conexiones de red (concretamente sockets de red) y áreas de memoria.
+
+La gestión de recursos incluye tanto la prevención de fugas de recursos (no liberar un recurso cuando un proceso ha terminado de utilizarlo) como el tratamiento de la contención de recursos (cuando varios procesos desean acceder a un recurso limitado). Por ejemplo, los recursos informáticos (de capacidad) pueden ser: la memoria, la capacidad de almacenamiento e incluso la CPU con la que cuenta una computadora.
+
+Un recurso libre es la capacidad de un recurso con la que cuenta una computadora en un determinado momento. Por ejemplo, el recurso de memoria RAM libre en un determinado momento puede ser 450 MB de un total de memoria de 1 GB. Un recurso también puede ser un dispositivo. Por ejemplo, una computadora que cuenta con una impresora, cuenta con ese recurso.
+
+#### Establecimiento de conecciones
+
+
+
+### Email y Phishing
