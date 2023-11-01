@@ -4908,4 +4908,10 @@ Realidad: Es imposible que un antivirus esté al corriente con los virus que sal
 
 #### Metadatos, Firma y Descripción
 
+Existen diversas definiciones sobre los metadatos, sin embargo puede resumirse en la siguiente: “Conjunto estructurado de datos que describen a otros datos, a su estructura interna y a sus servicios, cuyo propósito es incrementar la identificación y la individualidad de cada archivo o paquete de datos”
+
+-Firma y Descripción: Al momento de verificar un software o un proceso en nuestro ordenador, observaremos que existen nombres de fabricantes en cada uno de ellos o al menos en su mayoría, así como una descripcion del producto o el software asociado a cada proceso. También se denomina firma, a la traza o secuencia que se obtiene al ejecutar un código. Casi siempre identificado por un HASH.
+
+-HASH: Es un algoritmo matemático que transforma cualquier bloque arbitrario de datos en una nueva serie de caracteres con una longitud fija. Independientemente de la longitud de los datos de entrada, el valor hash de salida tendrá siempre la misma longitud.
+
 #### Análisis heurístico y Herramientas
