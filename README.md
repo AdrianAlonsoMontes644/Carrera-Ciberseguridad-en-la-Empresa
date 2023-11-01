@@ -4734,8 +4734,6 @@ Protocolos de la capa de la aplicación:
 
  ○ CLASE: Email Sospechoso y Archivos Infectados
 
- ○ CLASE: Laboratorio (virtualbox/VMware) 
-
 ####
 
 ### Conceptos y Definiciones
@@ -4952,6 +4950,82 @@ Un recurso libre es la capacidad de un recurso con la que cuenta una computadora
 
 #### Establecimiento de conecciones
 
+En informática, conexión puede referirse a:
 
+-El punto exacto donde se realiza un enlace entre dispositivos o sistemas.
+
+.También conexión puede hacer referencia al enlace completo establecido, no sólo el punto específico. En algunos contextos conexión puede ser sinónimo de acceso. Puede ser una conexión digital o analógica.
+
+-Conexión Cableada
+
+-Conexión inalámbrica
+
+-Conexión a una red, con el objetivo de transferir datos usualmente en ambos sentidos.
+
+.Conexión a internet.
+
+.Conexión punto a punto.
+
+.Conexión dial-up.
+
+-Conexión a una base de datos.
+
+-Conexión virtual o VPN
+
+-Conectar un dispositivo a una computadora.
+
+-Conexión a un servicio online como una red social, un programa de mensajería, etc. En este caso sinónimo de Iniciar sesión.
+
+-Conexión por acceso remoto.
 
 ### Email y Phishing
+
+#### Emails sospechosos y archivos infectados
+
+Existen diversas formas de detectar un correo electrónico falso y evitar caer en cualquier estafa cibernética. Vamos a ver 5 maneras que te permitirán identificarlo:
+
+.El dominio de la dirección de email no coincide con el de la empresa.
+
+.Faltas de ortografía o de concordancia.
+
+.El correo solicita información personal
+
+.El asunto del correo es de máxima alerta
+
+.Generalmente se incluyen archivos adjuntos.
+
+-Como comprobar el auténtico remitente de un correo:
+
+.Desde Gmail:
+
+<Al dar a leer el correo, clicamos en la flecha situada a la derecha del asunto y entramos en Mostrar original.
+
+<Al revisar el contenido, vemos que este correo no es maligno, pues en el campo de Received podemos revisar que es la IP desde donde he mandado el correo. Además, en la ID del mensaje (Message-ID) vemos que el correo viene del servidor mail.gmail.com.
+
+<El código de Received viene a decir que se ha enviado desde esa IP a través de la web de Gmail a esa hora concreta del servidor.
+
+.Desde Hotmail:
+
+<Hacemos clic con el botón derecho sobre el asunto del correo y marcamos Ver código fuente del mensaje.
+
+<Se trata del mismo correo que el caso anterior,solo que esta vez lo hemos reenviado, para ver los cambios. Porque no es lo mismo enviar un correo en el mismo servidor donde lo vas a recibir que a otro distinto. Podemos ver todos los patrones y compararlo mejor.
+
+<En Received vemos el servidor de Google, junto con su IP y los datos del servidor de Microsoft. Podemos comprobar que este correo no es falso porque en todos los campos donde debe verse el servidor están correctos.
+
+.Desde Microsoft Outlook:
+
+<Teniendo abierto el correo, clicaremos con el boton derecho para que salga el sub menu y elegiremos “Ver código fuente”
+
+<Se abrirá una ventana. Nos fijaremos en el cuadro de texto situado en la parte inferior de la misma. Como no se podrá ver toda la información, copiaremos el contenido y lo pondremos en un bloc de notas.
+
+<Revisamos de nuevo los campos de Received, así como todo el encabezado en general.
+
+.Archivos Infectados: 
+
+<La mayoría de los incidentes de seguridad se inician al hacer click en algún enlace de página web comprometida en un archivo recibido y no verificado por el antivirus o por nosotros mismos.
+
+<La forma de revisar los paquetes de datos o ficheros sospechosos es hacerles un scan con el antivirus instalado en local o subiéndolo a páginas especializadas como VIRUS TOTAL o la herramienta web de KASPERSKY entre otros.
+
+->(|Este curso ha sido corto, pero lento. Que malos powerpoint de apoyo hace este profesor|)
+
+##
