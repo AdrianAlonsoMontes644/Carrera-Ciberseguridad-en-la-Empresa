@@ -4920,9 +4920,13 @@ Heurística es un conjunto de técnicas y procedimientos para determinar según 
 
 -Herramientas (Local – Online):
 
-.Local: Software instalado en nuestro ordenador para su protección. (antivirus)
+.Local: Software instalado en nuestro ordenador para su protección (antivirus). Se puede hacer con herramientas de fabricante, pero solo nos dira si está infectado o no. Para recurrir los informes hay que acudir a los logs.
 
-.Online: Aplicación Web que nos permite revisar archivos sin ejecutarlos en nuestro ordenador o que pueden remitirse a una web para su escaneo. (Virus total)
+.Online: Aplicación Web que nos permite revisar archivos sin ejecutarlos en nuestro ordenador o que pueden remitirse a una web para su escaneo (Virus total). Podemos obtener informes muy amplios que no requieren de nuestros recursos o conocimientos.
 
+Se recomienda tener dos o tres alternativas antes de hacer un triaje para asegurar un resultado más acertado.
 
+### Análisis de archivos ejecutables
+
+#### Paquetes, ruta de instalación y ruta de ejecución
 
