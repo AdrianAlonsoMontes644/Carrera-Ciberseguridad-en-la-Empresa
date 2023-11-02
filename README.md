@@ -5028,4 +5028,104 @@ Existen diversas formas de detectar un correo electrónico falso y evitar caer e
 
 ->(|Este curso ha sido corto, pero lento. Que malos powerpoint de apoyo hace este profesor|)
 
-##
+#### Proyecto de clases Día 19: 02/11/2023
+
+## "Curso de desarrollo seguro"
+
+● Ciclo de desarrollo seguro de software
+
+● Seguridad en el desarrollo
+
+● Seguridad en los procesos y procedimientos
+
+● Seguridad en la configuración del entorno
+
+#### 
+
+### Ciclo de desarrollo seguro de software
+
+Seguridad: La protección de la información frente a las distintas amenazas al objeto de garantizar el buen funcionamiento.
+
+-La seguridad tiene 4 principios: 
+
+.Autenticidad
+
+.Confidencialidad
+
+.Integridad
+
+.Disponibilidad
+
+-La información, como el software, tiene un ciclo de vida:
+
+.Creación
+
+.Distribución
+
+.Uso
+
+.Mantenimiento
+
+.Destrucción
+
+-La seguridad:
+
+.Requiere de un mantenimiento continuado
+
+.Las personas son el factor fundamental
+
+.Debe estar integrada en todos los procesos y procedimientos
+
+.Requiere de la implicación de todos
+
+#### Ciclo de desarrollo de software
+
+¿Por qué desarrollar de manera segura?: El coste de arreglar un fallo de seguridad aumenta exponencialmente con el tiempo
+
+La importancia de la seguridad para un negocio: Para evitar que se filtre información sensible o evitar el robo de cuentas por ejemplo
+
+-Fases del secure SDLC
+
+.Requisitos: Cada producto, servicio y característica que Microsoft desarrolla comienza con requisitos de seguridad y privacidad claramente definidos; son la base de aplicaciones seguras e informan de su diseño. Los equipos de desarrollo definen estos requisitos en función de factores como el tipo de datos que controlará el producto, las amenazas conocidas, los procedimientos recomendados, las regulaciones y los requisitos del sector, y las lecciones aprendidas de incidentes anteriores. Una vez definidos, los requisitos se definen, documentan y realizan un seguimiento claramente.
+
+.Arquitectura y diseño: Una vez definidos los requisitos de seguridad, privacidad y funcionalidad, puede comenzar el diseño del software. Como parte del proceso de diseño, se crean modelos de amenazas para ayudar a identificar, clasificar y evaluar posibles amenazas según el riesgo. 
+
+.Implementación: La implementación comienza con los desarrolladores que escriben código según el plan que crearon en las dos fases anteriores. Microsoft proporciona a los desarrolladores un conjunto de herramientas de desarrollo seguras para implementar de forma eficaz todos los requisitos de seguridad, privacidad y función del software que diseñan. 
+
+.Testeo: Antes de que se pueda publicar cualquier código escrito, se requieren varias comprobaciones y aprobaciones para comprobar que el código se ajusta a SDL, cumple los requisitos de diseño y está libre de errores de codificación.
+
+.Despliegue: Después de pasar todas las pruebas y revisiones de seguridad necesarias, las compilaciones no se publican inmediatamente para todos los clientes. 
+
+.Mantenimiento
+
+#### Requisitos:
+
+-Fases de análisis y requisitos:
+
+.Requisitos y objetivos de la aplicación
+
+.Posibles problemas
+
+.Tecnología
+
+.Frameworks
+
+.Lenguajes
+
+.Funcionales y no funcionales
+
+-Seguridad en los requisitos:
+
+.Solventar vulnerabilidades conocidas
+
+.Análisis de riesgos
+
+.Tecnologías con mantenimiento y actualizaciones
+
+.Frameworks extendidos y respaldados por la comunidad o alguna empresa
+
+Tener en cuenta la seguridad desde esta primera fase es vital para ahorrar en el futuro
+
+#### Arquitectura y diseño
+
+
