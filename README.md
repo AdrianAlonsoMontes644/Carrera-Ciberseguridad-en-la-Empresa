@@ -5238,5 +5238,8 @@ El entorno de testing es distinto del mundo real
 
 .Revisión de logs
 
+->|(Este profesor da los puntos con alguna anotación propia tan corta y básica que me parece lo mismo que solo escribir el punto)|
+
 ### Seguridad en el Desarrollo
 
+#### Validación de Entradas
