@@ -5128,4 +5128,115 @@ Tener en cuenta la seguridad desde esta primera fase es vital para ahorrar en el
 
 #### Arquitectura y diseño
 
+-Fase de Arquitectura y diseño:
+
+.Definición de servicios
+
+.Interfaces
+
+.Protocolos
+
+.Sistemas
+
+.Redes
+
+.Flujo de datos
+
+-Seguridad en la Arquitectura y el Diseño:
+
+.Identificar vulnerabilidades en las tecnologías escogida y protegerlas
+
+.Asegurar los recursos de datos
+
+.Emplear protocolos de comunicación seguros
+
+.Estudiar estándares y arquitecturas típicas
+
+Una arquitectura segura es el primer paso hacia una aplicación segura
+
+#### Implementación
+
+-La fase de Implementación se basa únicamente en el desarrollo de la aplicación
+
+-Seguridad en la Implementación:
+
+.Seguir las buenas prácticas que veremos durante el curso
+
+.Evitar el uso de funciones deprecated
+
+.Controlar errores
+
+.Controlar flujos de datos
+
+.Mantener los procesos lo más simples posibles
+
+#### Testeo
+
+-Fase de Testeo:
+
+.Plan de pruebas
+
+.Tests unitarios
+
+.Tests de integración
+
+.Tests de los sistemas
+
+.Automatización de tests
+
+.Revisión de tests
+
+-Seguridad en los tests:
+
+.Testear las vulnerabilidades conocidas, debemos asegurarnos de que están protegidas
+
+.Fuzz testing
+
+.Pentesting básico
+
+#### Despliegue
+
+-Fase de Despliegue:
+
+.Preparación del entorno de producción
+
+.Configuración de servicios
+
+.Configuración de sistemas
+
+.Gestión de usuarios
+
+.Gestión de operaciones
+
+-Seguridad en el Despiegue:
+
+.Configurar de manera segura cada servicio
+
+.Configurar de manera segura cada sistema
+
+.Gestiona de manera segura los permisos y operaciones
+
+El entorno de testing es distinto del mundo real
+
+#### Mantenimiento
+
+-Fase de Mantenimiento:
+
+.Revisión de bugs
+
+.Nuevas funcionalidades
+
+.Optimización de código
+
+-Seguridad en el Mantenimiento:
+
+.Versiones actualizadas de cada framework o librería
+
+.Actualizar tecnologías
+
+.Actualizar procedimientos
+
+.Revisión de logs
+
+### Seguridad en el Desarrollo
 
