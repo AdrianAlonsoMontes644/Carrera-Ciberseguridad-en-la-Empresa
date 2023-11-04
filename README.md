@@ -5721,3 +5721,21 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 .Evita el uso de funciones vulnerables (printf, strcpy...)
 
 -En Resumen:
+
+.El principio KISS: Keep It Simple Stupid ->(|Me encanta|)
+
+.Mínimos privilegios
+
+.Ninguna configuración por defecto
+
+.Todo actualizado
+
+.Siempre revisamos la seguridad en sistemas de confianza
+
+.Desconfianza total en el usuario
+
+.Conocer la tecnología, lenguaje o framework que usemos
+
+#### Carrera Proyecto de clases Día 21: 05/10/2023
+
+## ""
