@@ -5604,4 +5604,96 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 
 #### Configuración del Sistema
 
--La configuración del Sistema:
+-La configuración del Sistema: Entendemos por sistema a la máquina física o virtual que contiene nuestro software, así como todas las dependencias necesarias para que funciones correctamente
+
+.Puede ser una red de sistemas conectados (microservicios)
+
+.Puede ser un solo sistema con varios contenedores
+
+-Asegura la configuración del Sistema:
+
+.Asegúrate de que todos los servidores, frameworks y componentes están actualizados, parcheados y en su última versión estable
+
+.Desactiva el directory listing
+
+.Restringe los privilegios al mínimo para el servidor, los procesos y las cuentas de usuario
+
+.Cuando ocurra una excepción del sistema, debe fallar de manera segura
+
+.Elimina cualquier fichero o funcionalidad innecesaria
+
+.Elimina cualquier código o comentario no pensado para un entorno de producción
+
+.No muestres tu estructura de fichero en robots.txt, anida todos los ficheros a ocultar bajo un directorio
+
+.Controla y define los métodos HTTP que permites en cada página, desactiva los innecesarios
+
+.Elimina cabeceras innecesarias relacionadas con el sistema operativo
+
+.Implementa un sistema de gestión de activos y registra el software y los componentes del sistema en él
+
+.Implementa un software de control de cambios para gestionar y guardar los cambios del código en producción y desarrollo
+
+.Separa y delimita los entornos de desarrollo y producción y limita y controla el acceso al primero
+
+#### Seguridad en Bases de Datos
+
+-Las Bases de Datos: 
+
+.Son parte fundamental de casi cualquier software actual
+
+.Existen muchas y de diversos tipos, pero todas basan su funcionamiento en los métodos CRUD: Guardar información, Leerla, Actualizarla y Eliminarla
+
+.La información es parte fundamental de cualquier software, hay que salvaguardar su integridad
+
+-Asegurando las Bases de Datos:
+
+.Usa queries fuertemente parametrizadas
+
+.Valida las entradas y codifica las salidas
+
+.La aplicación debe tener los mínimos privilegios posibles cuando acceda a la BBDD
+
+.Usa contraseñas seguras
+
+.La configuración de la conexión con las BBDD no debe estar hardcodeada, debe estar en un fichero de configuración o en un sistema de confianza y cifrada
+
+.Cierra la conexión ASAP (As Soon As Possible)
+
+.Elimina y modifica cualquier password o configuración por defecto de la base de datos que la exponga
+
+.Desactiva cualquier funcionalidad innecesaria de la base de datos
+
+.Elimina cualquier contenido que viniera por defecto
+
+.Elimina cualquier cuenta que viniera por defecto
+
+#### Manejo de Ficheros
+
+-Seguridad al Manejar y Trabajar Ficheros:
+
+.El software no es más que un montón de código guardado en ficheros
+
+.Las aplicaciones pueden requerir que los usuarios puedan subir ficheros de diversa índole
+
+.Un fichero puede ser inofensivo o altamente peligroso, no debemos confiar en la buena fe del usuario o en el origen de su fichero
+
+.No entregar información dada por el usuario directamente a una función
+
+.Requerir autenticación antes de subir cualquier fichero
+
+.Limitar y validar los tipos de los fichero subidos
+
+.No guardar ficheros en el mismo contexto de la aplicación, deben ir a la BBDD o a otro servidor
+
+.No permitir subir ningún fichero que pueda interpretar un servidor web
+
+.Desactiva la ejecución de ficheros en cualquier directorio que no lo requiera
+
+.Crea una lista blanca de tipos de ficheros subidos y nombres que tienen permiso para ser leídos o ejecutados
+
+.No envíes o muestres nunca rutas absolutas al usuario
+
+.Asegúrate de que los recursos y ficheros de la aplicación son de solo lectura
+
+.Escanea los fichero subidos en busca de malware
