@@ -5491,3 +5491,117 @@ Esas tres razones hacen necesario emplear la codificación de las salidas
 .Fallos criptográficos
 
 #### Seguridad en la configuración del entorno
+
+### Control de Accesos
+
+-Por qué controlar los accesos:
+
+.Perseverar la confidencialidad de los datos
+
+.Proteger la información de los usuarios
+
+.Proteger recursos de nuestro software que solo deben ser accionados o usados por algunos roles o usuarios específicos
+
+En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuestro software
+
+-Como controlar los accesos:
+
+.Emplear únicamente objetos de sistemas de mconfianza para tomar decisiones de autorización mde accesos
+
+.Emplea un único componente en tu software que revise la autorización de accesos
+
+.Los controles de accesos deben fallar de manera segura
+
+.Rechaza cualquier acceso ante cualquier caída o error en la información de configuración de la seguridad
+
+.Fuerza la autenticación para cualquier petición (aunque proceda del propio servidor)
+
+.Si deben almacenarse datos sobre el estado en el cliente, usa encriptación y chequea la integridad en el servidor
+
+.Limita el número de transacciones en el tiempo por usuario
+
+.Desactiva las cuentas sin uso
+
+.Minimizar los privilegios que se otorgan a cualquier usuario al mínimo posible
+
+.Crea una política de control de accesos
+
+-Restringe los accesos a:
+
+.Ficheros o otros recursos
+
+.URLs protegidas
+
+.Funciones protegidas
+
+.Referencias directas a objetos
+
+.Servicios protegidos
+
+.Datos de aplicación
+
+.Atributos de usuarios y datos y políticas empleadas por los controles de acceso
+
+.Información de configuración de seguridad
+
+#### Protección de datos
+
+-Los datos:
+
+.Son el oro del siglo XXI ->|(Esta frase me ha gustado bastante)|
+
+.En ellos reside el verdadero valor de nuestro software
+
+.Las leyes exigen una alta protección para según qué tipo de datos
+
+.Los usuarios demandan seguridad en sus datos y les preocupa de cara a usar una aplicación o no
+
+.En aplicaciones de banca, solo un 7,7% de usuarios piensa que sus apps son seguras 
+
+-Protege los datos:
+
+.Usa el principio de mínimos privilegios
+
+.Protege cualquier copia en caché o de seguridad de datos sensibles y eliminas las copias temporales
+
+.Encripta la información secreta almacenada por el software
+
+.Protege el código fuente
+
+.Elimina comentarios del código visible para el usuario para evitar mostrar información del backend
+
+.Elimina y restringe el acceso a documentación innecesaria de la aplicación
+
+.No incluyas información sensible en los parámetros de las peticiones GET
+
+.No autocompletes formularios sensibles
+
+.No guardes en memoria caché la información de páginas con datos sensibles (Cache-Control:no-store)
+
+.La aplicación debe soportar la eliminación de datos sensibles cuando estos no sean necesarios
+
+.Implementa un control de accesos seguro, con una política robusta y bien configurado
+
+#### Seguridad de Comunicaciones
+
+-La interfaz de comunicación: Se define como una conexión funcional entre dos sistemas, programas, dispositivos o componentes de cualquier tipo que permite el intercambio de información
+
+-Protege las comunicaciones:
+
+.Implementa el cifrado para la transmisión de cualquier información sensible.
+
+.Emplea TLS siempre o algún cifrado discreto cuando no sea posible
+
+.El certificado TLS debe ser válido, no estar expirado y tener el nombre de dominio bien
+
+.Una conexión TLS fallida no debe abrir una conexión insegura
+
+.Emplea TLS para todas las conexiones que requieran autenticación
+
+.Emplea TLS para conexiones a sistemas externos que impliquen el uso de información sensible
+
+.Emplea una única implementación estándar TLS que esté bien configurada
+
+#### Configuración del Sistema
+
+-La configuración del Sistema:
