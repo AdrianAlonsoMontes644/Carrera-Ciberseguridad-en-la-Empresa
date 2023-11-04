@@ -5367,3 +5367,47 @@ Esas tres razones hacen necesario emplear la codificación de las salidas
 ### Seguridad en los procesos y procedimientos
 
 #### Autenticación y Manejo de Contraseñas
+
+-La importancia de la Autenticación:
+
+.Uno de los principios de la seguridad es la propia autenticación
+
+.La funcionalidad básica para asignar permisos de acceso a determinados recursos, según roles, grupos, dueños…
+
+.Un fallo de autenticación podría ocasionar graves daños, alguien podría hacerse pasar por un usuario que no es
+
+-Como asegurar la Autenticación:
+
+.Deben usarse soluciones testadas y extendidas para cada lenguaje que simplifiquen este proceso y que cuenten con actualizaciones periódicas
+
+.Debemos realizar todas comprobaciones en un sistema de confianza
+
+.Centraliza todos los servicios de autenticación del software
+
+.Todos los controles de autenticación deben fallar de manera segura
+
+.Almacena las contraseñas hasheadas (no MD5) con sal y asegurate de que solo la aplicación puede escribir en esa tabla/colección
+
+.No mostrar qué parte de la autenticación ha fallado: usuario o contraseña
+
+.Utiliza el método HTTP POST para autenticar en caso de aplicación web
+
+.Obliga a los usuarios a emplear contraseñas complejas que incluyan números, letras minúsculas, mayúsculas y símbolos y tengan cuantos más caracteres mejor
+
+.No muestres la contraseña en la pantalla del usuario cuando la introduzca
+
+.Limita el número de intentos de login fallidos y bloquea la cuenta si se sobrepasa
+
+.Notifica a los usuarios cuando ocurra un reseteo de sus contraseñas y asegura este proceso tanto o más como la propia creación de usuarios
+
+.No usar ningún mail de usuario para notificar que no estuviera previamente registrado
+
+.Si es necesario, obliga a los usuarios a cambiar la contraseña cada cierto tiempo
+
+.Cambia todas las contraseñas por defecto
+
+.Usa doble factor de autenticación para recursos e información muy sensible
+
+#### Manejo de Sesiones
+
+-La importancia de las sesiones:
