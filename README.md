@@ -5697,3 +5697,27 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 .Asegúrate de que los recursos y ficheros de la aplicación son de solo lectura
 
 .Escanea los fichero subidos en busca de malware
+
+#### Manejo de Memoria
+
+-Asegura la Memoria: 
+
+.La memoria de un computador nos permite ejecutar los procesos de nuestro software, almacenar información en caché de rápido acceso y almacenar información a largo plazo
+
+.Es fundamental cuidar la memoria de nuestros sistemas para un buen funcionamiento
+
+.El cloud computing ha incrementado la preocupación por el buen uso de la memoria, ya que esta cuesta dinero
+
+.Emplea controles de entrada y salida para datos no confiables
+
+.Revisa que los buffer son tan grandes como deben ser
+
+.Si usas funciones como strncpy(), cuida que el buffer de destino tenga la misma longitud que el origen
+
+.Trunca las cadenas de entrada antes de pasarlas a funciones de copia o concatenación
+
+.Libera la memoria cuando completes una función o proceso
+
+.Evita el uso de funciones vulnerables (printf, strcpy...)
+
+-En Resumen:
