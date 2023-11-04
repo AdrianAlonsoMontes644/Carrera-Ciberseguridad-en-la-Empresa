@@ -5411,3 +5411,82 @@ Esas tres razones hacen necesario emplear la codificación de las salidas
 #### Manejo de Sesiones
 
 -La importancia de las sesiones:
+
+.Permiten guardar información relativa de cada usuario que opera usando nuestro software
+
+.Debemos intentar registrar todas las operaciones que se realicen, así como el actor que la ejecuta
+
+.Puede servir para trazar errores, mejorar la interfaz de usuario o comprobar un funnel de ventas
+
+.Demasiada información relevante para no cuidarla
+
+-Asegurando las sesiones:
+
+.Usa los controles de manejo de sesión que implemente tu servidor o framework e identifica estas sesiones como las únicas válidas
+
+.Los identificadores de sesión deben generarse en un sistema de confianza y de manera aleatoria
+
+.Las funciones de logout deben eliminar la conexión de una sesión por completo y estar disponibles en todas las pantallas de la aplicación
+
+.Termina las sesiones periódicamente, incluso aunque la sesión esté activa
+
+.Tras cada re-autenticación debe crearse una nueva sesión, no mantener la antigua
+
+.Los id de sesión solo deben estar presentes en la cookie
+
+.Recicla los id de sesión periódicamente
+
+.Configura el atributo secure para las cookies
+
+#### Manejo de Errores y Log
+
+-La importancia del Manejo de Errores y Log:
+
+.Un error puede desvelar información sensible
+
+.Un log guarda la traza de cualquier operación que se realice en nuestra aplicación
+
+.La integridad del log es vital para la detección de ataques, malas prácticas o acciones no permitidas
+
+.Un correcto manejo de errores mejora la experiencia de usuario en una aplicación
+
+-Asegurando el Manejo de Errores y Log:
+
+.No desveles información relevante en los errores como detalles del sistema, información de cuentas o ids de sesión
+
+.No muestres mensajes de debug
+
+.Implementa mensajes de error genéricos
+
+.Libera la memoria en uso cuando ocurra un error
+
+.Todos los sistemas de log deben implementarse en un sistema de confianza
+
+.Asegúrate de que los mensajes de error que incluyan código no se ejecuten como tal en ninguna UI
+
+.Restringe el acceso a los logs
+
+.No almacenes información relevante en los logs como detalles del sistema, ids de sesión o contraseñas
+
+.Valida la integridad de los logs usando hashes
+
+-Que guardo en los Logs?
+
+.Fallos de validación de entrada
+
+.Intentos de autenticación
+
+.Fallos de acceso de control
+
+.Eventos de manipulación de datos
+
+.Intentos de login con tokens expirados o inválidos
+
+.Excepciones del sistema
+
+.Funciones de administración, incluyendo cambios en la configuración de seguridad
+
+.Fallos en conexiones TLS
+
+.Fallos criptográficos
+
