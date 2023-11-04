@@ -5028,7 +5028,7 @@ Existen diversas formas de detectar un correo electrónico falso y evitar caer e
 
 ->(|Este curso ha sido corto, pero lento. Que malos powerpoint de apoyo hace este profesor|)
 
-#### Proyecto de clases Día 19: 02/11/2023
+#### Carrera Proyecto de clases Día 19: 02/11/2023
 
 ## "Curso de desarrollo seguro"
 
@@ -5240,6 +5240,130 @@ El entorno de testing es distinto del mundo real
 
 ->|(Este profesor da los puntos con alguna anotación propia tan corta y básica que me parece lo mismo que solo escribir el punto)|
 
+#### Carrera Proyecto de clases Día 20: 04/11/2023
+
 ### Seguridad en el Desarrollo
 
 #### Validación de Entradas
+
+Cualquier dato introducido por un usuario es suceptible de ocasionar errores. Es de vital importancia controlar la inserción de datos a nuestro software
+
+-SQLi - Inyección de código SQL:
+
+.Ataque de inyección de código
+
+.Permite a un atacante ejecutar código SQL sobre nuestra base de datos
+
+-Validación de ficheros subidos:
+
+.Si nuestro software o aplicación permite subir ficheros a un determinado servidor, debemos cuidar la seguridad de esta funcionalidad
+
+.Un atacante podría tomar el control de nuestra máquina mediante este tipo de ataques
+
+-Validación de Entradas:
+
+.Realizar todas las validaciones en un sistema de confianza
+
+.Especificar la codificación de caracteres para todas las entradas (UTF-8...)
+
+.Identifica todas las entradas de datos y clasifícalas en confiables y no confiables. Valida las no confiables
+
+.Crea una rutina centralizada de validación de entradas para tu aplicación
+
+.Canonicaliza los datos antes de validarlos(codifica todos igual)
+
+.Cualquier fallo de validación debe incurrir en el rechazo de la entrada
+
+.Valida todos los datos que provenga del cliente
+
+.Valida rangos de datos, tamaño de datos y tipos de datos
+
+.Si es posible, valida los datos empleando una lista blanca
+
+.Si es necesario para tu aplicación utilizar caracteres raros, asegurate de implementar controles de entrada y salida específicos para estos
+
+#### Codificación de salidas:
+
+-¿Qué lo diferencia de la validación de entradas?
+
+.Las entradas de datos son impredecibles y esto hace imposible la validación de entrada perfecta
+
+.Debido al funcionamiento de la aplicación, puede ser necesario admitir caracteres raros
+
+.Los datos recibidos pueden ser empleados en muchos contextos (JS, CSS, HTML...)
+
+Esas tres razones hacen necesario emplear la codificación de las salidas
+
+-XSS - CROSS SITE SCRIPTING:
+
+.Ataque de inyección de código
+
+.Permite a un atacante ejecutar código javascript malicioso
+
+-Codificación de Salidas:
+
+.El mejor método para prevenir XSS y SQLi
+
+.El objetivo principal es convertir entradas de datos no confiables en datos seguros que mostrar
+
+.Hacer toda la codificación en un sistema de confianza
+
+.Utilizar una rutina testeada y estándar para la codificación de cada tipo de datos
+
+.Codificar todos los caracteres a menos que sean seguros para el intérprete previsto
+
+.Sanitizar todas las salidas de datos no confiables destinadas a comandos o consultas: OS, SQL, XML o LDAP
+
+#### Criptografía
+
+-Por qué cifrar la información?
+
+.Una de las máximas de la seguridad informática es la confidencialidad
+
+.En el siglo XXI el valor está en los datos
+
+.No queremos revelar información relevante de nuestro negocio ni de nuestros usuarios
+
+.LOPD
+
+.Todas las funciones criptográficas empleadas deben implementarse en un sistema de confianza
+
+.Proteger los “secretos maestros” de accesos no autorizados
+
+.Manejar el sistema ante errores de los módulos criptográficos
+
+.Todos los números, nombres de archivo, GUIDs y cadenas que deban ser aleatorios/as y no adivinables, serán generados con un módulo testeado y aprobado que cumpla con ese requisito
+
+.Los módulos criptográficos utilizados deben ser compatibles con FIPS 140-2 o algún estándar similar
+
+.Debe establecerse una política y un proceso para la gestión de claves criptográficas
+
+#### Buffer Overflow
+
+-Historia:
+
+.Documentado en 1972
+
+.Explotado en 1988 por el Morris Worm
+
+.Redescubierto y publicado en 1995 y 1996
+
+.Usado para piratear la XBox
+
+.Usado para piratear la PS2
+
+->|(Bastante seguro que habrá más, pero el tipo tiene prisa supongo)|
+
+-Qué es? :El excesivo relleno de una variable o recurso que resulta en un problema con el manejo de memoria, pudiendo incurrir en modificaciones de memoria, manipulación y acceso a direcciones de memoria y crasheos de programas.
+
+-Buffer Overflow: 
+
+.Audita tu código
+
+.Conoce la documentación del lenguaje y sus vulnerabilidades conocidas: Estándares de desarrollo, funciones inseguras…
+
+.Herramientas de compilación específicas: StackShield, StackGuard… 
+
+### Seguridad en los procesos y procedimientos
+
+#### Autenticación y Manejo de Contraseñas
