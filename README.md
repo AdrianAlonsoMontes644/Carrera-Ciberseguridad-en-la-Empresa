@@ -5868,3 +5868,89 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 
 .Aplicabilidad de los controles del ENS según la entidad auditada: Algunos controles del ENS o requisitos no aplicarán para la evaluación y adecuación de la entidad por su naturaleza o tipo de actividad que desarrollan independientemente de la categoría establecida.
 
+#### Activos y dependencias
+
+-Los activos de la organización:
+
+.El Esquema Nacional de Seguridad aplica los controles al alcance de la información y los servicios de las administraciones públicas entre los ciudadanos y otras administraciones públicas.
+
+.Estos servicios se ofrecen y gestionan a través de sistemas informáticos (carpetas compartidas, aplicaciones, servidores, páginas web, documentos, etc.).
+
+.Estos sistemas informáticos están alojados en soportes y sistemas hardware físicos o virtuales.
+
+.A su vez, estos soportes y sistemas conforman una arquitectura de red y sistemas
+
+-Los Activos Esenciales: 
+
+.Empadronamiento
+
+.Autoloquidaciones
+
+-Loa Activos de Soporte
+
+.Página web 
+
+.Carpetas compartidas 
+
+.app de autoloquidaciones
+
+.Servidor web 
+
+.Servidor app 
+
+.Servidor dominio
+
+.Red Ayto
+
+#### Concepto de Madurez:
+
+-Controles del ENS: El Esquema Nacional de Seguridad está conformado por un total de 75 controles o también llamadas medidas de seguridad
+
+.Se dividen en 3 grupos:
+
+<Marco organizativo: Constituido por un conjunto de medidas relacionadas con la organización global de seguridad
+
+<Marco operacional: Constituido por las medidas a tomar para proteger la operación del sistema con un conjunto integral de componentes para un fin
+
+<Marco de protección: Se centrarán en activos concretos según su naturaleza, con el nivel requerido en cada dimensión de seguridad
+
+.Orden: Identificación de servicios esenciales (alcance) -> Establecer el nivel de las dimensiones de seguridad -> Establecer la categoría del sistema general -> Establecer la aplicabilidad de controles
+
+-Madurez de un control:
+
+. Cada control está implantado en la entidad según un nivel de madurez
+
+. Efectividad de un proceso según su grado de profesionalización
+
+                       Nivel                                                Descripción
+                L0-Inexistente (0%)                                La medida no se está aplicando.
+              L1-Inicial/ad hoc (10%)                          El proceso existe pero no se gestiona.
+         L2-Repetible, pero intuitivo (50%)             El proceso tiene cierta planificación y pautas a seguir.
+              L3-Proceso definido (80%)                       El proceso está actualizado y establecido.
+            L4-Gestionado y medible (90%)                         El proceso se revisa y monitorea.
+                 L5-Optimizado (100%)                  El proceso entra dentro de la dinámica de mejora continua.
+
+.Ejemplo: Cortafuegos
+
+<No aplica: No hay interconexión y, por tanto, el cortafuegos no es necesario.
+
+<L0 (0%): El sistema está interconectado pero el cortafuegos requerido no ha sido implantado en la interconexión.
+
+<L1 (10%): El cortafuegos está implantado en la interconexión con los valores por defecto y sin realizar ningún mantenimiento sobre el mismo.
+
+<L2 (50%): El cortafuegos es revisado temporalmente sin tener un procedimiento establecido para ello.
+
+<L3 (80%): El cortafuegos es revisado de la forma y con la periodicidad establecida en el procedimiento documentado.
+
+<L4 (90%): El procedimiento de gestión del cortafuegos es analizado temporalmente para determinar su eficacia y eficiencia.
+
+<L5 (100%): El procedimiento de gestión del cortafuegos es mejorado periódicamente en función de los análisis de eficacia y eficiencia. 
+
+.Niveles mínimos de madurez según categoría del sistema:
+
+                Categoría del sistema                          Nivel mínimo de madurez requerido
+                       BÁSICA                               L2 – Reproducible, pero intuitivo (50%)
+                       MEDIA                                      L3 – Proceso definido (80%)
+                       ALTA                                      L4 – Gestionado y medible (90%)
+
+### Marco Organizativo
