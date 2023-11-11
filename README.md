@@ -5736,6 +5736,135 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 
 .Conocer la tecnología, lenguaje o framework que usemos
 
-#### Carrera Proyecto de clases Día 21: 05/10/2023
+#### Carrera Proyecto de clases Día 21: 11/11/2023
 
-## ""
+## "Curso de Introducción al Esquema Nacional de Seguridad (ENS)"
+
+● 1. Introducción al Esquema Nacional de Seguridad
+
+● 2. Marco organizativo
+
+● 3. Marco operacional
+
+● 4. Medidas de protección
+
+● 5. Análisis de riesgos
+
+● 6. Adecuación y mantenimiento
+
+##
+
+### Introducción al Esquema Nacional de Seguridad
+
+#### Enfoque, objetivos, alcance y aplicabilidad
+
+-Necesidad de regulación:
+
+.Digitalización de las administraciones públicas
+
+.Ley 11/2007 de Acceso Electrónico de los Ciudadanos a los Servicios Públicos → Administración electrónica
+
+.Uso eficiente de las tecnologías de la información y comunicaciones
+
+.Mantener la privacidad, confianza y eficacia en el mundo electrónico
+
+-La finalidad del Esquema Nacional de Seguridad: es la creación de las condiciones necesarias de confianza en el uso de los medios electrónicos, a través de medidas para garantizar la seguridad de los sistemas, los datos, las comunicaciones, y los servicios electrónicos, que permita a los ciudadanos y a las Administraciones públicas, el ejercicio de derechos y el cumplimiento de deberes a través de estos medios.
+
+-Creación del ENS:
+
+.Recomendaciones de la Unión Europea en cuanto a administraciones públicas
+
+.Acceso electrónico de los ciudadanos a servicios públicos
+
+.Protección de datos de carácter personal y garantía de derechos digitales
+
+.Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común
+
+.Reutilización de la información en el sector público
+
+-Alcance:
+
+.Digitalización de las administraciones públicas
+
+.Servicios esenciales
+
+.Activos que afectan a estos servicios esenciales
+
+.Sistema general de información
+
+-Aplicabilidad:
+
+.Determinación de la categoría de un sistema:
+
+<Dimensiones de seguridad:
+
+■ Disponibilidad (D)
+
+■ Integridad (A)
+
+■ Confidencialidad (C)
+
+■ Autenticidad (A)
+
+■ Trazabilidad (T)
+
+.Determinación del nivel requerido en una dimensión
+
+<Bajo: Se entenderá como perjuicio limitado:
+
+■ La reducción de forma apreciable de la capacidad de la organización para atender eficazmente con sus obligaciones corrientes, aunque estas sigan desempeñándose.
+
+■ El sufrimiento de un daño menor por los activos de la organización.
+
+■ El incumplimiento formal de alguna ley o regulación, que tenga carácter de subsanable.
+
+■ Causar un perjuicio menor a algún individuo, que aún siendo molesto pueda ser fácilmente reparable.
+
+■ Otros de naturaleza análoga
+
+<Medio: Se entenderá como perjuicio grave:
+
+■ La reducción significativa la capacidad de la organización para atender eficazmente a sus obligaciones fundamentales, aunque estas sigan desempeñándose.
+
+■ El sufrimiento de un daño significativo por los activos de la organización.
+
+■ El incumplimiento material de alguna ley o regulación, o el incumplimiento formal que no tenga carácter de subsanable.
+
+■ Causar un perjuicio significativo a algún individuo, de difícil reparación.
+
+■ Otros de naturaleza análoga.
+
+<alto: Se entenderá como perjuicio muy grave:
+
+■ La anulación de la capacidad de la organización para atender a alguna de sus obligaciones fundamentales y que éstas sigan desempeñándose.
+
+■ El sufrimiento de un daño muy grave, e incluso irreparable, por los activos de la organización.
+
+■ El incumplimiento grave de alguna ley o regulación.
+
+■ Causar un perjuicio grave a algún individuo, de difícil o imposible reparación.
+
+■ Otros de naturaleza análoga.
+
+.Determinación de la categoría de un sistema
+
+<Básica: Si ninguna alcanza un nivel superior al bajo.
+
+<media: Si alguna de sus dimensiones alcanza el nivel medio y ninguna alcanza el nivel alto.
+
+<Alta: Si alguna de sus dimensiones alcanza el nivel alto.
+
+.Aplicabilidad de los controles del ENS según la categoría definida:
+
+          Nivel Básico          Nivel Medio          Nivel Alto          Código control                           Nombre control
+
+             aplica                  =                   =                   mp.if.1                   Áreas separadas y con control de acceso
+
+              n.a.                 aplica                =                   mp.if.9                        Instalaciones alternativas
+              
+             aplica                  +                   ++                  mp.com.3              Protección de la autenticidad y de la integridad
+
+              n.a.                 aplica                +                    mp.s.8                Protección frente a la denegación de servicio
+
+.Aplicabilidad de los controles del ENS según la entidad auditada: Algunos controles del ENS o requisitos no aplicarán para la evaluación y adecuación de la entidad por su naturaleza o tipo de actividad que desarrollan independientemente de la categoría establecida.
+
