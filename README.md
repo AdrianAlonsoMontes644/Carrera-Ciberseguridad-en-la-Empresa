@@ -5954,3 +5954,225 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
                        ALTA                                      L4 – Gestionado y medible (90%)
 
 ### Marco Organizativo
+
+#### Politica de seguridad
+
+-Definición de política de seguridad: Conjunto de directrices plasmadas en documento escrito que rigen la forma en que una organización gestiona y protege la información y los servicios que considera críticos.
+
+.La política de seguridad es la piedra angular del ENS y primer objetivo a conseguir en caso de no disponer de ella.
+
+.Todos los órganos superiores de Administraciones Públicas deberán contar con su política de seguridad.
+
+-Contenido de la política de seguridad:
+
+.Elaboración de la política de seguridad teniendo en cuenta los principios básicos del ENS:
+
+<Artículo 5. La seguridad como un proceso integral.
+
+<Artículo 6. Gestión de la seguridad basada en los riesgos.
+
+<Artículo 7. Prevención, reacción y recuperación.
+
+<Artículo 8. Líneas de defensa.
+
+<Artículo 9. Reevaluación periódica.
+
+<Artículo 10. La seguridad como función diferenciada.
+
+-Normativa de seguridad: Descripción general de cómo afrontar los temas en materia de seguridad
+
+.Norma: Uso correcto y responsabilidades
+
+.Guía: Ayuda en la aplicación de medidas
+
+.Procedimiento: Paso a paso de una tarea concreta
+
+.Uso correcto de los equipos, servicios e instalaciones.
+
+.Uso indebido y medidas disciplinarias
+
+-Procedimientos de seguridad y proceso de autorización:
+
+.Requisito de existir procedimientos de seguridad escritos
+
+.Proceso formal de autorización y solicitud de autorización:
+
+<Instalaciones, entrada de equipos en producción, aplicaciones, comunicaciones, medios telemáticos, soportes de información, equipos móviles y portátiles, servicios de terceros
+
+#### Comité de Seguridad:
+
+-Comité de Seguridad TIC:
+
+.La organización de la seguridad estará gestionada por un comité de seguridad TIC y por los distintos responsables designados.
+
+.Órgano colegiado cuyos miembros ostentan roles especializados en la organización de la seguridad.
+
+.Máxima autoridad respecto a decisiones de seguridad
+
+-Funciones del Comité de Seguridad TIC:
+
+.Funciones generales:
+
+<Elaborar la Política de Seguridad Corporativa que deberá ser aprobada por la Dirección de la entidad.
+
+<Aprobar el marco normativo y medidas técnicas a implementar de acuerdo al Plan de Implantación de la seguridad de las TIC en la organización.
+
+<Coordinar todas las funciones de seguridad de la organización.
+
+<Velar por el cumplimiento de la normativa legal y sectorial de aplicación.
+
+<Velar por el alineamiento de las actividades de seguridad con los objetivos de la organización.
+
+<Coordinar los Planes de Continuidad de las diferentes áreas, para asegurar una actuación sin fisuras en caso de que deban ser activados
+
+<Coordinar y aprobar, en su caso, las propuestas de proyectos recibidas de los diferentes ámbitos de seguridad, encargándose de gestionar un control y presentación regular del progreso de los proyectos y anuncio de las posibles desviaciones.
+
+<Recibir las inquietudes en materia de seguridad de la Dirección de la entidad y transmitirlas a los responsables departamentales pertinentes, recabando de ellos las correspondientes respuestas y soluciones que, una vez coordinadas, habrán de ser comunicadas a la Dirección.
+
+<Recabar, a través del Responsable de Seguridad de las TIC (CISO), informes regulares del estado de la seguridad de la organización y de los posibles incidentes, para poder adoptar las decisiones oportunas.
+
+<Coordinar y dar respuesta a las inquietudes de los diferentes Administradores del Sistema/Administradores Especialistas en Seguridad (AS/AES), transmitidas habitualmente a través del Responsable de Seguridad de las TIC (CISO) o del Responsable del Sistema (RSIS).
+
+<Definir, dentro de la Política de Seguridad Corporativa, la asignación de roles y los criterios para alcanzar las garantías pertinentes en lo relativo a segregación de funciones.
+
+<Resolver los conflictos de responsabilidad que puedan aparecer entre los diferentes responsables y/o entre diferentes áreas de la organización, elevándolo a la Dirección en aquellos casos en los que no tenga suficiente autoridad para decidir
+
+.Funciones específicas de seguridad de la información
+
+<Atender las inquietudes de la Dirección de la entidad y de los diferentes departamentos, en materia de seguridad de la información.
+
+<Informar regularmente del estado de la seguridad de la información a la Dirección.
+
+<Promover la mejora continua del sistema de gestión de la seguridad de la información (SGSI).
+
+<Elaborar la estrategia de evolución de la organización en lo que respecta a seguridad de la información.
+
+<Coordinar los esfuerzos de las diferentes áreas en materia de seguridad de la información, para asegurar que los esfuerzos son consistentes, que están alineados con la estrategia decidida en la materia, evitando duplicidades.
+
+<Revisar regularmente la Política de Seguridad de la Información, para su aprobación por la Dirección.
+
+<Aprobar la Normativa de Seguridad de la información.
+
+<Elaborar y aprobar los requisitos de formación y cualificación de responsables, operadores y usuarios, desde el punto de vista de seguridad de la información.
+
+<Supervisar y aprobar la gestión de riesgos de seguridad de la información, el Plan de Tratamiento de Riesgos (PTR) y los principales riesgos residuales asumidos por la organización, recomendando a la Dirección posibles actuaciones.
+
+<Monitorizar el desempeño de los procesos de gestión de incidentes de seguridad y recomendar posibles actuaciones respecto de ellos.
+
+<Promover la realización de las auditorías periódicas que permitan verificar el cumplimiento de las obligaciones del organismo en materia de seguridad.
+
+<Aprobar planes de mejora de la seguridad de la información de la organización.
+
+<Priorizar las actuaciones en materia de seguridad cuando los recursos sean limitados.
+
+<Velar porque la seguridad de la información se tenga en cuenta en todos los proyectos desde su especificación inicial hasta su puesta en operación.
+
+-Integrantes del Comité de Seguridad TIC:
+
+.Presidente del Comité (moderación, desempate)
+
+.Vocales (voz, voto)
+
+.Secretaría del Comité (convocatoria, actas)
+
+.Delegado de protección de datos
+
+.Invitados Personal técnico especializado (voz, sin voto)
+
+#### Roles y Responsabilidades
+
+-Responsable de información:
+
+.Nivel de gobierno
+
+.Determina los requisitos de seguridad de la información
+
+.Una o varias personas
+
+.Ayudar a determinar los requisitos de seguridad de la información, identificando los niveles de seguridad de dicha información mediante la valoración del impacto sobre ésta de los incidentes que pudieran producirse.
+
+.Proporcionar la información necesaria para realizar los preceptivos análisis de riesgos, con la finalidad de establecer las salvaguardas a implantar. Para ello, contará con la ayuda de la persona responsable del sistema.
+
+.En relación con los análisis de riesgos de los sistemas de información, aceptar los riesgos residuales de las informaciones manejadas que sean de su competencia.
+
+-Responsable del servicio:
+
+.Nivel de gobierno
+
+.Determina los requisitos de seguridad de los servicios prestados
+
+.Una o varias personas
+
+.Ayudar a determinar los requisitos de seguridad de los servicios a prestar, identificando los niveles de seguridad de los mismos mediante la valoración del impacto sobre éstos de los incidentes que pudieran producirse.
+
+.En el ámbito de cada servicio, proporcionar la información necesaria para realizar los preceptivos análisis de riesgos, con la finalidad de establecer las salvaguardas a implantar. Para ello, contará con la ayuda de la persona responsable del sistema.
+
+-Responsable de seguridad:
+
+.Nivel de supervisión
+
+.Determina las decisiones de seguridad para satisfacer los requisitos establecidos para la información y los servicios
+
+.Una persona
+
+.Elaborará la normativa de seguridad que se presentará al Comité de Seguridad TIC- para su aprobación.
+
+.Labores de soporte, asesoramiento e información al Comité de Seguridad TIC de la entidad, así como de ejecución de las decisiones y acuerdos adoptados por éste.
+
+.Diseño y ejecución de los programas de actuación propios de la entidad, incluyendo, entre otros, planes directores de seguridad, proyectos de desarrollo normativo, auditorías de cumplimiento y planes de adecuación legal.
+
+.Conocer los cambios tecnológicos que puedan afectar a los sistemas de información, pudiendo tener consecuencias para la organización. En este caso deberá alertar al Comité de Seguridad TIC y proponer las medidas oportunas.
+
+.La correcta ejecución de las instrucciones emanadas del Comité de Seguridad TIC.
+
+.La presentación regular de informes sobre el estado de seguridad de los servicios TIC al Comité de Seguridad TIC
+
+.La preparación de informes en caso de incidentes excepcionalmente graves y en caso de desastres.
+
+.Definición, implantación y mantenimiento de los controles de carácter organizativo para la protección de los datos, aplicaciones y sistemas, así como la elaboración del Análisis de Riesgos de la entidad, análisis que será presentado al Comité de Seguridad TIC para su aprobación. Este análisis deberá actualizarse regularmente dependiendo de la criticidad del sistema.
+
+.La inspección de las verificaciones regulares de seguridad aprobadas por el Comité. El resultado de estas inspecciones se presentará al Comité de Seguridad TIC para su conocimiento y aprobación. Si como resultado de la inspección aparecen incumplimientos, propondrá medidas correctoras que presentará al Comité de Seguridad TIC para su aprobación, responsabilizándose de que sean llevadas a cabo.
+
+.Definición y ejecución de los programas formativos y de concienciación relacionadas con buenas prácticas de seguridad TIC.
+
+-Responsables de seguridad -> delegados:
+
+.El Responsable de seguridad delegará funciones pero no responsabilidad
+
+.Normalmente se encargan de seguridad de sistemas de información concretos (como departamentos)
+
+-Responsable del sistema:
+
+.Nivel operativo
+
+.Operar y aplicar las medidas determinadas de las decisiones de seguridad
+
+.Una o varias personas (internos o externos si los sistemas están delegados a otra entidad)
+
+.Desarrollar, operar y mantener el sistema de información durante todo su ciclo de vida, incluyendo sus especificaciones, instalación y verificación de su correcto funcionamiento.
+
+.Definir la topología y la gestión del sistema de información, estableciendo los criterios de uso y los servicios disponibles en el mismo.
+
+.Cerciorarse de que las medidas de seguridad se integren adecuadamente en el marco general de seguridad.
+
+-Responsable de seguridad física:
+
+.Nivel operativo
+
+.Adoptará las medidas de seguridad que le competan, dentro de las determinadas por el Responsable de Seguridad e informará a éste de su grado de implantación, eficacia e incidentes.
+
+.Persona física u órgano colegiado (interno o externo si la seguridad física está delegada a otra entidad)
+
+.Nivel de ejecución
+
+.Ejecutar e implantar las medidas de seguridad.
+
+.Dependencia o del responsable de sistema o de responsable de seguridad.
+
+.Una o varias personas (internos o externos si la seguridad está delegada a otra entidad)
+
+-Administradores de seguridad:
+
+.El Administrador de seguridad delegará funciones pero no responsabilidad
+
+#### Marco Operacional
