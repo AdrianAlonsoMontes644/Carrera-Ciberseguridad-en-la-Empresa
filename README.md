@@ -6175,4 +6175,151 @@ En definitiva, evitar que cualquier usuario no vea nada que no deba ver en nuest
 
 .El Administrador de seguridad delegará funciones pero no responsabilidad
 
-#### Marco Operacional
+#### Carrera Proyecto de clases Día 22: 12/11/2023
+
+### Marco Operacional
+
+#### Planificación de la seguridad
+
+-Marco operacional: protección de la operación del sistema
+
+-Actividades previas a la puesta en explotación:
+
+.Proceso integral de la seguridad desde el primer momento
+
+.Gestión de la seguridad basada en los riesgos de la entidad
+
+-Maduración de medidas puramente organizativa y documental
+
+Arquitectura de seguridad (op.pl.2):
+
+.Documentación y descripción de la visión global:
+
+<B: Información de instalaciones, sistemas, líneas de defensa, identificación de usuarios.
+
+<M: Sistema de gestión.
+
+<A: Control interno del sistema.
+
+-Adquisición de nuevos componentes (op.pl.3):
+
+.Proceso formal de adquisición de nuevos componentes del sistema:
+
+<¿Conclusiones del análisis de riesgos?
+
+<¿Acorde a la arquitectura de seguridad?
+
+<¿Cumple con las necesidades?
+
+■ Técnicas
+
+■ Formación
+
+■ Financiación
+
+-Dimensionamiento y gestión de nuevas capacidades (op.pl.4):
+
+.Estudio previo de necesidades:
+
+<procesamiento, almacenamiento, comunicación, formación, personal, instalaciones, etc.
+
+-Componentes certificados (op.pl.5):
+
+.Uso de sistemas, aplicaciones, equipos con certificaciones reconocidas de seguridad según los criterios exigibles.
+
+<La categoría alta de un sistema requiere de componentes con certificación segura y reconocidos por el Esquema Nacional de Evaluación y Certificación de la Seguridad de las Tecnologías de la Información.
+
+#### Acceso a la información
+
+-Marco operacional: protección de la operación del sistema
+
+-Actividades preparatorias para dar (o no) acceso a un recurso
+
+.Comodidad de uso VS protección
+
+-Identificación (op.acc.1):
+
+.Identificación del usuario en el sistema:
+
+<Identificación única
+
+-Se puede saber quién ha hecho algo y qué ha hecho:
+
+Trazabilidad
+
+Confidencialidad
+
+Autenticidad
+
+-Requisitos de acceso (op.acc.2):
+
+.Los recursos se protegen con algún mecanismo que impide su utilización
+
+.Derecho de acceso según las decisiones de determinada persona responsable del recurso
+
+.Control del acceso
+
+-Segregación de funciones y tareas (op.acc.3):
+
+.Separación de el desarrollo de una operación, el mantenimiento y la auditoría
+
+<Contemplar la incompatibilidad de realización de tareas
+
+-Proceso de gestión de derechos de acceso (op.acc.4):
+
+.Mínimo privilegio posible
+
+.Acceso a información necesaria
+
+.Permiso de autorización solo por el personal con competencia
+
+-Mecanismo de autenticación (op.acc.5):
+
+.“algo que se sabe”
+
+.“algo que se tiene”
+
+.“algo que se es”
+
+-Acceso local (op.acc.6):
+
+.¿Cómo se accede desde los puestos de trabajo?:
+
+<B: ¿Intentos de acceso?
+
+<B: ¿registro de intentos?
+
+<M: ¿informa el sistema del último acceso?
+
+<A: ¿Acceso limitado por horario?
+
+-Acceso remoto (op.acc.7):
+
+.¿Cómo se accede desde fuera de las instalaciones?
+
+<Se aplican mismas medidas que op.acc.6 y adicionalmente medidas de seguridad de comunicaciones (mp.com.2)
+
+<Autorización previa de qué se puede hacer remotamente
+
+#### Explotación de Servicios Internos y Externos
+
+-Explotación de Servicios Internos:
+
+.Marco operacional: protección de la operación del sistema
+
+.Uso correcto y gestión de los activos tecnológicos de la entidad
+
+<Inventario, mantenimiento, protección, cambios, actividad
+
+
+
+-Explotación de Servicios Externos:
+
+.Marco operacional: protección de la operación del sistema
+
+.Uso correcto y gestión de los activos tecnológicos subcontratados con terceros:
+
+<La entidad también es responsable de los riesgos de estos servicios
+
+#### Continuidad de Servicio y Monitorización
+
