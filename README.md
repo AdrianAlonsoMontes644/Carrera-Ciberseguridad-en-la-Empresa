@@ -6770,3 +6770,101 @@ Autenticidad
 .Disponibilidad de medios alternativos para prestar el servicio de las aplicaciones con las mismas garantías que los medios habituales
 
 ### Analisís de Riesgos
+
+#### Activos y Amenazas
+
+-Análisis de riesgos:
+
+.BÁSICA: informal
+
+.MEDIA: semi-informal
+
+.ALTA: formal
+
+-Metodología: MAGERIT
+
+-Pasos:
+
+.Fase 1: Definir el Alcance:
+
+<Alcance:
+
+■ Informal, semi-formal, formal
+
+■ Activos y amenazas tenidos en cuenta
+
+.Fase 2: Identificar los Activos
+
+<Valoración de los activos: Necesidad de proteger
+
+■ Valor propio o valor acumulado: acumulación de los activos dependientes superiores
+
+■ Valoración cualitativa o cuantitativa
+
+■ Valoración según las dimensiones de seguridad
+
+<Confidencialidad: ¿qué daño causaría que lo conociera quien no debe?
+
+<Integridad: ¿qué perjuicio causaría que estuviera dañado o corrupto?
+
+<Disponibilidad: ¿qué perjuicio causaría no tenerlo o no poder utilizarlo?
+
+<Autenticidad: ¿qué perjuicio causaría no saber exactamente quien hace o ha hecho cada cosa?
+
+<Trazabilidad: ¿qué daño causaría no saber a quién se le presta tal servicio? ¿quién hace qué y cuándo? ¿qué daño causaría no saber quién accede a qué datos y qué hace con ellos?
+
+.Fase 3: Identificar Amenazas
+
+<Origen:
+
+■ Natural: fuego, inundaciones, etc.
+
+■ Industrial: eléctrico
+
+■ Defectos de aplicación: bugs (vulnerabilidades)
+
+■ Causadas por personal: intencional/no intencional
+
+.Fase 4: Identificar Vulnerabilidades y Salvaguardas
+
+<Identificar vulnerabilidades de los activos:
+
+■ Puntos débiles conocidos
+
+<Identificar salvaguardas:
+
+■ Medidas de seguridad que tenemos actualmente implantadas en los activos
+
+.Fase 5: Evaluar el Riesgo
+
+<Para cada activo, para cada amenaza, para cada dimensión de seguridad
+
+<Riesgo repercutido: Impacto en el valor propio del activo X probabilidad
+
+<Riesgo acumulado: Impacto proporcional a las dependencias del activo X probabilidad
+
+.Fase 6: Tratar el Riesgo
+
+<Tratamiento del riesgo:
+
+■ Transferir el riesgo (seguros, cláusulas, etc). Ojo! No se transfiere la responsabilidad.
+
+■ Eliminar el riesgo (en caso de no ser necesario)
+
+■ Asumir el riesgo
+
+■ Implantar salvaguardas (mitigar)
+
+#### Herramienta Pilar
+
+-Análisis y gestión de riesgos
+
+-Digitalización del seguimiento del ENS
+
+-Análisis de impacto y continuidad de operaciones
+
+-PILAR (CCN-STIC 470): Análisis y gestión de riesgos e impacto
+
+-PILAR Basic (CCN-STIC 472): PYME y administración local → Análisis y gestión de riesgos
+
+-μPILAR (CCN-STIC 473): Análisis de riesgo rápido
