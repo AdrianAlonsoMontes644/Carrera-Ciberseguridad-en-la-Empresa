@@ -6474,3 +6474,299 @@ Autenticidad
 ### Medidas de Protección
 
 #### Protección de Instalacciones
+
+-Áreas separadas y con control de acceso (mp.if.1):
+
+.La infraestructura sigue un reparto de zonas separadas según su función y se controla el acceso a dichas zonas
+
+-Identificación de las personas (mp.if.2):
+
+.Control de acceso a los locales y con registro de entrada-salida
+
+-Acondicionamiento de los locales (mp.if.3):
+
+.Condiciones de temperatura y humedad
+
+.Protección frente a las amenazas del análisis de riesgos
+
+.Protección del cableado
+
+-Energía eléctrica (mp.if.4):
+
+.Se garantiza el suministro de potencia
+
+.Se garantiza el correcto funcionamiento de las luces de emergencia
+
+-Protección frente a incendios (mp.if.5):
+
+-Protección frente a inundaciones (mp.if.6):
+
+.Referencia a normativa industrial seguida en la instalación y adecuación del edificio para incendios e inundaciones
+
+-Registro de entrada y salida de equipamiento (mp.if.7):
+
+.Identificar equipamiento que sale y entra, quién autoriza, fecha, tiempo estimado, etc
+
+-Instalaciones alternativas (mp.if.9):
+
+.Existencia y disponibilidad de instalaciones alternativas
+
+.Mismas garantías de seguridad que las habituales
+
+#### Gestión del Personal
+
+-Caracterización del puesto de trabajo (mp.per.1):
+
+.Responsabilidades de seguridad según el puesto de trabajo
+
+.Requisitos para ocupar el puesto de trabajo y en la selección de personal
+
+-Deberes y obligaciones (mp.per.2):
+
+.Deberes y responsabilidades en el puesto de trabajo en materia de seguridad:
+
+<Medidas disciplinarias, periodo de aplicación
+
+<Aplicable en personal contratado a través de terceros
+
+-Concienciación (mp.per.3):
+
+.Recordar normativa de seguridad
+
+.Recordar procedimiento de gestión de incidentes
+
+-Formación (mp.per.4):
+
+.Gestionar correctamente la información
+
+.Saber detectar y reaccionar a diferentes tipos de incidentes
+
+-Personal alternativo (mp.per.9):
+
+.Personal que se haga cargo de funciones en caso de indisponibilidad del personal habitual
+
+.Personal alternativo = personal habitual en cuanto a garantías de seguridad
+
+#### Protección de Equipos
+
+-Puesto de trabajo despejado (mp.eq.1):
+
+.Política de escritorio limpio
+
+.Solo la actividad que se está realizando en dicho momento
+
+.M: Material no usado→ guardado en lugar cerrado
+
+-Bloqueo de puesto de trabajo (mp.eq.2):
+
+.Bloqueo al cabo de un tiempo de inactividad requiriendo autenticación
+
+.A: Cierre de sesiones abiertas
+
+-Protección de portátiles (mp.eq.3):
+
+.Inventario de equipos portátiles que salen de la instalación y la persona responsable del mismo (op.exp.1 Inventario de activos, mp.if.7 entrada y salida de equipamiento)
+
+-Procedimiento de información de cualquier incidente (op.exp.7):
+
+.Limitación de la información accesible
+
+.Limitación de almacenamiento de información sensible
+
+.A: Detectores de violación de seguridad
+
+.A: Información de nivel alto cifrada
+
+-Medios alternativos (mp.eq.9):
+
+.Equipos de trabajo alternativos en caso de fallo de los habituales
+
+.Establecimiento de un tiempo máximo de entrada en funcionamiento
+
+#### Protección de las comunicaciones
+
+-Perímetro seguro (mp.com.1):
+
+.Sistema de cortafuegos que separe la red interna del exterior
+
+.Todo el tráfico pasará por el cortafuegos
+
+.A: Cortafuegos formado por dos o más equipos de diferente fabricante en cascada y sistemas redundantes de alta disponibilidad
+
+-Protección de la confidencialidad (mp.com.2):
+
+.Uso de VPN cuando se acceda desde fuera de la red con cifrado acreditado
+
+.A: Uso de dispositivos hardware preferentemente
+
+.A: Productos certificados (op.pl.5)
+
+-Protección de autenticidad y la integridad (mp.com.3):
+
+.Mecanismos para asegurar la autenticación
+
+.M: Uso de VPN cuando se acceda desde fuera de la red con cifrado acreditado
+
+.A: Uso de dispositivos hardware preferentemente
+
+.A: Productos certificados (op.pl.5)
+
+-Segregación de redes (mp.com.4):
+
+.Segmentación de usuarios para acotar el acceso a la información → VLAN
+
+-Medios alternativos (mp.com.9):
+
+.Redes alternativas en caso de fallo de los habituales
+
+.Establecimiento de un tiempo máximo de entrada en funcionamiento
+
+#### Protección de Soportes: 
+
+-Etiquetado (mp.si.1):
+
+.Etiqueta sin revelar contenido pero indicando nivel de seguridad
+
+.Capacidad para correlacionar la etiqueta con la identificación del soporte
+
+-Criptografía (mp.si.2):
+
+.Especial importancia en soportes portátiles
+
+.Aplicación de mecanismos de cifrado para garantizar confidencialidad e integridad en caso de pérdida
+
+.A: Algoritmos y productos certificados (op.pl.5)
+
+-Custodia (mp.si.3) y Transporte (mp.si.4):
+
+.Control y registro de correcto uso y acceso al soporte
+
+.Alineado con control de acceso (mp.if.1) y entrada-salida de equipamiento (mp.if.7)
+
+-Borrado y destrucción (mp.si.5):
+
+.Reutilización o desecho → Borrado seguro de información
+
+.Borrado seguro = Borrado a bajo nivel
+
+.M: Destrucción del soporte en caso de no permitir borrado seguro
+
+.M: Productos certificados (op.pl.5)
+
+#### Desarrollo Seguro
+
+-Desarrollo (mp.sw.1):
+
+.Entornos diferentes: DESARROLLO - PRE - PRO
+
+.Metodología de desarrollo reconocida con integración de la seguridad
+
+-Aceptación y puesta en servicio (mp.sw.2):
+
+.Antes de pasar a producción:
+
+<Criterios de aceptación de seguridad
+
+<No afecta a la seguridad de otros elementos
+
+.Pruebas y testeo con datos no reales
+
+.M: Análisis de vulnerabilidades y pentesting
+
+.A: Auditoría
+
+#### Protección de la Información
+
+-Datos de carácter personal (mp.info.1):
+
+.Cuando un sistema trate datos de carácter personal, deben de cumplirse los requisitos que se indica en la Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPDGDD)
+
+-Calificación de la información (mp.info.2):
+
+.Según la política de seguridad, el responsable de información determina la calificación de la misma
+
+.M: Descripción de los criterios para etiquetar a la información según su nivel de seguridad.
+
+-Cifrado de la información (mp.info.3):
+
+.Información con nivel alto se cifra durante su almacenamiento y transmisión
+
+.Seguir las indicaciones de mp.com.2 (confidencialidad de la comunicación) y mp.si.2 (criptografía)
+
+-Firma electrónica (mp.info.4):
+
+.Integridad y autenticidad de los documentos a través de firma electrónica durante su almacenamiento y transmisión
+
+.M y A: Aumento de los requisitos de validación
+
+-Sellos de tiempo (mp.info.5):
+
+.Integridad de la información cuando se requiere de información temporal sobre la misma
+
+.Orientado a datos usados como evidencia electrónica
+
+-Limpieza de documentos (mp.info.6):
+
+.Retirada de información en campos ocultos, meta-datos, revisiones, comentarios, etc.
+
+.Especialmente importante cuando el documento se hace público
+
+-Copias de seguridad (mp.info.9):
+
+.Mismo nivel de seguridad que los datos originales
+
+.Abarcar:
+
+<Información de trabajo
+
+<Información de aplicaciones
+
+<Datos de configuración
+
+<Claves
+
+#### Protección de los Servicios
+
+-Protección del correo electrónico (mp.s.1):
+
+.Medidas de seguridad que se utilizan para evitar incidentes:
+
+<SPAM
+
+<Malware (especialmente phishing)
+
+.Se incluye el uso seguro de correo electrónico en la formación y normas de uso para los empleados
+
+-Protección de servicios y aplicaciones web (mp.s.2):
+
+.Medidas de seguridad que se utilizan para evitar incidentes:
+
+<Manipulación de URL
+
+<Bypass de acceso a la aplicación
+
+<Manipulación de cookies
+
+<Escalado de privilegios
+
+<Ataques XSS (Cross Site Scripting)
+
+.A: Certificados cualificados de autenticación
+
+-Protección frente a denegación de servicio (mp.s.8):
+
+.Ataques DoS y DDoS:
+
+<Control de peticiones
+
+<Balanceamiento de carga
+
+.A: Sistemas para detectar el ataque
+
+.A: Procedimiento para reaccionar al ataque
+
+-Medios alternativos (mp.s.9):
+
+.Disponibilidad de medios alternativos para prestar el servicio de las aplicaciones con las mismas garantías que los medios habituales
+
+### Analisís de Riesgos
