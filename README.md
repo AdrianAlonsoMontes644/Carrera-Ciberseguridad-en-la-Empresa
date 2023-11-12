@@ -6311,7 +6311,87 @@ Autenticidad
 
 <Inventario, mantenimiento, protección, cambios, actividad
 
+.Inventario de activos (op.exp.1):
 
+<Inventario actualizado de los activos e identificación del responsable de cada uno
+
+.Configuración de seguridad (op.exp.2):
+
+<Retirada de cuentas o contraseñas estándar
+
+<Mínima funcionalidad posible
+
+<Seguridad por defecto
+
+.Gestión de la configuración (op.exp.3):
+
+<Gestión y monitorización continua del punto anterior
+
+.Mantenimiento (op.exp.4):
+
+<Seguir pautas de mantenimiento e instalación del fabricante
+
+<Procedimiento de actualizaciones según riesgo
+
+.Gestión de cambios (op.exp.5):
+
+<Control continuo de cambios (control anterior más estricta y controlada)
+
+■ Seguimiento de nuevas versiones
+
+■ Aprobación
+
+■ Entornos PRE-PRO
+
+.Protección frente a código dañino (op.exp.6):
+
+<Mecanismos de prevención y reacción frente a malware
+
+■ Gusanos, troyanos, spyware, etc.
+
+.Gestión de incidentes (op.exp.7):
+
+<Procedimiento de gestión de incidentes
+
+■ reporte, organización, medidas, recursos, análisis posterior
+
+.Registro de actividad de los usuarios (op.exp.8):
+
+<¿Quién? ¿Cuándo? ¿Sobre qué?:
+
+■ B: Se activan los registros
+
+■ M: Se activan y revisan
+
+■ A: Sistema automático de recolección y correlación (SIEM)
+
+.Registro de la gestión de incidentes (op.exp.9):
+
+<Se guarda información del incidente y todas sus consecuencias
+
+<Registro de evidencias para posible uso a nivel judicial
+
+<Revisión de eventos auditables
+
+.Protección de registros de actividad (op.exp.10):
+
+<Especial cuidado a la hora de proteger los registros de actividad
+
+■ periodo de retención
+
+■ control de acceso a los mismos
+
+■ gestión correcta de copias de seguridad
+
+.Protección de claves criptográficas (op.exp.11):
+
+<Protección de claves durante su ciclo de vida
+
+■ Generación, transporte, almacenamiento, destrucción
+
+<B: separación de medios de generación de medios de operación
+
+<M y A: Algoritmos acreditados por el CCN
 
 -Explotación de Servicios Externos:
 
@@ -6321,5 +6401,76 @@ Autenticidad
 
 <La entidad también es responsable de los riesgos de estos servicios
 
+.Contratación y acuerdos a nivel de servicio (op.ext.1):
+
+<Establecer en el contrato o acuerdo las características del servicio y los requisitos a nivel de seguridad.
+
+■ Responsabilidades
+
+■ Consecuencias de incumplimiento
+
+<Ya puede venir exigido por la otra empresa si tiene que cumplir con nivel medio aunque la nuestra no sea necesario
+
+.Gestión diaria (op.ext.2):
+
+<Medición rutinaria de los acuerdos del control anterior.
+
+.Medios alternativos (op.ext.3):
+
+<Provisión del servicio por medios alternativos en caso de indisponibilidad
+
+■ Por ejemplo: doble línea de telecomunicaciones o alta redundancia de servidores en la nube.
+
 #### Continuidad de Servicio y Monitorización
 
+-Marco operacional: protección de la operación del sistema
+
+-Continuación del servicio ante cualquier incidente
+
+-Monitorización del sistema para prevenir incidentes
+
+.Análisis de impacto (op.cont.1):
+
+<Realización de análisis de impacto que permita determinar:
+
+■ disponibilidad de cada servicio
+
+■ elementos críticos para la prestación de servicio
+
+.Plan de continuidad (op.cont.2):
+
+<Acciones a realizar en caso de interrupción
+
+■ Funciones, responsabilidades, actividades
+
+■ Alternativas y evidencia de acuerdo en firme de las mismas
+
+■ Formación respecto al papel en el plan
+
+■ Integrado con otros planes de la empresa
+
+.Pruebas periódicas (op.cont.3):
+
+<Revisión periódica del plan de continuidad
+
+■ Localizar y corregir deficiencias
+
+.Detección de intrusión (op.mon.1):
+
+<Disponer de herramientas de detección y de prevención de intrusión (IDS, IPS) → Firewalls UTM
+
+.Sistema de métricas (op.mon.2):
+
+<Medición y seguimiento de proyectos de seguridad con criterios cualitativos y cuantitativos
+
+■ B: Grado de implantación de medidas de seguridad
+
+■ M: Métricas para la eficacia sistema de gestión de incidentes
+
+■ A: Métricas para la eficacia del sistema de seguridad TIC
+
+.Sistema de métricas (op.mon.2)
+
+### Medidas de Protección
+
+#### Protección de Instalacciones
