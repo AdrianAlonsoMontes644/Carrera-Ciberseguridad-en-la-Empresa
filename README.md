@@ -6952,3 +6952,169 @@ Autenticidad
 ### Adecuación y mantenimiento
 
 #### Implantación de medidas técnicas
+
+-ENS = Adecuación y mantenimiento de la seguridad
+
+-Seguridad organizativa y operacional
+
+-Seguridad mediante medidas técnicas:
+
+.1º Viabilidad según análisis de riesgos (impacto x probabilidad)
+
+.2º Estudio de requisitos y necesidades a cubrir
+
+.3º Métrica de seguimiento de la implantación
+
+.4º Revisión y mantenimiento
+
+-TIPOS:
+
+.Prevención: Impedir que la amenaza se materialice
+
+.Disuasión: Informar de consecuencias
+
+.Protección: Proteger de explotación de riesgos
+
+.Detección y reacción: Localizar y reportar incidentes
+
+.Recuperación: Volver al estado normal
+
+-Exclusión de sistemas
+
+.Justificando que no están relacionadas o forman parte en ningún punto de:
+
+<Ejercicio de derechos del ciudadano
+
+<Cumplimiento de deberes y obligaciones
+
+<Acceso electrónico a servicios del ciudadano
+
+-Vinculación o dependencia de administraciones públicas
+
+.El ENS es aplicable a entidades vinculadas o dependientes de administraciones públicas:
+
+<Administración General del Estado
+
+<Comunidad autónoma
+
+<Entidades locales
+
+.Reutilización de indicaciones, evolución, mejoras y medidas técnicas en empresas dependientes → cumplimiento indirecto
+
+-Puntos clave para las medidas técnicas según las propiedades de la seguridad:
+
+.Integridad: Protección de la información (firewalls, antimalware)
+
+.Confidencialidad: Control de acceso
+
+.Disponibilidad: Backups, redundancia, anti-DoS
+
+.Autenticidad: Firmas y certificados
+
+.Trazabilidad: Logs, inventario de activos
+
+-Guías CCN-STIC:
+
+.Requisitos de seguridad para aplicaciones de determinado tipo algunas especialmente orientadas a cumplimiento con ENS
+
+.Configuración de seguridad en sistemas y aplicaciones extendidos:
+
+<Microsoft, Amazon, IMB, Cisco, Citrix, Fortinet, etc.
+
+.Configuración de tecnologías extendidas:
+
+<Kubernetes, Nextcloud, SQL Database, Android, Wordpress
+
+-Aplicaciones CCN-CERT:
+
+.No solo las relacionadas directamente con implantación y auditoría ENS
+
+.Cubrir las necesidades técnicas de seguridad a través del CCN y sus herramientas:
+
+<Detección y prevención de malware, logs, eventos, inventario, etc
+
+#### Redacción de procedimientos operativos
+
+-Adecuación al ENS requiere de evidencias de cumplimiento:
+
+.Documentación de los procedimientos
+
+.Registro de incidencias o eventos
+
+.Evaluación interna y prueba de funcionamiento
+
+-Recomendaciones para la redacción de procedimientos:
+
+.Agrupar controles VS Separación de documento por control
+
+.No utilizar nombres propios sino cargos
+
+.Detalle solo en lo necesario
+
+.Procedimientos personales de la entidad
+
+-Recomendaciones para la redacción de procedimientos:
+
+.¿Cómo llevar a cabo las tareas?
+
+.¿Quienes participan en las tareas?
+
+.¿Cómo identificar y actuar ante desviaciones del procedimiento?
+
+-Recomendaciones para la redacción de procedimientos:
+
+.Cumplir con los requisitos y preguntas de la auditoría
+
+-Revisión de procedimientos operativos:
+
+.¿Es necesario concretar más o realizar más documentos?
+
+.¿Nº de desviaciones del procedimiento?
+
+.¿Utilidad y comprensión del procedimiento?
+
+#### Herramienta INES
+
+-INES: Herramienta del CCN para recogida de información y seguimiento del ENS
+
+-Solicitud de acceso identificándose como organismo público para la acreditación
+
+-Secciones:
+
+.1 Identificación del organismo: Datos de la entidad
+
+.2 Categorización de los sistemas: <BÁSICA, MEDIA, ALTA → [C] [I] [D] [A] [T]
+
+.3 Análisis y gestión de riesgos: Información de su estado y activos
+
+.4 Actividades organizativas: Preguntas sobre roles, desarrollo de la política de seguridad y gestión de la seguridad.
+
+.5 Recursos: Equipo de seguridad, dedicación, tareas, presupuesto STIC 
+
+.6 Medidas de seguridad: Controles ENS {org, op, mp}
+
+.7 Medidas de interconexión: Preguntas sobre conexión a internet y arquitectura de protección perimetral, acceso remoto y herramientas de seguridad que se disponen.
+
+.8 Aplicación de la seguridad: Preguntas sobre identificación y autenticación de usuarios internos y externos, servicios externos y subcontratados, direccionamiento IP, gestión de cambios, continuidad y formación.
+
+.9 Gestión de incidentes: Conteo de incidentes de interrupción y resto en número de días/horas y tiempo en resolverlos
+
+.10 Auditorías: Para categoría MEDIA y ALTA → superar auditoría al menos cada 2 años. Información sobre la auditoría
+
+.11 Indicadores clave de riesgo: Puntos de seguridad de importancia:
+
+<Gestión de equipos (dominio)
+
+<% Equipos personales con uso laboral y de eso, los administrados por la entidad (BYOD)
+
+<Número de personas de Seguridad TIC que han causado baja
+
+-Permite: 
+
+-Importación de valores desde PILAR
+
+-Importación de información de incidentes (SAT):
+
+.Sistemas de alerta temprana del CCN
+
+->|(Con esto, termino el Curso, la verdad este último no me gusto tanto, me recordó incluso un poco al profesor del 2 módulo. Pero bueno, 7120 líneas)|
