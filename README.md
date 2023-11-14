@@ -6855,6 +6855,8 @@ Autenticidad
 
 ■ Implantar salvaguardas (mitigar)
 
+#### Carrera Proyecto de clases Día 23: 14/11/2023
+
 #### Herramienta Pilar
 
 -Análisis y gestión de riesgos
@@ -6868,3 +6870,85 @@ Autenticidad
 -PILAR Basic (CCN-STIC 472): PYME y administración local → Análisis y gestión de riesgos
 
 -μPILAR (CCN-STIC 473): Análisis de riesgo rápido
+
+-Se puede Instalar:
+
+.Aplicación Java
+
+.Windows: ejecutable (.exe)
+
+.Linux: Archivo java (.jar) con app y librerías
+
+.Mac OS: Archivo java (.jar) → pilar.app
+
+-Estructura:
+
+.D. Proyecto:
+
+<Datos del proyecto
+
+<Dominios de seguridad:
+
+■ Los activos se ubican dentro de algún dominio de seguridad. Cada activo pertenece a un dominio y sólo a un dominio.
+
+■ Un dominio de seguridad es una colección de activos uniformemente protegidos, típicamente bajo una única autoridad para diferenciar entre zonas en el sistema de información.
+
+■ Por ejemplo: instalaciones centrales, sucursales, comerciales trabajando con portátiles pueden ser diferentes dominios de seguridad de una entidad
+
+<Subconjunto de clases de activos:
+
+■ Tipos de activos
+
+■ On/Off: Ocultar/mostrar para poder crear un activo de esa clase
+
+■ Cargadas por biblioteca
+
+.A. Análisis de riesgos:
+
+<Capa estándar:
+
+■ Activos esenciales
+
+■ Servicios
+
+■ Equipamiento
+
+■ Servicios subcontratados
+
+■ Instalaciones
+
+■ Personal
+
+<Grupos de activos
+
+■ Aplicaciones
+
+■ Equipos
+
+■ Comunicaciones
+
+■ Elementos auxiliares
+
+<Seleccionar, modificar y aplicar de forma sencilla las clases de activos creados
+
+.R. Informes
+
+<Medidas de seguridad
+
+<Riesgo acumulado
+
+.E. Perfiles de seguridad:
+
+<valoración de controles
+
+-Detección de amenazas: Gracias a determinar correctamente las clases de activos PILAR puede asociar automáticamente las amenazas que afectan a un activo
+
+-Valoración de amenazas:
+
+.Cuantificación de las amenazas sobre los activos
+
+.Se auto carga del archivo TSV – Threat Standard Values
+
+### Adecuación y mantenimiento
+
+#### Implantación de medidas técnicas
