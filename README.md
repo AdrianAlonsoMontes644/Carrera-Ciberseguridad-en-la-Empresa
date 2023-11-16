@@ -7118,3 +7118,5 @@ Autenticidad
 .Sistemas de alerta temprana del CCN
 
 ->|(Con esto, termino el Curso, la verdad este último no me gusto tanto, me recordó incluso un poco al profesor del 2 módulo. Pero bueno, 7120 líneas)|
+
+->|(Me acorde hoy dia 16 que no hize el examen, lo intenté una vez y suspendi, no pude ver en que me quivoqué porque al cargar la pantalla del suspenso se reincio todo por algún motivo y me mando a la pregunta 1 de vuelta empezandome el segundo intento de golpe y sin saber en que me equivoque... maravilla. 2 suspenso, a probar mañana si la página no pierde la cabeza)|
